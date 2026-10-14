@@ -1,0 +1,33 @@
+name: Rhody 12-Hour Sleeper Sync & Roast Engine
+
+on:
+  schedule:
+    - cron: "0 */12 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync-and-roast:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Rhody Website Repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Pull Sleeper League & Generate Roasts
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: node scripts/update-rhody.mjs
+
+      - name: Commit & Auto-Publish Updated Website Data
+        run: |
+          git config user.name "Rhody Roast Bot"
+          git config user.email "bot@rhodyfantasy.local"
+          git add data/rhody-data.json
+          git diff --staged --quiet || (git commit -m "🐏 12-Hour Auto-Update: Latest Sleeper trades, waivers & roasts" && git push)
