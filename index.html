@@ -1,0 +1,1193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RHODY GRIDIRON DESK | Official URI Fantasy Broadcast & League Vault</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            keaney: '#68ABE8',
+            urinavy: '#002147',
+            uridark: '#00152e',
+            urigold: '#FFD453',
+          },
+          fontFamily: {
+            display: ['Oswald', 'sans-serif'],
+            sans: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { background-color: #00152e; color: #f8fafc; }
+    .keaney-gradient { background: linear-gradient(135deg, #002147 0%, #003875 50%, #68ABE8 100%); }
+    .card-glass { background: rgba(0, 33, 71, 0.88); border: 1px solid rgba(104, 171, 232, 0.28); }
+    .ticker-wrap { overflow: hidden; white-space: nowrap; }
+    .ticker-move { display: inline-block; animation: ticker 42s linear infinite; }
+    @keyframes ticker { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+    .tab-active { background-color: #FFD453; color: #002147; font-weight: 800; }
+    .tab-inactive { background-color: rgba(0, 33, 71, 0.8); color: #68ABE8; border: 1px solid rgba(104, 171, 232, 0.35); }
+  </style>
+</head>
+<body class="min-h-screen font-sans antialiased">
+
+  <!-- TOP BREAKING NEWS TICKER -->
+  <div class="bg-keaney text-urinavy font-bold text-xs uppercase tracking-wider py-2 border-b-2 border-urigold">
+    <div class="ticker-wrap">
+      <div id="live-ticker" class="ticker-move">
+        <span>🐏 KINGSTON SPORTS DESK • LIVE SLEEPER SYNC LEAGUE 1389738151307649024</span>
+        <span class="mx-8">🚨 PERMANENT RECORD: CAAAAM BLEW 50 FAAB ON A WEEK 1 DEFENSE</span>
+        <span class="mx-8">🚨 JEWSINPARIS TRADED AWAY DRAKE LONDON FOR JORDAN MASON</span>
+        <span class="mx-8">🚫 CAAAAM ALSO HAS HIS THUMB PERMANENTLY GLUED TO THE VETO BUTTON</span>
+        <span class="mx-8">💰 CEREALSTROKE STILL THINKS FAAB IS A LAUNDRY DETERGENT</span>
+        <span class="mx-8">🕵️ AMBER ALERT: DOES CARLACOTE KNOW SHE IS IN THIS LEAGUE?</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- URI KEANEY BLUE BROADCAST HEADER -->
+  <header class="keaney-gradient border-b-4 border-urigold shadow-2xl">
+    <div class="max-w-7xl mx-auto px-4 py-7 flex flex-col lg:flex-row items-center justify-between gap-6">
+      <div class="flex items-center gap-5">
+        <div class="w-20 h-20 rounded-2xl bg-urinavy border-2 border-urigold flex flex-col items-center justify-center shadow-xl shrink-0">
+          <span class="font-display text-3xl font-bold text-keaney leading-none">URI</span>
+          <span class="text-[10px] font-extrabold tracking-widest text-urigold mt-1">RHODY</span>
+        </div>
+        <div>
+          <div class="flex flex-wrap items-center gap-2">
+            <span class="bg-urigold text-urinavy text-xs font-extrabold px-2.5 py-0.5 rounded uppercase tracking-wider">Meade Stadium Press Box</span>
+            <span id="season-badge" class="bg-urinavy/80 text-keaney border border-keaney/40 text-xs font-semibold px-2.5 py-0.5 rounded">Loading Seasons...</span>
+            <span id="player-db-badge" class="bg-emerald-500/20 text-emerald-300 border border-emerald-400/40 text-xs font-semibold px-2.5 py-0.5 rounded">Syncing NFL Player Names...</span>
+          </div>
+          <h1 id="league-title" class="font-display text-4xl md:text-5xl font-bold uppercase tracking-tight text-white mt-1">
+            RHODY FANTASY NETWORK
+          </h1>
+          <p class="text-sm text-slate-200 mt-1">
+            Rotating 12-Hour Roast & History Engine • League ID <code class="text-urigold font-mono">1389738151307649024</code>
+          </p>
+        </div>
+      </div>
+
+      <!-- STATUS & ROTATION PREVIEW BOX -->
+      <div class="flex flex-col items-end gap-2 bg-urinavy/90 px-4 py-3 rounded-xl border border-keaney/40 shrink-0">
+        <div class="flex items-center gap-2">
+          <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+          <span id="edition-cycle-label" class="text-xs font-bold uppercase tracking-wider text-keaney">12-Hour Roast Rotation Active</span>
+        </div>
+        <p id="last-sync-time" class="text-xs text-slate-300">Crawling Sleeper API & NFL Player Dictionary...</p>
+        <div class="flex gap-2 mt-1">
+          <button onclick="rotateRoastEdition()" class="bg-urigold hover:bg-white text-urinavy font-extrabold text-xs px-3 py-1.5 rounded transition">
+            🎲 Preview Next 12h Roast Cycle
+          </button>
+          <button onclick="initRhodyPortal(true)" class="bg-keaney hover:bg-white text-urinavy font-extrabold text-xs px-3 py-1.5 rounded transition">
+            ↻ Sync Live Sleeper
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- NAVIGATION TABS + COMPLETE HISTORY DROPDOWN -->
+    <div class="bg-urinavy/95 border-t border-keaney/30">
+      <div class="max-w-7xl mx-auto px-4 py-3 flex flex-wrap items-center justify-between gap-4">
+        <div class="flex flex-wrap items-center gap-2">
+          <button id="tab-btn-live" onclick="switchTab('live')" class="tab-active px-4 py-2 rounded-lg text-xs uppercase tracking-wider transition">
+            🎙️ Live Broadcast & Roasts
+          </button>
+          <button id="tab-btn-history" onclick="switchTab('history')" class="tab-inactive px-4 py-2 rounded-lg text-xs uppercase tracking-wider transition">
+            🏛️ Complete League History & Record Book
+          </button>
+          <button id="tab-btn-rosters" onclick="switchTab('rosters')" class="tab-inactive px-4 py-2 rounded-lg text-xs uppercase tracking-wider transition">
+            🏈 Full Team Rosters (Real Player Names)
+          </button>
+        </div>
+
+        <!-- SEASON ARCHIVE DROPDOWN -->
+        <div class="flex items-center gap-2">
+          <label for="season-select" class="text-xs font-bold uppercase text-keaney">Complete History Dropdown:</label>
+          <select id="season-select" onchange="onSeasonDropdownChange(this.value)" class="bg-uridark text-urigold border border-urigold/50 rounded-lg px-3 py-1.5 text-xs font-bold focus:outline-none">
+            <option value="ALL">All-Time Combined History</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTAINER -->
+  <main class="max-w-7xl mx-auto px-4 py-8 space-y-10">
+
+    <!-- ========================================== -->
+    <!-- TAB 1: LIVE BROADCAST, STANDINGS & ROASTS  -->
+    <!-- ========================================== -->
+    <div id="tab-live" class="space-y-10">
+
+      <!-- 12-HOUR ROTATING ROAST DESK -->
+      <section>
+        <div class="flex items-center justify-between mb-4">
+          <div>
+            <h2 class="font-display text-2xl md:text-3xl font-bold uppercase tracking-wide text-keaney flex items-center gap-2">
+              <span>🔥 The Kingston Roast Desk</span>
+              <span class="text-xs bg-red-500/20 text-red-300 border border-red-400/40 px-2.5 py-0.5 rounded-full font-sans">Rotates Every 12 Hours</span>
+            </h2>
+            <p class="text-sm text-slate-400">Targeting poor lineup starts, panicked waiver claims, bad trades, and bench blunders automatically.</p>
+          </div>
+        </div>
+        <div id="roast-articles-container" class="grid grid-cols-1 lg:grid-cols-2 gap-6"></div>
+      </section>
+
+      <!-- LIVE STANDINGS + THIS WEEK'S MATCHUPS WITH REAL PLAYER NAMES -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+
+        <!-- KEANEY STANDINGS (2 COLS) -->
+        <div class="lg:col-span-2 card-glass rounded-2xl p-6 shadow-xl">
+          <div class="flex items-center justify-between mb-4 border-b border-keaney/20 pb-3">
+            <div>
+              <h3 class="font-display text-2xl font-bold uppercase text-white">🏆 Keaney Power Standings & Rotating Manager Roasts</h3>
+              <p class="text-xs text-slate-400">100% unique, dynamically rotating roasts for all managers based on live Sleeper stats</p>
+            </div>
+            <span id="total-seasons-pill" class="text-xs bg-keaney/20 text-keaney px-3 py-1 rounded-full font-bold"></span>
+          </div>
+
+          <div class="overflow-x-auto">
+            <table class="w-full text-left border-collapse">
+              <thead>
+                <tr class="text-xs uppercase text-keaney border-b border-keaney/30">
+                  <th class="py-3 px-2">#</th>
+                  <th class="py-3 px-2">Manager & Rotating Roast Profile</th>
+                  <th class="py-3 px-2 text-center">Record</th>
+                  <th class="py-3 px-2 text-right">Points For</th>
+                  <th class="py-3 px-2 text-right">Max PF (Bench Mistake Meter)</th>
+                  <th class="py-3 px-2 text-right">FAAB Left</th>
+                </tr>
+              </thead>
+              <tbody id="standings-body" class="divide-y divide-keaney/15 text-sm">
+                <tr><td colspan="6" class="py-8 text-center text-slate-400">Loading Rhody standings from Sleeper...</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- LIVE MATCHUPS WITH TOP SCORERS (1 COL) -->
+        <div class="card-glass rounded-2xl p-6 shadow-xl">
+          <div class="flex items-center justify-between mb-4 border-b border-keaney/20 pb-3">
+            <div>
+              <h3 class="font-display text-2xl font-bold uppercase text-white">⚡ Meade Stadium Scoreboard</h3>
+              <p id="current-week-label" class="text-xs text-urigold font-semibold">Live Matchups & Starters</p>
+            </div>
+          </div>
+          <div id="matchups-container" class="space-y-4">
+            <p class="text-sm text-slate-400 py-6 text-center">Pulling current week matchups...</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ALL-TIME TRANSACTION WIRE (REAL PLAYER NAMES) -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+        <!-- TRADES LEDGER -->
+        <div class="card-glass rounded-2xl p-6 shadow-xl">
+          <div class="flex items-center justify-between mb-4 border-b border-keaney/20 pb-3">
+            <div>
+              <h3 class="font-display text-2xl font-bold uppercase text-urigold">🤝 The Trade & Fleece Ledger (Real Player Names)</h3>
+              <p class="text-xs text-slate-400">Every trade that miraculously survived Caaaam's veto trigger finger</p>
+            </div>
+            <span id="trade-counter" class="text-xs font-bold bg-urigold/20 text-urigold px-2.5 py-1 rounded-full">0 Trades</span>
+          </div>
+          <div id="trades-feed" class="space-y-3 max-h-[540px] overflow-y-auto pr-1"></div>
+        </div>
+
+        <!-- WAIVERS LEDGER -->
+        <div class="card-glass rounded-2xl p-6 shadow-xl">
+          <div class="flex items-center justify-between mb-4 border-b border-keaney/20 pb-3">
+            <div>
+              <h3 class="font-display text-2xl font-bold uppercase text-keaney">💸 Waiver Wire & FAAB Blunders</h3>
+              <p class="text-xs text-slate-400">Real player pickups, panic drops, and CerealStroke's untouched wallet</p>
+            </div>
+            <span id="waiver-counter" class="text-xs font-bold bg-keaney/20 text-keaney px-2.5 py-1 rounded-full">0 Moves</span>
+          </div>
+          <div id="waivers-feed" class="space-y-3 max-h-[540px] overflow-y-auto pr-1"></div>
+        </div>
+
+      </div>
+
+      <!-- COMPLETE MANAGER SCOUTING DOSSIER (ROTATING ROASTS) -->
+      <section class="card-glass rounded-2xl p-6 shadow-xl">
+        <h3 class="font-display text-2xl font-bold uppercase text-white mb-1">📋 Official Rhody Scouting Dossier (Rotating Roasts For All Managers)</h3>
+        <p class="text-xs text-slate-400 mb-5">Zero duplicate badges. Your 7 custom legends (including Caaaam's infamous 50-FAAB defense splurge) cycle through fresh roasts automatically.</p>
+        <div id="lore-cards" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+      </section>
+
+    </div>
+
+    <!-- ==================================================== -->
+    <!-- TAB 2: COMPLETE LEAGUE HISTORY & ALL-TIME VAULT      -->
+    <!-- ==================================================== -->
+    <div id="tab-history" class="hidden space-y-10">
+
+      <!-- SEASON TROPHY ROOM & TOILET BOWL ARCHIVE -->
+      <section class="card-glass rounded-2xl p-6 shadow-xl border-t-4 border-t-urigold">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6 border-b border-keaney/20 pb-4">
+          <div>
+            <h2 class="font-display text-3xl font-bold uppercase text-urigold">🏛️ The Complete Rhody League Vault & Trophy Room</h2>
+            <p class="text-sm text-slate-300">Every season crawled via Sleeper's <code class="text-keaney">previous_league_id</code> chain—Champions, Toilet Bowls, All-Time Records, and Historical Trades.</p>
+          </div>
+        </div>
+
+        <!-- SEASON SUMMARY PLAQUES -->
+        <div id="season-plaques-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-8"></div>
+
+        <!-- ALL-TIME FRANCHISE LEADERBOARD TABLE -->
+        <h3 class="font-display text-2xl font-bold uppercase text-white mb-3">📊 All-Time Franchise Leaderboard (Combined Across All Seasons)</h3>
+        <div class="overflow-x-auto">
+          <table class="w-full text-left border-collapse">
+            <thead>
+              <tr class="text-xs uppercase text-keaney border-b border-keaney/30">
+                <th class="py-3 px-2">Rank</th>
+                <th class="py-3 px-2">Manager</th>
+                <th class="py-3 px-2 text-center">Seasons</th>
+                <th class="py-3 px-2 text-center">All-Time W-L</th>
+                <th class="py-3 px-2 text-center">Win %</th>
+                <th class="py-3 px-2 text-right">Career Points For</th>
+                <th class="py-3 px-2 text-right">Career Points Against</th>
+                <th class="py-3 px-2 text-center">Total Trades</th>
+                <th class="py-3 px-2 text-center">Total Waivers</th>
+              </tr>
+            </thead>
+            <tbody id="alltime-leaderboard-body" class="divide-y divide-keaney/15 text-sm"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- SEASON-BY-SEASON DEEP ARCHIVE VIEWER -->
+      <section class="card-glass rounded-2xl p-6 shadow-xl">
+        <div class="flex flex-wrap items-center justify-between gap-4 mb-4 border-b border-keaney/20 pb-3">
+          <div>
+            <h3 id="archive-season-heading" class="font-display text-2xl font-bold uppercase text-keaney">📅 Complete Season-by-Season Breakdown</h3>
+            <p class="text-xs text-slate-400">Select any season below or from the top dropdown to view every standing and trade from that year.</p>
+          </div>
+          <div id="season-filter-pills" class="flex flex-wrap gap-2"></div>
+        </div>
+        <div id="season-archive-details"></div>
+      </section>
+
+    </div>
+
+    <!-- ==================================================== -->
+    <!-- TAB 3: FULL TEAM ROSTERS (REAL PLAYER NAMES)         -->
+    <!-- ==================================================== -->
+    <div id="tab-rosters" class="hidden space-y-6">
+      <div class="card-glass rounded-2xl p-6 shadow-xl">
+        <h2 class="font-display text-3xl font-bold uppercase text-white mb-1">🏈 Active Rhody Rosters (Real NFL Player Names & Positions)</h2>
+        <p class="text-sm text-slate-400 mb-6">Live starters and bench players for every team in League 1389738151307649024.</p>
+        <div id="full-rosters-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="border-t border-keaney/20 mt-12 py-6 text-center text-xs text-slate-400">
+    Built for the <strong class="text-keaney">Rhody Fantasy League (1389738151307649024)</strong> • Auto-Rotates Every 12 Hours • Go Rhody Rams 🐏
+  </footer>
+
+  <script>
+    const LEAGUE_ID = "1389738151307649024";
+
+    let GLOBAL_SEASONS = [];
+    let GLOBAL_TRADES = [];
+    let GLOBAL_WAIVERS = [];
+    let GLOBAL_ROSTERS = [];
+    let GLOBAL_CRON_ROASTS = null;
+    let PLAYER_MAP = {};
+
+    let ROAST_CYCLE_OFFSET = 0;
+    function get12HourSlot() {
+      return Math.floor(Date.now() / (12 * 3600 * 1000)) + ROAST_CYCLE_OFFSET;
+    }
+
+    // ============================================================================
+    // 1. ROTATING LORE FOR YOUR 7 LEGENDS (Including Caaaam's 50-FAAB Defense Splurge)
+    // ============================================================================
+    const KNOWN_LORE_MANAGERS = {
+      "jewsinparis": {
+        badge: "🏛️ Drake London Trade Criminal",
+        angles: [
+          (m) => `Author of the single worst trade in Rhody history: shipping away alpha WR1 Drake London for backup RB Jordan Mason. Currently sitting at ${m.wins}-${m.losses} (${m.fpts.toFixed(1)} PF) and every loss is direct karma.`,
+          (m) => `Scientists at URI are still studying how JewsinParis looked at Drake London, looked at Jordan Mason, and hit 'Accept.' Trade calculator privileges remain permanently revoked.`,
+          (m) => `Still trying to live down the Drake London for Jordan Mason fleecing. Even with ${m.wins} wins, opposing managers treat his trade DMs like a phishing scam.`
+        ]
+      },
+      "caaaam": {
+        badge: "💸 Week 1 50-FAAB Defense Tycoon & Chief Veto Officer",
+        angles: [
+          (m) => `Legendary general manager who dropped a staggering 50 FAAB on a single Week 1 defense before anyone had even played a snap. When he's not blowing half his budget on September kicker/defense points, Caaaam is sitting at ${m.wins}-${m.losses} vetoing everyone else's trades.`,
+          (m) => `Owner of the most infamous financial disaster in Rhody history: detonating 50% of his entire FAAB budget in Week 1 on a defense. Now sitting at ${m.wins}-${m.losses} (${m.fpts.toFixed(1)} PF) while furiously smashing the Veto button on normal trades.`,
+          (m) => `Splurged 50 FAAB on a defense in Week 1 like a high-roller at Twin River Casino, only to watch it score 3 fantasy points. Currently ${m.wins}-${m.losses} and policing everyone else's 3rd-string roster moves.`
+        ]
+      },
+      "elord11": {
+        badge: "🔄 Ryan Center Revolving-Door Trader",
+        angles: [
+          (m) => `Addicted to the trade button (${m.myTrades} career deals logged). If ELord11 goes 48 hours without shuffling his roster, send a wellness check—currently ${m.wins}-${m.losses}.`,
+          (m) => `Runs his fantasy team like a Wall Street day-trading floor (${m.myTrades} trades, ${m.myWaivers} waivers). Sitting at ${m.wins}-${m.losses} (${m.fpts.toFixed(1)} PF) and spamming trade offers.`,
+          (m) => `Has traded away or acquired half the NFL this season (${m.myTrades} trades). His starting lineup changes identities faster than a URI parking pass policy.`
+        ]
+      },
+      "prayinggrantis": {
+        badge: "👑 Unexplained Superteam Architect",
+        angles: [
+          (m) => `Somehow always ends up with the 2007 Patriots on his roster (${m.wins}-${m.losses}, ${m.fpts.toFixed(1)} PF) while the rest of the league watches in hypnosis and complains later.`,
+          (m) => `Death, taxes, and PrayingGrantis assembling an Avengers superteam (${m.fpts.toFixed(1)} PF) while everyone else fights over waiver wire scraps.`,
+          (m) => `League investigators are auditing how PrayingGrantis ended up with another stacked roster at ${m.wins}-${m.losses}. Must have sleeper-cell agents inside every other front office.`
+        ]
+      },
+      "tylero0": {
+        badge: "🐍 Expired Used-Car Fleece Salesman",
+        angles: [
+          (m) => `Constantly firing off 'three bench warmers for your best starter' trade offers that haven't fooled anyone since 2018. Currently ${m.wins}-${m.losses} (${m.fpts.toFixed(1)} PF).`,
+          (m) => `Tylero0's trade offers belong in a comedy museum. Sitting at ${m.wins}-${m.losses} with ${m.myTrades} completed deals because the entire league puts his DMs on Do Not Disturb.`,
+          (m) => `Still trying to pawn off his injured bench scrubs in 3-for-1 blockbusters. Hasn't successfully fleeced anyone since the Obama administration.`
+        ]
+      },
+      "cerealstroke": {
+        badge: "🥣 'What Does FAAB Stand For?' CEO",
+        angles: [
+          (m) => `Still thinks FAAB is a brand of almond milk. Has $${m.faabLeft} of his budget sitting untouched in a savings account while riding his draft-night roster to a ${m.wins}-${m.losses} record.`,
+          (m) => `Allergic to the waiver wire (${m.myWaivers} moves) and hoarding $${m.faabLeft} FAAB like it rolls over into real US dollars at the campus bookstore.`,
+          (m) => `Refuses to spend a single FAAB dollar ($${m.faabLeft} left) and hasn't made a waiver claim since opening night. Pure draft-and-pray strategy.`
+        ]
+      },
+      "carlacote": {
+        badge: "👻 The Ghost of Kingston (Witness Protection)",
+        angles: [
+          (m) => `The league's greatest unsolved mystery: does CarlaCote actually know she is in this fantasy football league? Yet she has ${m.wins} win(s)—anyone who loses to her owes an apology.`,
+          (m) => `Zero press conferences, mysterious roster management, and ${m.wins}-${m.losses} on the scoreboard. Losing to CarlaCote is officially the ultimate humiliation in Rhody.`,
+          (m) => `Operating entirely from witness protection. CarlaCote doesn't check her lineup for weeks, yet somehow stumbles into ${m.wins} win(s) just to ruin someone else's playoff odds.`
+        ]
+      }
+    };
+
+    // ============================================================================
+    // 2. ROTATING UNIQUE ARCHETYPES FOR ALL OTHER MANAGERS (ZERO DUPLICATES)
+    // ============================================================================
+    const UNIQUE_ROAST_ARCHETYPES = [
+      {
+        id: "bench_saboteur",
+        badge: "🪑 Head Coach of the Benchwarmers",
+        scoreFn: (m) => m.benchLeft * 3,
+        roastFn: (m, slot) => slot % 2 === 0
+          ? `Left a criminal ${m.benchLeft.toFixed(1)} points rotting on the bench this season (${m.maxFpts.toFixed(1)} Max PF vs ${m.fpts.toFixed(1)} actual PF). Elite at drafting, terrible at clicking Start.`
+          : `Coaching malpractice at Meade Stadium: @${m.displayName} has ${m.benchLeft.toFixed(1)} bench points crying on the sidelines while sitting at ${m.wins}-${m.losses}.`
+      },
+      {
+        id: "schedule_punching_bag",
+        badge: "🌩️ Official Schedule-Gods Punching Bag",
+        scoreFn: (m) => m.fptsAgainst * 2.5,
+        roastFn: (m, slot) => slot % 2 === 0
+          ? `Opponents have dropped ${m.fptsAgainst.toFixed(1)} Points Against on his head. Every week @${m.displayName} plays someone, their random flex turns into Jerry Rice.`
+          : `Nobody plays defense worse than @${m.displayName} (${m.fptsAgainst.toFixed(1)} PA). Opposing teams treat his weekly matchup like a get-right scrimmage.`
+      },
+      {
+        id: "paper_tiger_fraud",
+        badge: "🍀 Smoke & Mirrors Schedule Fraud",
+        scoreFn: (m) => (m.wins * 120) - m.fptsAgainst,
+        roastFn: (m, slot) => slot % 2 === 0
+          ? `Walking around Kingston at ${m.wins}-${m.losses} like Bill Belichick despite only scoring ${m.fpts.toFixed(1)} PF against a cupcake ${m.fptsAgainst.toFixed(1)} PA schedule.`
+          : `The ultimate mirage record (${m.wins}-${m.losses}). @${m.displayName} has dodged every high scorer and is prime real estate for a playoff collapse.`
+      },
+      {
+        id: "waiver_panic_addict",
+        badge: "🚨 3:00 AM Waiver Wire Panic Addict",
+        scoreFn: (m) => (m.myWaivers * 35) + m.faabUsed,
+        roastFn: (m, slot) => slot % 2 === 0
+          ? `Has churned through ${m.myWaivers} waiver moves and blown $${m.faabUsed} FAAB desperately trying to patch his ${m.wins}-${m.losses} roster together with Scotch tape.`
+          : `Cannot stop dropping and adding players (${m.myWaivers} transactions). @${m.displayName} treats the free-agent pool like a scratch-off lottery ticket aisle.`
+      },
+      {
+        id: "empty_calories_scorer",
+        badge: "🎭 Empty-Calorie Garbage Time All-Star",
+        scoreFn: (m) => m.fpts - (m.wins * 95),
+        roastFn: (m, slot) => slot % 2 === 0
+          ? `Has racked up ${m.fpts.toFixed(1)} Points For yet sits at ${m.wins}-${m.losses}—exclusively drops 140 points in weeks he would've won anyway.`
+          : `The king of meaningless stat-padding: ${m.fpts.toFixed(1)} PF for a ${m.wins}-${m.losses} record. @${m.displayName}'s roster only wakes up in 4th-quarter garbage time.`
+      },
+      {
+        id: "cardio_kings",
+        badge: "🏃‍♂️ Out Here Doing Weekly Cardio",
+        scoreFn: (m) => 2000 - m.fpts,
+        roastFn: (m, slot) => slot % 2 === 0
+          ? `With only ${m.fpts.toFixed(1)} Points For (${m.wins}-${m.losses}), @${m.displayName}'s starting lineup scores touchdowns at the same rate URI finds parking at 10 AM.`
+          : `An offensive coordinator's nightmare: ${m.fpts.toFixed(1)} total points (${m.wins}-${m.losses}). His starters are just out on the turf getting 10,000 steps in.`
+      },
+      {
+        id: "tenured_autopilot",
+        badge: "🛋️ Tenured Professor on Autopilot",
+        scoreFn: (m) => 500 - (m.myTrades * 50 + m.myWaivers * 20),
+        roastFn: (m, slot) => slot % 2 === 0
+          ? `With ${m.myTrades} trades and ${m.myWaivers} waiver moves, @${m.displayName} manages his ${m.wins}-${m.losses} franchise with the urgency of a tenured professor on sabbatical.`
+          : `Checks the Sleeper app once every fiscal quarter (${m.myTrades} trades, ${m.myWaivers} moves) and lets Jesus take the wheel to a ${m.wins}-${m.losses} record.`
+      },
+      {
+        id: "jeff_fisher_purgatory",
+        badge: "⚖️ The Jeff Fisher .500 Purgatory Award",
+        scoreFn: (m) => 1000 - Math.abs(m.wins - m.losses) * 200,
+        roastFn: (m, slot) => slot % 2 === 0
+          ? `Sitting at ${m.wins}-${m.losses} (${m.fpts.toFixed(1)} PF)—never dominant enough to scare anybody, never awful enough to rebuild. Pure Kingston mid-table purgatory.`
+          : `If lukewarm tap water was a fantasy football franchise, it would be @${m.displayName}'s ${m.wins}-${m.losses} campaign (${m.fpts.toFixed(1)} PF).`
+      },
+      {
+        id: "faab_coupon_clipper",
+        badge: "🪙 Extreme Coupon Clipper GM",
+        scoreFn: (m) => m.faabLeft * 4,
+        roastFn: (m, slot) => slot % 2 === 0
+          ? `Clutching onto $${m.faabLeft} of remaining FAAB while sitting at ${m.wins}-${m.losses} like he's saving up for a down payment on a Narragansett beach house.`
+          : `Refuses to bid more than $2 on anybody ($${m.faabLeft} FAAB left) while watching waiver wire league-winners go to everyone else.`
+      },
+      {
+        id: "boom_or_bust_casino",
+        badge: "🎰 Twin River Casino Boom-or-Bust Roster",
+        scoreFn: (m) => m.fpts + m.fptsAgainst,
+        roastFn: (m, slot) => slot % 2 === 0
+          ? `Every @${m.displayName} matchup (${m.wins}-${m.losses}) is chaotic—either his lineup drops a nuclear bomb or three starters leave injured in the first quarter.`
+          : `Drafted a roster with zero floor and pure chaos (${m.fpts.toFixed(1)} PF). Watching his Sunday scoreboard requires blood pressure medication.`
+      }
+    ];
+
+    function assignUniqueRoastsToAllManagers(rosters, allTrades, allWaivers) {
+      const slot = get12HourSlot();
+      const usedArchetypeIds = new Set();
+
+      rosters.forEach(r => {
+        r.myTrades = allTrades.filter(t => (t.managerNames || []).includes(r.displayName)).length;
+        r.myWaivers = allWaivers.filter(w => (w.managerNames || []).includes(r.displayName)).length;
+        r.benchLeft = Math.max(0, (r.maxFpts || r.fpts) - r.fpts);
+      });
+
+      const unroutedManagers = [];
+
+      rosters.forEach(r => {
+        const cleanUser = (r.displayName || "").toLowerCase().replace(/[^a-z0-9]/g, "");
+        const cleanTeam = (r.teamName || "").toLowerCase().replace(/[^a-z0-9]/g, "");
+        let matchedLore = null;
+
+        for (const [key, loreDef] of Object.entries(KNOWN_LORE_MANAGERS)) {
+          if (cleanUser.includes(key) || cleanTeam.includes(key)) {
+            matchedLore = loreDef;
+            break;
+          }
+        }
+
+        if (matchedLore) {
+          const angleFn = matchedLore.angles[slot % matchedLore.angles.length];
+          r.lore = {
+            handle: r.displayName,
+            badge: matchedLore.badge,
+            roast: angleFn(r)
+          };
+        } else {
+          unroutedManagers.push(r);
+        }
+      });
+
+      unroutedManagers.forEach((r, idx) => {
+        let bestArch = null;
+        let bestScore = -Infinity;
+
+        for (const arch of UNIQUE_ROAST_ARCHETYPES) {
+          if (usedArchetypeIds.has(arch.id)) continue;
+          const s = arch.scoreFn(r);
+          if (s > bestScore) {
+            bestScore = s;
+            bestArch = arch;
+          }
+        }
+
+        if (!bestArch) {
+          bestArch = UNIQUE_ROAST_ARCHETYPES[idx % UNIQUE_ROAST_ARCHETYPES.length];
+        }
+        usedArchetypeIds.add(bestArch.id);
+
+        r.lore = {
+          handle: r.displayName,
+          badge: bestArch.badge,
+          roast: bestArch.roastFn(r, slot)
+        };
+      });
+    }
+
+    function rotateRoastEdition() {
+      ROAST_CYCLE_OFFSET += 1;
+      assignUniqueRoastsToAllManagers(GLOBAL_ROSTERS, GLOBAL_TRADES, GLOBAL_WAIVERS);
+      renderStandingsAndDossier(GLOBAL_ROSTERS);
+      renderRoastDesk(GLOBAL_CRON_ROASTS, GLOBAL_ROSTERS, GLOBAL_TRADES, GLOBAL_WAIVERS);
+      document.getElementById("edition-cycle-label").textContent = `12-Hour Roast Cycle #${(get12HourSlot() % 100)} Active`;
+    }
+
+    function openPlayerDB() {
+      return new Promise((resolve, reject) => {
+        const req = indexedDB.open("RhodySleeperCacheDB", 1);
+        req.onupgradeneeded = (e) => e.target.result.createObjectStore("kv");
+        req.onsuccess = (e) => resolve(e.target.result);
+        req.onerror = (e) => reject(e.target.error);
+      });
+    }
+
+    async function getCachedPlayers() {
+      try {
+        const db = await openPlayerDB();
+        return new Promise((resolve) => {
+          const tx = db.transaction("kv", "readonly");
+          const req = tx.objectStore("kv").get("nfl_players_v1");
+          req.onsuccess = () => resolve(req.result || null);
+          req.onerror = () => resolve(null);
+        });
+      } catch (_) { return null; }
+    }
+
+    async function setCachedPlayers(map) {
+      try {
+        const db = await openPlayerDB();
+        const tx = db.transaction("kv", "readwrite");
+        tx.objectStore("kv").put({ timestamp: Date.now(), map }, "nfl_players_v1");
+      } catch (_) {}
+    }
+
+    async function loadNFLPlayerDictionary(cachedJsonPlayers) {
+      const badge = document.getElementById("player-db-badge");
+      if (cachedJsonPlayers && Object.keys(cachedJsonPlayers).length > 500) {
+        PLAYER_MAP = cachedJsonPlayers;
+        badge.textContent = `✓ ${Object.keys(PLAYER_MAP).length.toLocaleString()} Real NFL Names Ready`;
+        return;
+      }
+      const cached = await getCachedPlayers();
+      if (cached && cached.map && (Date.now() - cached.timestamp < 86400000)) {
+        PLAYER_MAP = cached.map;
+        badge.textContent = `✓ ${Object.keys(PLAYER_MAP).length.toLocaleString()} Real NFL Names Ready`;
+        return;
+      }
+      badge.textContent = "Downloading NFL Player Names from Sleeper...";
+      const res = await fetch("https://api.sleeper.app/v1/players/nfl");
+      const raw = await res.json();
+      const slimMap = {};
+      for (const [id, p] of Object.entries(raw)) {
+        const name = p.full_name || `${p.first_name || ""} ${p.last_name || ""}`.trim();
+        if (name) {
+          slimMap[id] = { name, pos: p.position || "FLEX", team: p.team || "FA" };
+        }
+      }
+      PLAYER_MAP = slimMap;
+      await setCachedPlayers(slimMap);
+      badge.textContent = `✓ ${Object.keys(PLAYER_MAP).length.toLocaleString()} Real NFL Names Synced`;
+    }
+
+    function formatPlayerName(pid, includeMeta = true) {
+      if (!pid) return "Unknown Player";
+      if (/^[A-Z]{2,3}$/.test(pid)) return `${pid} D/ST`;
+      const entry = PLAYER_MAP[pid];
+      if (!entry) return `Player #${pid}`;
+      if (typeof entry === "string") return entry;
+      return includeMeta ? `${entry.name} (${entry.pos} - ${entry.team || 'FA'})` : entry.name;
+    }
+
+    async function fetchJSON(url) {
+      const res = await fetch(url);
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      return res.json();
+    }
+
+    async function crawlAllLeagueSeasons(startLeagueId) {
+      const seasons = [];
+      let currentId = startLeagueId;
+      let safety = 0;
+
+      while (currentId && currentId !== "0" && safety < 10) {
+        safety++;
+        try {
+          const league = await fetchJSON(`https://api.sleeper.app/v1/league/${currentId}`);
+          const [users, rosters, winnersBracket, losersBracket] = await Promise.all([
+            fetchJSON(`https://api.sleeper.app/v1/league/${currentId}/users`),
+            fetchJSON(`https://api.sleeper.app/v1/league/${currentId}/rosters`),
+            fetchJSON(`https://api.sleeper.app/v1/league/${currentId}/winners_bracket`).catch(() => []),
+            fetchJSON(`https://api.sleeper.app/v1/league/${currentId}/losers_bracket`).catch(() => [])
+          ]);
+          seasons.push({ league, users, rosters, winnersBracket, losersBracket });
+          currentId = league.previous_league_id;
+        } catch (e) {
+          break;
+        }
+      }
+      return seasons;
+    }
+
+    function switchTab(tabName) {
+      ["live", "history", "rosters"].forEach(t => {
+        document.getElementById(`tab-${t}`).classList.toggle("hidden", t !== tabName);
+        const btn = document.getElementById(`tab-btn-${t}`);
+        btn.className = t === tabName
+          ? "tab-active px-4 py-2 rounded-lg text-xs uppercase tracking-wider transition"
+          : "tab-inactive px-4 py-2 rounded-lg text-xs uppercase tracking-wider transition";
+      });
+    }
+
+    function onSeasonDropdownChange(seasonVal) {
+      switchTab("history");
+      renderSeasonArchiveDetail(seasonVal);
+    }
+
+    function renderStandingsAndDossier(enrichedRosters) {
+      document.getElementById("standings-body").innerHTML = enrichedRosters.map((r, idx) => {
+        const benchLeft = Math.max(0, (r.maxFpts || r.fpts) - r.fpts);
+        return `
+          <tr class="hover:bg-keaney/10 transition">
+            <td class="py-3 px-2 font-display font-bold text-urigold text-base">${idx + 1}</td>
+            <td class="py-3 px-2">
+              <div class="font-bold text-white">${r.teamName} <span class="text-xs text-keaney font-normal">(@${r.displayName})</span></div>
+              <div class="text-[11px] text-urigold mt-0.5 font-semibold">${r.lore.badge}: <span class="text-slate-300 font-normal">${r.lore.roast}</span></div>
+            </td>
+            <td class="py-3 px-2 text-center font-bold text-white">${r.wins}-${r.losses}${r.ties ? `-${r.ties}` : ''}</td>
+            <td class="py-3 px-2 text-right font-mono text-keaney font-semibold">${r.fpts.toFixed(2)}</td>
+            <td class="py-3 px-2 text-right font-mono text-xs text-slate-300">
+              ${r.maxFpts ? `${r.maxFpts.toFixed(1)} <span class="text-red-300 block text-[10px]">(-${benchLeft.toFixed(1)} on bench)</span>` : '—'}
+            </td>
+            <td class="py-3 px-2 text-right font-mono">
+              <span class="px-2 py-0.5 rounded text-xs font-bold ${r.faabUsed === 0 ? 'bg-amber-500/20 text-amber-300 border border-amber-400/40' : 'bg-emerald-500/20 text-emerald-300'}">
+                $${r.faabLeft} ${r.faabUsed === 0 ? '(UNTOUCHED)' : ''}
+              </span>
+            </td>
+          </tr>
+        `;
+      }).join("");
+
+      document.getElementById("lore-cards").innerHTML = enrichedRosters.map(r => `
+        <div class="bg-urinavy/90 border border-keaney/30 rounded-xl p-4 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-2">
+              <span class="font-bold text-white text-base truncate">@${r.displayName}</span>
+              <span class="text-[11px] bg-keaney/20 text-urigold px-2 py-0.5 rounded font-semibold shrink-0">${r.lore.badge}</span>
+            </div>
+            <p class="text-xs text-slate-300 leading-relaxed">${r.lore.roast}</p>
+          </div>
+          <div class="mt-3 pt-2 border-t border-keaney/15 flex justify-between text-[11px] text-slate-400 font-mono">
+            <span>Record: ${r.wins}-${r.losses}</span>
+            <span>Trades: ${r.myTrades}</span>
+            <span>Waivers: ${r.myWaivers}</span>
+          </div>
+        </div>
+      `).join("");
+    }
+
+    async function initRhodyPortal() {
+      document.getElementById("last-sync-time").textContent = "Syncing live Sleeper data & complete history...";
+
+      try {
+        let cachedData = null;
+        try {
+          cachedData = await fetchJSON("./data/rhody-data.json?t=" + Date.now());
+          GLOBAL_CRON_ROASTS = cachedData;
+        } catch (_) {}
+
+        await loadNFLPlayerDictionary(cachedData?.playerNames);
+
+        const nflState = await fetchJSON("https://api.sleeper.app/v1/state/nfl");
+        const allSeasons = await crawlAllLeagueSeasons(LEAGUE_ID);
+        GLOBAL_SEASONS = allSeasons;
+
+        if (!allSeasons.length) throw new Error("Could not load Sleeper League " + LEAGUE_ID);
+
+        const current = allSeasons[0];
+        const currentWeek = Math.max(1, nflState.display_week || nflState.week || 1);
+
+        document.getElementById("league-title").textContent = (current.league.name || "RHODY") + " GRIDIRON DESK";
+        document.getElementById("season-badge").textContent = `${current.league.season} Season • Week ${currentWeek}`;
+        document.getElementById("total-seasons-pill").textContent = `${allSeasons.length} Season${allSeasons.length > 1 ? 's' : ''} Crawled`;
+        document.getElementById("last-sync-time").textContent = `Synced: ${new Date().toLocaleTimeString()} (Auto-Cron: Every 12h)`;
+
+        const selectEl = document.getElementById("season-select");
+        selectEl.innerHTML = `<option value="ALL">All-Time Combined History (${allSeasons.length} Seasons)</option>` +
+          allSeasons.map(s => `<option value="${s.league.season}">${s.league.season} Season (${s.league.name})</option>`).join("");
+
+        const allTrades = [];
+        const allWaivers = [];
+
+        for (const seasonBundle of allSeasons) {
+          const sLeague = seasonBundle.league;
+          const sUserMap = {};
+          seasonBundle.users.forEach(u => { sUserMap[u.user_id] = u.display_name; });
+          const sRosterToName = {};
+          seasonBundle.rosters.forEach(r => {
+            sRosterToName[r.roster_id] = sUserMap[r.owner_id] || `Roster ${r.roster_id}`;
+          });
+
+          const weekPromises = [];
+          for (let wk = 1; wk <= 18; wk++) {
+            weekPromises.push(
+              fetchJSON(`https://api.sleeper.app/v1/league/${sLeague.league_id}/transactions/${wk}`)
+                .then(txs => txs.map(t => ({
+                  ...t,
+                  season: sLeague.season,
+                  week: wk,
+                  sRosterToName,
+                  managerNames: (t.roster_ids || []).map(rid => sRosterToName[rid])
+                })))
+                .catch(() => [])
+            );
+          }
+          const weeksResults = await Promise.all(weekPromises);
+          weeksResults.flat().forEach(tx => {
+            if (tx.status !== "complete") return;
+            if (tx.type === "trade") allTrades.push(tx);
+            if (tx.type === "waiver" || tx.type === "free_agent") allWaivers.push(tx);
+          });
+        }
+
+        allTrades.sort((a, b) => (b.status_updated || 0) - (a.status_updated || 0));
+        allWaivers.sort((a, b) => (b.status_updated || 0) - (a.status_updated || 0));
+        GLOBAL_TRADES = allTrades;
+        GLOBAL_WAIVERS = allWaivers;
+
+        const userMap = {};
+        current.users.forEach(u => { userMap[u.user_id] = u; });
+        const waiverBudget = current.league.settings?.waiver_budget || 100;
+        const rosterMap = {};
+
+        const enrichedRosters = current.rosters.map(r => {
+          const owner = userMap[r.owner_id] || {};
+          const displayName = owner.display_name || `Roster #${r.roster_id}`;
+          const teamName = owner.metadata?.team_name || displayName;
+          const wins = r.settings?.wins || 0;
+          const losses = r.settings?.losses || 0;
+          const ties = r.settings?.ties || 0;
+          const fpts = (r.settings?.fpts || 0) + ((r.settings?.fpts_decimal || 0) / 100);
+          const fptsAgainst = (r.settings?.fpts_against || 0) + ((r.settings?.fpts_against_decimal || 0) / 100);
+          const maxFpts = (r.settings?.ppts || 0) + ((r.settings?.ppts_decimal || 0) / 100);
+          const faabUsed = r.settings?.waiver_budget_used || 0;
+          const faabLeft = Math.max(0, waiverBudget - faabUsed);
+
+          const baseObj = {
+            roster_id: r.roster_id,
+            owner_id: r.owner_id,
+            displayName,
+            teamName,
+            wins,
+            losses,
+            ties,
+            fpts,
+            fptsAgainst,
+            maxFpts,
+            faabUsed,
+            faabLeft,
+            players: r.players || [],
+            starters: r.starters || []
+          };
+          rosterMap[r.roster_id] = baseObj;
+          return baseObj;
+        }).sort((a, b) => (b.wins - a.wins) || (b.fpts - a.fpts));
+
+        GLOBAL_ROSTERS = enrichedRosters;
+
+        assignUniqueRoastsToAllManagers(enrichedRosters, allTrades, allWaivers);
+        renderStandingsAndDossier(enrichedRosters);
+
+        document.getElementById("current-week-label").textContent = `Week ${currentWeek} Box Scores & Starters`;
+        const matchups = await fetchJSON(`https://api.sleeper.app/v1/league/${LEAGUE_ID}/matchups/${currentWeek}`);
+        const byMatchupId = {};
+        matchups.forEach(m => {
+          if (!m.matchup_id) return;
+          if (!byMatchupId[m.matchup_id]) byMatchupId[m.matchup_id] = [];
+          byMatchupId[m.matchup_id].push(m);
+        });
+
+        const getTopStarterLine = (mObj) => {
+          if (!mObj || !mObj.players_points) return "";
+          const starters = mObj.starters || [];
+          let bestPid = null;
+          let bestPts = -999;
+          starters.forEach(pid => {
+            const pts = mObj.players_points[pid] ?? 0;
+            if (pts > bestPts) { bestPts = pts; bestPid = pid; }
+          });
+          return bestPid ? `Top: ${formatPlayerName(bestPid, false)} (${bestPts.toFixed(1)})` : "";
+        };
+
+        const matchupPairs = Object.values(byMatchupId);
+        document.getElementById("matchups-container").innerHTML = matchupPairs.length
+          ? matchupPairs.map(pair => {
+              const [a, b] = pair;
+              const teamA = rosterMap[a?.roster_id] || { displayName: "Team A" };
+              const teamB = rosterMap[b?.roster_id] || { displayName: "Team B" };
+              const ptsA = (a?.points || 0).toFixed(2);
+              const ptsB = (b?.points || 0).toFixed(2);
+              return `
+                <div class="bg-urinavy/90 border border-keaney/25 rounded-xl p-3.5 space-y-2">
+                  <div>
+                    <div class="flex justify-between items-center text-sm">
+                      <span class="font-bold text-white truncate max-w-[175px]">@${teamA.displayName}</span>
+                      <span class="font-mono font-bold text-keaney">${ptsA}</span>
+                    </div>
+                    <div class="text-[11px] text-slate-400">${getTopStarterLine(a)}</div>
+                  </div>
+                  <div class="border-t border-keaney/15 pt-2">
+                    <div class="flex justify-between items-center text-sm">
+                      <span class="font-bold text-white truncate max-w-[175px]">@${teamB.displayName}</span>
+                      <span class="font-mono font-bold text-urigold">${ptsB}</span>
+                    </div>
+                    <div class="text-[11px] text-slate-400">${getTopStarterLine(b)}</div>
+                  </div>
+                </div>
+              `;
+            }).join("")
+          : `<p class="text-xs text-slate-400 text-center py-4">No active matchups posted for Week ${currentWeek} yet.</p>`;
+
+        document.getElementById("trade-counter").textContent = `${allTrades.length} Total Trades`;
+        document.getElementById("waiver-counter").textContent = `${allWaivers.length} Total Moves`;
+
+        document.getElementById("trades-feed").innerHTML = allTrades.length
+          ? allTrades.map(tx => {
+              const managers = (tx.roster_ids || []).map(rid => `@${tx.sRosterToName[rid] || rid}`).join(" ⇄ ");
+              const addsList = tx.adds
+                ? Object.entries(tx.adds).map(([pid, rid]) =>
+                    `<div class="text-emerald-300"><strong>@${tx.sRosterToName[rid]}</strong> receives <strong>${formatPlayerName(pid)}</strong></div>`
+                  ).join("")
+                : "";
+              const picksList = (tx.draft_picks || []).map(p =>
+                `<div class="text-keaney"><strong>@${tx.sRosterToName[p.owner_id]}</strong> receives ${p.season} Round ${p.round} Pick</div>`
+              ).join("");
+              const dateStr = tx.status_updated ? new Date(tx.status_updated).toLocaleDateString() : "";
+              return `
+                <div class="bg-urinavy/90 border border-urigold/30 rounded-xl p-3.5 text-xs space-y-1.5">
+                  <div class="flex justify-between items-center border-b border-keaney/15 pb-1">
+                    <span class="font-bold text-urigold text-sm">${managers}</span>
+                    <span class="text-slate-400">${tx.season} • Wk ${tx.week} (${dateStr})</span>
+                  </div>
+                  <div class="space-y-1">${addsList}${picksList}</div>
+                  <div class="text-[11px] text-slate-400 italic pt-1">Miraculously slipped past Caaaam's veto trigger finger.</div>
+                </div>
+              `;
+            }).join("")
+          : `<p class="text-xs text-slate-400 py-4 text-center">No completed trades logged yet.</p>`;
+
+        document.getElementById("waivers-feed").innerHTML = allWaivers.length
+          ? allWaivers.slice(0, 80).map(tx => {
+              const rid = tx.roster_ids?.[0];
+              const manager = tx.sRosterToName[rid] || `Roster ${rid}`;
+              const bid = tx.settings?.waiver_bid;
+              const adds = tx.adds ? Object.keys(tx.adds).map(pid => `<span class="text-emerald-300 font-semibold">+ ${formatPlayerName(pid)}</span>`).join("<br>") : "";
+              const drops = tx.drops ? Object.keys(tx.drops).map(pid => `<span class="text-red-300">- ${formatPlayerName(pid)}</span>`).join("<br>") : "";
+              return `
+                <div class="bg-urinavy/90 border border-keaney/20 rounded-xl p-3 text-xs flex justify-between items-center gap-3">
+                  <div>
+                    <span class="font-bold text-white">@${manager}</span>
+                    <span class="text-slate-400 ml-1">(${tx.season} • Wk ${tx.week})</span>
+                    <div class="mt-1 space-y-0.5">${adds}${adds && drops ? '<br>' : ''}${drops}</div>
+                  </div>
+                  ${bid !== undefined ? `<span class="bg-keaney/20 text-keaney font-mono font-bold px-2.5 py-1 rounded shrink-0">$${bid} FAAB</span>` : `<span class="text-slate-400 text-[11px] shrink-0">Free Agent</span>`}
+                </div>
+              `;
+            }).join("")
+          : `<p class="text-xs text-slate-400 py-4 text-center">No waiver claims logged yet.</p>`;
+
+        renderFullRostersTab(enrichedRosters);
+        renderCompleteHistoryVault(allSeasons, allTrades, allWaivers);
+        renderRoastDesk(cachedData, enrichedRosters, allTrades, allWaivers);
+
+      } catch (err) {
+        console.error(err);
+        document.getElementById("last-sync-time").textContent = "Error syncing with Sleeper: " + err.message;
+      }
+    }
+
+    function renderFullRostersTab(rosters) {
+      const container = document.getElementById("full-rosters-grid");
+      container.innerHTML = rosters.map(r => {
+        const starterSet = new Set(r.starters || []);
+        const startersHtml = (r.starters || [])
+          .filter(pid => pid && pid !== "0")
+          .map(pid => `<li class="flex justify-between py-1 border-b border-keaney/10"><span class="text-emerald-300 font-semibold">${formatPlayerName(pid)}</span><span class="text-[10px] bg-emerald-500/20 text-emerald-300 px-1.5 py-0.5 rounded">STARTER</span></li>`)
+          .join("");
+
+        const benchHtml = (r.players || [])
+          .filter(pid => !starterSet.has(pid))
+          .map(pid => `<li class="flex justify-between py-1 border-b border-keaney/10 text-slate-300"><span>${formatPlayerName(pid)}</span><span class="text-[10px] text-slate-500">BENCH</span></li>`)
+          .join("");
+
+        return `
+          <div class="bg-urinavy/90 border border-keaney/30 rounded-2xl p-5 shadow-lg">
+            <div class="flex justify-between items-start mb-2 border-b border-keaney/20 pb-2">
+              <div>
+                <h4 class="font-display text-xl font-bold text-white">${r.teamName}</h4>
+                <p class="text-xs text-keaney">@${r.displayName} • ${r.wins}-${r.losses} (${r.fpts.toFixed(1)} PF)</p>
+              </div>
+              <span class="text-xs font-mono bg-urigold/20 text-urigold px-2 py-0.5 rounded font-bold">$${r.faabLeft} FAAB</span>
+            </div>
+            <p class="text-[11px] text-urigold font-semibold mb-3">${r.lore.badge}</p>
+            <ul class="text-xs space-y-0.5 max-h-80 overflow-y-auto pr-1">
+              ${startersHtml}
+              ${benchHtml}
+            </ul>
+          </div>
+        `;
+      }).join("");
+    }
+
+    function renderCompleteHistoryVault(allSeasons, allTrades, allWaivers) {
+      const plaquesGrid = document.getElementById("season-plaques-grid");
+      const careerMap = {};
+
+      plaquesGrid.innerHTML = allSeasons.map(bundle => {
+        const sLeague = bundle.league;
+        const userMap = {};
+        bundle.users.forEach(u => { userMap[u.user_id] = u; });
+
+        const rosterToManager = {};
+        const sortedRosters = [...bundle.rosters].map(r => {
+          const u = userMap[r.owner_id] || {};
+          const name = u.display_name || `Roster #${r.roster_id}`;
+          const fpts = (r.settings?.fpts || 0) + ((r.settings?.fpts_decimal || 0) / 100);
+          const fptsAgainst = (r.settings?.fpts_against || 0) + ((r.settings?.fpts_against_decimal || 0) / 100);
+          const wins = r.settings?.wins || 0;
+          const losses = r.settings?.losses || 0;
+          rosterToManager[r.roster_id] = name;
+
+          if (!careerMap[name]) {
+            careerMap[name] = { name, seasons: 0, wins: 0, losses: 0, fpts: 0, fptsAgainst: 0, trades: 0, waivers: 0 };
+          }
+          careerMap[name].seasons += 1;
+          careerMap[name].wins += wins;
+          careerMap[name].losses += losses;
+          careerMap[name].fpts += fpts;
+          careerMap[name].fptsAgainst += fptsAgainst;
+
+          return { ...r, name, wins, losses, fpts, fptsAgainst };
+        }).sort((a, b) => (b.wins - a.wins) || (b.fpts - a.fpts));
+
+        const champMatch = (bundle.winnersBracket || []).find(m => m.p === 1 && m.w);
+        const championName = champMatch ? rosterToManager[champMatch.w] : sortedRosters[0]?.name;
+        const lastPlaceName = sortedRosters[sortedRosters.length - 1]?.name;
+        const topScorer = [...sortedRosters].sort((a, b) => b.fpts - a.fpts)[0];
+
+        const seasonTradesCount = allTrades.filter(t => t.season === sLeague.season).length;
+        const seasonWaiversCount = allWaivers.filter(w => w.season === sLeague.season).length;
+
+        return `
+          <div class="bg-urinavy/90 border-2 border-urigold/40 rounded-2xl p-5 shadow-lg">
+            <div class="flex items-center justify-between mb-3">
+              <span class="font-display text-2xl font-bold text-urigold">${sLeague.season} SEASON</span>
+              <span class="text-xs bg-keaney/20 text-keaney px-2.5 py-0.5 rounded-full font-bold uppercase">${sLeague.status}</span>
+            </div>
+            <div class="space-y-2 text-xs">
+              <div class="flex justify-between py-1 border-b border-keaney/15">
+                <span class="text-slate-400">👑 Top Seed / Champion:</span>
+                <span class="font-bold text-white">@${championName || 'TBD'}</span>
+              </div>
+              <div class="flex justify-between py-1 border-b border-keaney/15">
+                <span class="text-slate-400">🔥 Highest Scoring Team:</span>
+                <span class="font-bold text-keaney">@${topScorer?.name || 'TBD'} (${(topScorer?.fpts || 0).toFixed(1)} pts)</span>
+              </div>
+              <div class="flex justify-between py-1 border-b border-keaney/15">
+                <span class="text-slate-400">🚽 Basement / Toilet Bowl:</span>
+                <span class="font-bold text-red-300">@${lastPlaceName || 'TBD'}</span>
+              </div>
+              <div class="flex justify-between py-1">
+                <span class="text-slate-400">📊 League Activity:</span>
+                <span class="text-slate-200 font-semibold">${seasonTradesCount} Trades • ${seasonWaiversCount} Waivers</span>
+              </div>
+            </div>
+            <button onclick="renderSeasonArchiveDetail('${sLeague.season}')" class="mt-4 w-full bg-keaney/20 hover:bg-keaney hover:text-urinavy text-keaney font-bold text-xs py-2 rounded-lg transition">
+              Inspect Full ${sLeague.season} Standings & Trades →
+            </button>
+          </div>
+        `;
+      }).join("");
+
+      allTrades.forEach(t => {
+        (t.managerNames || []).forEach(m => { if (careerMap[m]) careerMap[m].trades += 1; });
+      });
+      allWaivers.forEach(w => {
+        (w.managerNames || []).forEach(m => { if (careerMap[m]) careerMap[m].waivers += 1; });
+      });
+
+      const careerList = Object.values(careerMap).sort((a, b) => (b.wins - a.wins) || (b.fpts - a.fpts));
+      document.getElementById("alltime-leaderboard-body").innerHTML = careerList.map((c, idx) => {
+        const totalGames = c.wins + c.losses;
+        const winPct = totalGames > 0 ? ((c.wins / totalGames) * 100).toFixed(1) : "0.0";
+        return `
+          <tr class="hover:bg-keaney/10 transition">
+            <td class="py-3 px-2 font-display font-bold text-urigold">${idx + 1}</td>
+            <td class="py-3 px-2 font-bold text-white">@${c.name}</td>
+            <td class="py-3 px-2 text-center text-slate-300">${c.seasons}</td>
+            <td class="py-3 px-2 text-center font-bold text-white">${c.wins}-${c.losses}</td>
+            <td class="py-3 px-2 text-center font-mono text-keaney">${winPct}%</td>
+            <td class="py-3 px-2 text-right font-mono text-urigold font-semibold">${c.fpts.toFixed(2)}</td>
+            <td class="py-3 px-2 text-right font-mono text-slate-400">${c.fptsAgainst.toFixed(2)}</td>
+            <td class="py-3 px-2 text-center font-mono text-emerald-300 font-bold">${c.trades}</td>
+            <td class="py-3 px-2 text-center font-mono text-keaney">${c.waivers}</td>
+          </tr>
+        `;
+      }).join("");
+
+      const pillsContainer = document.getElementById("season-filter-pills");
+      pillsContainer.innerHTML = `<button onclick="renderSeasonArchiveDetail('ALL')" class="bg-urigold text-urinavy font-bold text-xs px-3 py-1 rounded">All Seasons</button>` +
+        allSeasons.map(s => `<button onclick="renderSeasonArchiveDetail('${s.league.season}')" class="bg-urinavy border border-keaney/40 text-keaney hover:bg-keaney hover:text-urinavy font-bold text-xs px-3 py-1 rounded transition">${s.league.season}</button>`).join("");
+
+      renderSeasonArchiveDetail("ALL");
+    }
+
+    function renderSeasonArchiveDetail(seasonFilter) {
+      const container = document.getElementById("season-archive-details");
+      const targetSeasons = seasonFilter === "ALL"
+        ? GLOBAL_SEASONS
+        : GLOBAL_SEASONS.filter(s => String(s.league.season) === String(seasonFilter));
+
+      container.innerHTML = targetSeasons.map(bundle => {
+        const sLeague = bundle.league;
+        const userMap = {};
+        bundle.users.forEach(u => { userMap[u.user_id] = u; });
+
+        const rows = [...bundle.rosters].map(r => {
+          const u = userMap[r.owner_id] || {};
+          const name = u.display_name || `Roster #${r.roster_id}`;
+          const teamName = u.metadata?.team_name || name;
+          const wins = r.settings?.wins || 0;
+          const losses = r.settings?.losses || 0;
+          const fpts = (r.settings?.fpts || 0) + ((r.settings?.fpts_decimal || 0) / 100);
+          const fptsAgainst = (r.settings?.fpts_against || 0) + ((r.settings?.fpts_against_decimal || 0) / 100);
+          return { name, teamName, wins, losses, fpts, fptsAgainst };
+        }).sort((a, b) => (b.wins - a.wins) || (b.fpts - a.fpts));
+
+        const sTrades = GLOBAL_TRADES.filter(t => String(t.season) === String(sLeague.season));
+
+        return `
+          <div class="bg-urinavy/60 border border-keaney/25 rounded-xl p-5 mb-6">
+            <h4 class="font-display text-2xl font-bold text-urigold mb-3">${sLeague.season} Final Standings & Trade Vault (${sTrades.length} Trades)</h4>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+              <div>
+                <table class="w-full text-left text-xs border-collapse">
+                  <thead>
+                    <tr class="text-keaney uppercase border-b border-keaney/25">
+                      <th class="py-2">#</th>
+                      <th class="py-2">Manager</th>
+                      <th class="py-2 text-center">W-L</th>
+                      <th class="py-2 text-right">PF</th>
+                      <th class="py-2 text-right">PA</th>
+                    </tr>
+                  </thead>
+                  <tbody class="divide-y divide-keaney/10">
+                    ${rows.map((r, i) => `
+                      <tr>
+                        <td class="py-2 font-bold text-urigold">${i + 1}</td>
+                        <td class="py-2 text-white font-semibold">${r.teamName} <span class="text-slate-400">(@${r.name})</span></td>
+                        <td class="py-2 text-center text-white font-bold">${r.wins}-${r.losses}</td>
+                        <td class="py-2 text-right font-mono text-keaney">${r.fpts.toFixed(1)}</td>
+                        <td class="py-2 text-right font-mono text-slate-400">${r.fptsAgainst.toFixed(1)}</td>
+                      </tr>
+                    `).join("")}
+                  </tbody>
+                </table>
+              </div>
+              <div class="space-y-2 max-h-72 overflow-y-auto pr-1">
+                <div class="text-xs font-bold uppercase text-keaney mb-2">${sLeague.season} Completed Trades (Real Player Names)</div>
+                ${sTrades.length ? sTrades.map(tx => {
+                  const addsList = tx.adds
+                    ? Object.entries(tx.adds).map(([pid, rid]) =>
+                        `<div><strong class="text-urigold">@${tx.sRosterToName[rid]}</strong> got <strong class="text-emerald-300">${formatPlayerName(pid)}</strong></div>`
+                      ).join("")
+                    : "";
+                  return `<div class="bg-uridark/90 border border-keaney/20 rounded-lg p-2.5 text-xs">${addsList || 'Draft Pick Swap'} <span class="text-[10px] text-slate-400 block mt-1">Week ${tx.week}</span></div>`;
+                }).join("") : `<p class="text-xs text-slate-400">No trades completed in ${sLeague.season}.</p>`}
+              </div>
+            </div>
+          </div>
+        `;
+      }).join("");
+    }
+
+    function renderRoastDesk(cachedData, rosters, trades, waivers) {
+      const container = document.getElementById("roast-articles-container");
+      const cronRoasts = cachedData?.roasts;
+
+      if (cronRoasts && cronRoasts.length > 0 && ROAST_CYCLE_OFFSET === 0) {
+        container.innerHTML = cronRoasts.map(post => `
+          <article class="card-glass rounded-2xl p-6 shadow-xl border-l-4 border-l-urigold">
+            <div class="flex items-center justify-between text-xs text-keaney font-bold uppercase mb-2">
+              <span>${post.category || "12-Hour Kingston Roast"}</span>
+              <span>${post.timestamp}</span>
+            </div>
+            <h3 class="font-display text-2xl font-bold text-white mb-3">${post.headline}</h3>
+            <div class="text-sm text-slate-200 space-y-2 leading-relaxed whitespace-pre-line">${post.body}</div>
+          </article>
+        `).join("");
+        return;
+      }
+
+      const slot = get12HourSlot() % 3;
+      const topTeam = rosters[0];
+      const secondTeam = rosters[1] || rosters[0];
+      const bottomTeam = rosters[rosters.length - 1];
+      const worstBenchCoach = [...rosters].sort((a, b) => b.benchLeft - a.benchLeft)[0];
+      const unluckiestTeam = [...rosters].sort((a, b) => b.fptsAgainst - a.fptsAgainst)[0];
+      const latestTrade = trades[0];
+      const latestTradeText = latestTrade && latestTrade.adds
+        ? Object.entries(latestTrade.adds).map(([pid, rid]) => `@${latestTrade.sRosterToName[rid]} acquiring ${formatPlayerName(pid)}`).join(" & ")
+        : "Tylero0's latest rejected trade offer";
+
+      const editions = [
+        [
+          {
+            category: "🐏 Meade Stadium 12-Hour Dispatch (Edition A)",
+            headline: `State of the Rhody Union: @${topTeam?.displayName} Rules Kingston While @Caaaam Recovers From His 50-FAAB Defense Blunder`,
+            body: `Welcome to the 12-hour automated Kingston Sports Desk. Across ${GLOBAL_SEASONS.length} seasons, nothing will ever top @Caaaam detonating 50% of his entire FAAB budget in Week 1 on a defense before anyone had even played a snap, or @JewsinParis willingly shipping away alpha WR1 Drake London for Jordan Mason.\n\nMeanwhile, @${topTeam?.displayName} (${topTeam?.wins}-${topTeam?.losses}, ${topTeam?.fpts.toFixed(1)} PF) sits atop the throne while @PrayingGrantis continues his annual tradition of assembling an unexplained superteam and @ELord11 treats his roster like a Wall Street day-trading floor.`
+          },
+          {
+            category: "🕵️ All-League Lineup & Transaction Audit",
+            headline: `Lineup Malpractice & FAAB Hoarding: @${worstBenchCoach?.displayName} Leaves ${worstBenchCoach?.benchLeft.toFixed(1)} Pts On The Sideline`,
+            body: `Think you're safe because you weren't in the group chat lore? Our 12-hour Sleeper scanner just audited the whole league: @${worstBenchCoach?.displayName} leads Rhody in coaching malpractice with ${worstBenchCoach?.benchLeft.toFixed(1)} points left rotting on the bench, while @${unluckiestTeam?.displayName} has absorbed ${unluckiestTeam?.fptsAgainst.toFixed(1)} Points Against.\n\nOn the transaction wire, @CerealStroke still has $${rosters.find(r => r.displayName.toLowerCase().includes('cereal'))?.faabLeft ?? 100} FAAB untouched because he doesn't know what the acronym stands for, and our search party is still checking if @CarlaCote knows this league exists.`
+          }
+        ],
+        [
+          {
+            category: "🚨 12-Hour Trade & Fleece Tribunal (Edition B)",
+            headline: `The Fleece Files: @Tylero0 Keeps Sending Lowballs While ${latestTradeText} Raising Eyebrows`,
+            body: `Every 12 hours we check the wire to see if @Tylero0 finally tricked someone into accepting three bench scraps for a starter—and the drought continues. The most recent trade that actually slipped past @Caaaam's veto trigger finger featured ${latestTradeText}.\n\nStill, every negotiation in Rhody history is graded on the 'JewsinParis Scale,' where 10.0 is trading away Drake London for Jordan Mason.`
+          },
+          {
+            category: "🚽 Basement Watch & Contender Check",
+            headline: `@${bottomTeam?.displayName} (${bottomTeam?.wins}-${bottomTeam?.losses}) Enters Toilet Bowl Territory As @${secondTeam?.displayName} Stalks The #1 Seed`,
+            body: `Down in the Meade Stadium cellar, @${bottomTeam?.displayName} is sitting at ${bottomTeam?.wins}-${bottomTeam?.losses} (${bottomTeam?.fpts.toFixed(1)} PF) and looking up at @CarlaCote in the standings—a sentence that should trigger an immediate front-office investigation.\n\nUp top, @${secondTeam?.displayName} (${secondTeam?.wins}-${secondTeam?.losses}) and @${topTeam?.displayName} are on a collision course while @ELord11 is already cooking up his next 4-player trade package.`
+          }
+        ],
+        [
+          {
+            category: "🎙️ Ryan Center Late-Night Roast (Edition C)",
+            headline: `By The Numbers: Why Half This League Owes Their Starters An Apology`,
+            body: `Let's look at the cold, hard Sleeper tape. @${unluckiestTeam?.displayName} has had ${unluckiestTeam?.fptsAgainst.toFixed(1)} points dropped on his head this season, whereas @CerealStroke refuses to touch the waiver wire on principle and @CarlaCote is winning games from Witness Protection.\n\nAnd before anyone asks: yes, @Caaaam still blew 50 FAAB on a Week 1 defense, @JewsinParis gave up Drake London for Jordan Mason, and @Tylero0's trade offers are still in the dumpster.`
+          },
+          {
+            category: "👑 The Rhody Power Hierarchy",
+            headline: `Can Anyone Stop @PrayingGrantis From Building Another Superteam Or Catch @${topTeam?.displayName}?`,
+            body: `Every season the league vows not to let @PrayingGrantis assemble the Avengers, and every season it happens anyway. Right now @${topTeam?.displayName} (${topTeam?.wins}-${topTeam?.losses}, ${topTeam?.fpts.toFixed(1)} PF) holds the #1 spot, while @${worstBenchCoach?.displayName} would be right there with them if they knew how to set a starting lineup (${worstBenchCoach?.benchLeft.toFixed(1)} bench points wasted).`
+          }
+        ]
+      ];
+
+      const activePair = editions[slot];
+      container.innerHTML = activePair.map(post => `
+        <article class="card-glass rounded-2xl p-6 shadow-xl border-l-4 border-l-urigold">
+          <div class="flex items-center justify-between text-xs text-keaney font-bold uppercase mb-2">
+            <span>${post.category}</span>
+            <span>Auto-Rotates Every 12h</span>
+          </div>
+          <h3 class="font-display text-2xl font-bold text-white mb-3">${post.headline}</h3>
+          <div class="text-sm text-slate-200 space-y-2 leading-relaxed whitespace-pre-line">${post.body}</div>
+        </article>
+      `).join("");
+    }
+
+    initRhodyPortal();
+  </script>
+</body>
+</html>
