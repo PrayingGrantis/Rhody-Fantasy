@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-15T12:17:48.961Z",
+  "updatedAt": "2026-10-16T00:08:20.339Z",
   "roasts": [],
   "playerNames": {
     "1": {
@@ -13750,7 +13750,7 @@
     "2750": {
       "name": "DeAndre Carter",
       "pos": "WR",
-      "team": "FA"
+      "team": "DET"
     },
     "2751": {
       "name": "Daniel Brown",
@@ -48935,7 +48935,7 @@
     "11679": {
       "name": "Chris Braswell",
       "pos": "LB",
-      "team": "FA"
+      "team": "HOU"
     },
     "11680": {
       "name": "Patrick Paul",
@@ -50720,7 +50720,7 @@
     "12036": {
       "name": "Ian Wheeler",
       "pos": "RB",
-      "team": "FA"
+      "team": "PHI"
     },
     "12037": {
       "name": "Reddy Steward",
@@ -51950,7 +51950,7 @@
     "12282": {
       "name": "C.J. Ravenell",
       "pos": "DL",
-      "team": "NYG"
+      "team": "FA"
     },
     "12283": {
       "name": "Dylan McDuffie",
@@ -54895,7 +54895,7 @@
     "12871": {
       "name": "Eugene Asante",
       "pos": "LB",
-      "team": "FA"
+      "team": "SF"
     },
     "12872": {
       "name": "John Saunders",
