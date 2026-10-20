@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-19T12:20:23.009Z",
+  "updatedAt": "2026-10-20T00:13:29.852Z",
   "roasts": [],
   "playerNames": {
     "1": {
@@ -4145,7 +4145,7 @@
     "829": {
       "name": "Andy Dalton",
       "pos": "QB",
-      "team": "FA"
+      "team": "ATL"
     },
     "830": {
       "name": "A.J. Green",
@@ -20355,7 +20355,7 @@
     "4072": {
       "name": "Tre'Davious White",
       "pos": "CB",
-      "team": "FA"
+      "team": "BUF"
     },
     "4073": {
       "name": "Taco Charlton",
@@ -22865,7 +22865,7 @@
     "4574": {
       "name": "Cooper Rush",
       "pos": "QB",
-      "team": "ATL"
+      "team": "FA"
     },
     "4575": {
       "name": "Nate Theaker",
@@ -35080,7 +35080,7 @@
     "7050": {
       "name": "Josiah Deguara",
       "pos": "TE",
-      "team": "FA"
+      "team": "SEA"
     },
     "7051": {
       "name": "Grayland Arnold",
@@ -42160,7 +42160,7 @@
     "8472": {
       "name": "Darian Kinnard",
       "pos": "T",
-      "team": "FA"
+      "team": "LV"
     },
     "8473": {
       "name": "Eric Johnson",
@@ -43120,7 +43120,7 @@
     "8678": {
       "name": "Andrew Rupcich",
       "pos": "OT",
-      "team": "FA"
+      "team": "NE"
     },
     "8679": {
       "name": "Hayden Howerton",
@@ -44950,7 +44950,7 @@
     "10877": {
       "name": "Mazi Smith",
       "pos": "DL",
-      "team": "FA"
+      "team": "GB"
     },
     "10878": {
       "name": "Deonte Banks",
@@ -47645,7 +47645,7 @@
     "11421": {
       "name": "Ryan Miller",
       "pos": "WR",
-      "team": "FA"
+      "team": "NE"
     },
     "11422": {
       "name": "J.D. DiRenzo",
@@ -55715,7 +55715,7 @@
     "13035": {
       "name": "Amari Kight",
       "pos": "OT",
-      "team": "FA"
+      "team": "LV"
     },
     "13036": {
       "name": "T.J. Jackson",
@@ -59105,7 +59105,7 @@
     "13713": {
       "name": "KC Eziomume",
       "pos": "DB",
-      "team": "FA"
+      "team": "CHI"
     },
     "13714": {
       "name": "Caden Barnett",
@@ -60225,7 +60225,7 @@
     "13937": {
       "name": "Jackson Acker",
       "pos": "FB",
-      "team": "FA"
+      "team": "SEA"
     },
     "13938": {
       "name": "Jordan Dunbar",
@@ -60370,7 +60370,7 @@
     "13966": {
       "name": "Jacob Rizy",
       "pos": "OL",
-      "team": "FA"
+      "team": "NE"
     },
     "13967": {
       "name": "Jimmy Kibble",
