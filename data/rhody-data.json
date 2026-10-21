@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-20T12:17:11.135Z",
+  "updatedAt": "2026-10-21T00:12:03.303Z",
   "roasts": [],
   "playerNames": {
     "1": {
@@ -2225,7 +2225,7 @@
     "445": {
       "name": "Thomas Morstead",
       "pos": "P",
-      "team": "FA"
+      "team": "IND"
     },
     "446": {
       "name": "E.J. Biggers",
@@ -7165,7 +7165,7 @@
     "1433": {
       "name": "Brandon McManus",
       "pos": "K",
-      "team": "FA"
+      "team": "LAR"
     },
     "1434": {
       "name": "Sheldon Price",
@@ -16080,7 +16080,7 @@
     "3217": {
       "name": "Jihad Ward",
       "pos": "DE",
-      "team": "NYG"
+      "team": "FA"
     },
     "3218": {
       "name": "A'Shawn Robinson",
@@ -21160,7 +21160,7 @@
     "4233": {
       "name": "Zane Gonzalez",
       "pos": "K",
-      "team": "FA"
+      "team": "MIA"
     },
     "4234": {
       "name": "Noah Brown",
@@ -25420,7 +25420,7 @@
     "5086": {
       "name": "Marquez Valdes-Scantling",
       "pos": "WR",
-      "team": "FA"
+      "team": "PIT"
     },
     "5087": {
       "name": "JK Scott",
@@ -29570,7 +29570,7 @@
     "5917": {
       "name": "Mecole Hardman",
       "pos": "WR",
-      "team": "FA"
+      "team": "IND"
     },
     "5918": {
       "name": "Rodney Anderson",
@@ -32485,7 +32485,7 @@
     "6529": {
       "name": "Chris Myarick",
       "pos": "TE",
-      "team": "LV"
+      "team": "FA"
     },
     "6530": {
       "name": "Mark McLaurin",
@@ -33530,7 +33530,7 @@
     "6740": {
       "name": "Brett Toth",
       "pos": "OL",
-      "team": "SF"
+      "team": "FA"
     },
     "6741": {
       "name": "Josh Smith",
@@ -34035,7 +34035,7 @@
     "6841": {
       "name": "Jordan Elliott",
       "pos": "DT",
-      "team": "TEN"
+      "team": "FA"
     },
     "6842": {
       "name": "Jeff Gladney",
@@ -37470,7 +37470,7 @@
     "7528": {
       "name": "Najee Harris",
       "pos": "RB",
-      "team": "NYG"
+      "team": "FA"
     },
     "7529": {
       "name": "Gary Brightwell",
@@ -37630,7 +37630,7 @@
     "7561": {
       "name": "Elijah Mitchell",
       "pos": "RB",
-      "team": "FA"
+      "team": "PHI"
     },
     "7562": {
       "name": "Tutu Atwell",
@@ -37825,7 +37825,7 @@
     "7605": {
       "name": "Kyle Trask",
       "pos": "QB",
-      "team": "FA"
+      "team": "DAL"
     },
     "7606": {
       "name": "Kadarius Toney",
@@ -39045,7 +39045,7 @@
     "7849": {
       "name": "Charles Snowden",
       "pos": "LB",
-      "team": "WAS"
+      "team": "ATL"
     },
     "7850": {
       "name": "Justus Reed",
@@ -39410,7 +39410,7 @@
     "7922": {
       "name": "Riley Patterson",
       "pos": "K",
-      "team": "MIA"
+      "team": "FA"
     },
     "7923": {
       "name": "Robert Jones",
@@ -42015,7 +42015,7 @@
     "8443": {
       "name": "Evan Neal",
       "pos": "OL",
-      "team": "LV"
+      "team": "FA"
     },
     "8444": {
       "name": "Trevor Penning",
@@ -45660,7 +45660,7 @@
     "11019": {
       "name": "Erick Hallett",
       "pos": "DB",
-      "team": "FA"
+      "team": "TEN"
     },
     "11020": {
       "name": "Eric Scott",
@@ -46415,7 +46415,7 @@
     "11173": {
       "name": "D'Shawn Jamison",
       "pos": "CB",
-      "team": "NE"
+      "team": "FA"
     },
     "11174": {
       "name": "Jack Colletto",
@@ -47095,7 +47095,7 @@
     "11311": {
       "name": "Jason Brownlee",
       "pos": "WR",
-      "team": "FA"
+      "team": "NYG"
     },
     "11312": {
       "name": "T.J. Luther",
@@ -47945,7 +47945,7 @@
     "11481": {
       "name": "Natrone Brooks",
       "pos": "CB",
-      "team": "FA"
+      "team": "MIN"
     },
     "11482": {
       "name": "Clifford Chattman",
@@ -49810,7 +49810,7 @@
     "11854": {
       "name": "Andrew Coker",
       "pos": "OL",
-      "team": "FA"
+      "team": "CLE"
     },
     "11855": {
       "name": "Amari Gainer",
@@ -50975,7 +50975,7 @@
     "12087": {
       "name": "Emany Johnson",
       "pos": "DB",
-      "team": "FA"
+      "team": "CIN"
     },
     "12088": {
       "name": "Brock Mogensen",
@@ -53925,7 +53925,7 @@
     "12677": {
       "name": "Bradyn Swinson",
       "pos": "DE",
-      "team": "FA"
+      "team": "ARI"
     },
     "12678": {
       "name": "Mac McWilliams",
@@ -54160,7 +54160,7 @@
     "12724": {
       "name": "Kyonte Hamilton",
       "pos": "DL",
-      "team": "FA"
+      "team": "HOU"
     },
     "12725": {
       "name": "Luke Lachey",
@@ -54900,7 +54900,7 @@
     "12872": {
       "name": "John Saunders",
       "pos": "DB",
-      "team": "FA"
+      "team": "CLE"
     },
     "12873": {
       "name": "Alex Huntley",
@@ -55280,7 +55280,7 @@
     "12948": {
       "name": "Austin Keys",
       "pos": "LB",
-      "team": "WAS"
+      "team": "FA"
     },
     "12949": {
       "name": "Keenan Garber",
@@ -57100,7 +57100,7 @@
     "13312": {
       "name": "Josh Kattus",
       "pos": "TE",
-      "team": "FA"
+      "team": "CIN"
     },
     "13313": {
       "name": "Emmanuel Henderson",
@@ -58400,7 +58400,7 @@
     "13572": {
       "name": "Aiden Fisher",
       "pos": "LB",
-      "team": "FA"
+      "team": "KC"
     },
     "13573": {
       "name": "Quintayvious Hutchins",
@@ -59150,7 +59150,7 @@
     "13722": {
       "name": "Isaiah Nwokobia",
       "pos": "DB",
-      "team": "CIN"
+      "team": "FA"
     },
     "13723": {
       "name": "Devan Boykin",
@@ -59280,7 +59280,7 @@
     "13748": {
       "name": "Wes Pahl",
       "pos": "P",
-      "team": "FA"
+      "team": "CLE"
     },
     "13749": {
       "name": "Kole Wilson",
@@ -59385,7 +59385,7 @@
     "13769": {
       "name": "Collin Wright",
       "pos": "CB",
-      "team": "FA"
+      "team": "HOU"
     },
     "13770": {
       "name": "J. Michael Sturdivant",
@@ -59415,7 +59415,7 @@
     "13775": {
       "name": "TJ Quinn",
       "pos": "LB",
-      "team": "FA"
+      "team": "ATL"
     },
     "13776": {
       "name": "Hank Beatty",
@@ -59800,7 +59800,7 @@
     "13852": {
       "name": "Dontae McMillan",
       "pos": "RB",
-      "team": "SEA"
+      "team": "FA"
     },
     "13853": {
       "name": "Cam Miller",
@@ -59860,7 +59860,7 @@
     "13864": {
       "name": "Aidan Keanaaina",
       "pos": "DL",
-      "team": "FA"
+      "team": "DET"
     },
     "13865": {
       "name": "Dasan McCullough",
@@ -59890,7 +59890,7 @@
     "13870": {
       "name": "Quentin Moore",
       "pos": "TE",
-      "team": "FA"
+      "team": "WAS"
     },
     "13871": {
       "name": "Tanoa Togiai",
@@ -60830,7 +60830,7 @@
     "14058": {
       "name": "Malick Meiga",
       "pos": "WR",
-      "team": "SEA"
+      "team": "FA"
     },
     "14059": {
       "name": "Sean Fresch",
