@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-22T12:20:47.367Z",
+  "updatedAt": "2026-10-23T00:13:15.744Z",
   "roasts": [],
   "playerNames": {
     "1": {
@@ -20895,7 +20895,7 @@
     "4180": {
       "name": "Rayshawn Jenkins",
       "pos": "DB",
-      "team": "PIT"
+      "team": "FA"
     },
     "4181": {
       "name": "Tedric Thompson",
@@ -25758,7 +25758,7 @@
       "team": "FA"
     },
     "5154": {
-      "name": "Trent Sherfield Sr.",
+      "name": "Trent Sherfield",
       "pos": "WR",
       "team": "BUF"
     },
@@ -34560,7 +34560,7 @@
     "6946": {
       "name": "Myles Bryant",
       "pos": "DB",
-      "team": "FA"
+      "team": "DET"
     },
     "6947": {
       "name": "K'Von Wallace",
@@ -42015,7 +42015,7 @@
     "8443": {
       "name": "Evan Neal",
       "pos": "OL",
-      "team": "FA"
+      "team": "PHI"
     },
     "8444": {
       "name": "Trevor Penning",
@@ -42163,7 +42163,7 @@
       "team": "LV"
     },
     "8473": {
-      "name": "Eric Johnson II",
+      "name": "Eric Johnson",
       "pos": "DT",
       "team": "CLE"
     },
@@ -44540,7 +44540,7 @@
     "9490": {
       "name": "Tyler Scott",
       "pos": "WR",
-      "team": "LV"
+      "team": "FA"
     },
     "9491": {
       "name": "Ty Scott",
@@ -46100,7 +46100,7 @@
     "11108": {
       "name": "Anfernee Orji",
       "pos": "LB",
-      "team": "FA"
+      "team": "PHI"
     },
     "11109": {
       "name": "Mark Evans",
@@ -50743,9 +50743,9 @@
       "team": "FA"
     },
     "12041": {
-      "name": "Carl Jones",
+      "name": "Carl Jones Jr.",
       "pos": "DL",
-      "team": "FA"
+      "team": "BAL"
     },
     "12042": {
       "name": "Keith Randolph",
@@ -52825,7 +52825,7 @@
     "12457": {
       "name": "Jaydon Blue",
       "pos": "RB",
-      "team": "FA"
+      "team": "PHI"
     },
     "12458": {
       "name": "Player Invalid",
@@ -54895,7 +54895,7 @@
     "12871": {
       "name": "Eugene Asante",
       "pos": "LB",
-      "team": "SF"
+      "team": "FA"
     },
     "12872": {
       "name": "John Saunders Jr.",
@@ -55025,7 +55025,7 @@
     "12897": {
       "name": "Nate Carter",
       "pos": "RB",
-      "team": "KC"
+      "team": "FA"
     },
     "12898": {
       "name": "Seth Henigan",
@@ -57458,7 +57458,7 @@
       "team": "FA"
     },
     "13384": {
-      "name": "AJ Haulcy",
+      "name": "A.J. Haulcy",
       "pos": "DB",
       "team": "IND"
     },
