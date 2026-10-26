@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-25T12:13:02.226Z",
+  "updatedAt": "2026-10-26T00:10:56.909Z",
   "roasts": [],
   "playerNames": {
     "1": {
@@ -2225,7 +2225,7 @@
     "445": {
       "name": "Thomas Morstead",
       "pos": "P",
-      "team": "IND"
+      "team": "FA"
     },
     "446": {
       "name": "E.J. Biggers",
@@ -30010,7 +30010,7 @@
     "6005": {
       "name": "Kevin Givens",
       "pos": "DT",
-      "team": "SF"
+      "team": "FA"
     },
     "6006": {
       "name": "Byron Cowart",
@@ -47945,7 +47945,7 @@
     "11481": {
       "name": "Natrone Brooks",
       "pos": "CB",
-      "team": "MIN"
+      "team": "FA"
     },
     "11482": {
       "name": "Clifford Chattman",
@@ -56535,7 +56535,7 @@
     "13199": {
       "name": "Montorie Foster Jr.",
       "pos": "WR",
-      "team": "SEA"
+      "team": "FA"
     },
     "13200": {
       "name": "Max Hurleman",
@@ -58900,7 +58900,7 @@
     "13672": {
       "name": "Wydett Williams Jr.",
       "pos": "DB",
-      "team": "ARI"
+      "team": "FA"
     },
     "13673": {
       "name": "Trent Battle",
