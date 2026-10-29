@@ -13,7 +13,7 @@ async function getJSON(url) {
 async function main() {
   console.log("🐏 Starting 12-Hour Rhody Complete History & Roast Sync for " + LEAGUE_ID);
 
-  // 1. Download Master NFL Player Dictionary so every ID becomes a real name
+  // 1. Download Master NFL Player Dictionary
   const playersRaw = await getJSON("https://api.sleeper.app/v1/players/nfl");
   const playerNames = {};
   for (const [id, p] of Object.entries(playersRaw)) {
@@ -48,7 +48,7 @@ async function main() {
 
     const trades = [];
     const waivers = [];
-    for (let wk = 1; wk <= 18; wk++) {
+    for (let wk = 18; wk >= 1; wk--) {
       try {
         const txs = await getJSON(`https://api.sleeper.app/v1/league/${currId}/transactions/${wk}`);
         for (const tx of txs) {
@@ -65,13 +65,18 @@ async function main() {
               ([pid, rid]) => `${rosterMap[rid]} dropped ${formatPlayer(pid)}`
             ),
             faabBid: tx.settings?.waiver_bid || 0,
-            timestamp: tx.status_updated
+            timestamp: tx.status_updated,
+            date: new Date(tx.status_updated).toLocaleString("en-US", { timeZone: "America/New_York" })
           };
           if (tx.type === "trade") trades.push(summary);
           else if (tx.type === "waiver" || tx.type === "free_agent") waivers.push(summary);
         }
       } catch (_) {}
     }
+
+    // Sort newest transactions first
+    trades.sort((a, b) => b.timestamp - a.timestamp);
+    waivers.sort((a, b) => b.timestamp - a.timestamp);
 
     history.push({
       season: league.season,
@@ -83,68 +88,104 @@ async function main() {
           manager: rosterMap[r.roster_id],
           wins: r.settings?.wins || 0,
           losses: r.settings?.losses || 0,
-          fpts,
-          fptsAgainst: (r.settings?.fpts_against || 0) + ((r.settings?.fpts_against_decimal || 0) / 100),
-          benchPointsLeftBehind: Math.max(0, maxFpts - fpts),
+          fpts: Number(fpts.toFixed(2)),
+          fptsAgainst: Number(((r.settings?.fpts_against || 0) + ((r.settings?.fpts_against_decimal || 0) / 100)).toFixed(2)),
+          benchPointsLeftBehind: Number(Math.max(0, maxFpts - fpts).toFixed(2)),
           faabUsed: r.settings?.waiver_budget_used || 0
         };
-      }),
+      }).sort((a, b) => b.wins - a.wins || b.fpts - a.fpts),
       trades,
-      waivers: waivers.slice(0, 40)
+      waivers: waivers.slice(0, 25)
     });
 
     currId = league.previous_league_id;
   }
 
-  // 3. Generate Fresh Roasts via Gemini AI (if API key is present)
-  let roasts = [];
-  if (GEMINI_API_KEY) {
-    const prompt = `
-You are the savage, hilarious host of the "Rhody Gridiron Desk" (URI / Kingston themed fantasy football broadcast) covering Sleeper League "Rhody" (ID: 1389738151307649024).
+  const currentSeason = history[0] || {};
+  const recentTrades = (currentSeason.trades || []).slice(0, 8);
+  const recentWaivers = (currentSeason.waivers || []).slice(0, 12);
 
-MANDATORY LORE:
-1. JewsinParis traded away Drake London for Jordan Mason.
-2. Caaaam blew 50 FAAB in Week 1 on a defense and constantly vetos trades.
-3. ELord11 makes a ridiculous volume of trades.
-4. PrayingGrantis somehow ends up with a stacked Superteam.
-5. Tylero0 attempts terrible fleece offers constantly.
-6. CerealStroke has no idea what FAAB is and never waivers.
-7. CarlaCote is in witness protection and accidentally wins.
+  // 3. Generate Fresh Roasts via Gemini AI
+  if (!GEMINI_API_KEY) {
+    throw new Error("❌ GEMINI_API_KEY is missing! Make sure you added it under Settings -> Secrets and variables -> Actions -> Repository secrets.");
+  }
 
-Scan the latest trades, waiver moves, and standings in the JSON data below. Write 2 hilarious news articles/roasts highlighting recent trades, bad lineup decisions, or waiver blunders.
+  const prompt = `
+You are the savage, hilarious host of the "Rhody Gridiron Desk" (URI / Kingston themed fantasy football broadcast) covering Sleeper League "Rhody".
+Today's Date: ${new Date().toLocaleDateString("en-US", { timeZone: "America/New_York" })}.
 
-Live & Historical League Data:
-${JSON.stringify(history, null, 2)}
+LEAGUE LORE (Use for flavor, but DO NOT just repeat old jokes—focus heavily on the NEWEST trades, waivers, and standings below!):
+- JewsinParis once traded away Drake London for Jordan Mason.
+- Caaaam blew 50 FAAB in Week 1 on a defense and loves vetoing trades.
+- ELord11 is a trade addict.
+- PrayingGrantis builds stacked superteams.
+- Tylero0 sends terrible fleece offers.
+- CerealStroke ignores FAAB/waivers.
+- CarlaCote is in witness protection and still wins.
 
-Return ONLY valid JSON as an array of 2 objects with keys:
-"category" (string), "headline" (string), "timestamp" (string), "body" (2-3 paragraphs).
+=== BREAKING / MOST RECENT TRADES THIS SEASON (Newest First) ===
+${JSON.stringify(recentTrades, null, 2)}
+
+=== MOST RECENT WAIVER & FREE AGENT MOVES ===
+${JSON.stringify(recentWaivers, null, 2)}
+
+=== CURRENT STANDINGS (${currentSeason.season}) ===
+${JSON.stringify(currentSeason.standings, null, 2)}
+
+TASK:
+Write 4 fresh, savage, hilarious broadcast articles/roasts specifically breaking down the NEWEST trades above (name the exact players traded and roast the managers involved), recent waiver wire panic moves, and the current standings race. 
+
+Return ONLY a valid JSON array of 4 objects with these exact keys:
+[
+  {
+    "category": "BREAKING TRADE DESK" | "WAIVER WIRE AUTOPSY" | "CONTENDER WATCH" | "KINGSTON PANIC METER",
+    "headline": "Punchy headline naming the managers/players",
+    "timestamp": "LIVE • ${new Date().toLocaleDateString("en-US", { month: "short", day: "numeric" })} Edition",
+    "body": "2-3 witty, detailed paragraphs breaking down the specific trade or league update."
+  }
+]
 `;
 
-    try {
-      const geminiRes = await fetch(
-        `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${GEMINI_API_KEY}`,
-        {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            contents: [{ parts: [{ text: prompt }] }],
-            generationConfig: { responseMimeType: "application/json" }
-          })
+  console.log("🤖 Calling Gemini API to generate fresh trade & league roasts...");
+  const geminiRes = await fetch(
+    `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${GEMINI_API_KEY}`,
+    {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        contents: [{ parts: [{ text: prompt }] }],
+        generationConfig: {
+          responseMimeType: "application/json",
+          temperature: 1.0
         }
-      );
-
-      const geminiJson = await geminiRes.json();
-      const rawText = geminiJson.candidates?.[0]?.content?.parts?.[0]?.text;
-      if (rawText) roasts = JSON.parse(rawText);
-    } catch (e) {
-      console.log("Gemini API call skipped or failed, falling back to rotation engine:", e.message);
+      })
     }
+  );
+
+  const geminiJson = await geminiRes.json();
+  if (!geminiRes.ok || geminiJson.error) {
+    console.error("❌ Gemini API Error Details:", JSON.stringify(geminiJson, null, 2));
+    throw new Error(`Gemini API failed: ${geminiJson.error?.message || geminiRes.statusText}`);
   }
+
+  let rawText = geminiJson.candidates?.[0]?.content?.parts?.[0]?.text || "[]";
+  rawText = rawText.replace(/^```json\s*/i, "").replace(/```\s*$/i, "").trim();
+  const roasts = JSON.parse(rawText);
+
+  console.log(`✅ Generated ${roasts.length} fresh AI articles!`);
 
   fs.mkdirSync(path.join(process.cwd(), "data"), { recursive: true });
   fs.writeFileSync(
     path.join(process.cwd(), "data", "rhody-data.json"),
-    JSON.stringify({ updatedAt: new Date().toISOString(), roasts, playerNames }, null, 2)
+    JSON.stringify({
+      updatedAt: new Date().toISOString(),
+      roasts,
+      recentTrades,
+      recentWaivers,
+      currentStandings: currentSeason.standings,
+      history,
+      playerNames
+    }, null, 2)
   );
   console.log("✅ Saved data/rhody-data.json successfully.");
 }
