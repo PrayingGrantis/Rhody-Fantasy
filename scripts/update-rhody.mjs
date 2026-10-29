@@ -10,6 +10,40 @@ async function getJSON(url) {
   return res.json();
 }
 
+async function callGeminiWithFallback(prompt) {
+  const modelsToTry = ["gemini-3.8-flash", "gemini-flash-latest", "gemini-3.0-flash"];
+  let lastError = null;
+
+  for (const model of modelsToTry) {
+    console.log(`🤖 Trying Gemini model: ${model}...`);
+    const geminiRes = await fetch(
+      `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${GEMINI_API_KEY}`,
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          contents: [{ parts: [{ text: prompt }] }],
+          generationConfig: {
+            responseMimeType: "application/json",
+            temperature: 1.0
+          }
+        })
+      }
+    );
+
+    const geminiJson = await geminiRes.json();
+    if (geminiRes.ok && !geminiJson.error) {
+      console.log(`✅ Success with ${model}!`);
+      return geminiJson;
+    }
+
+    console.warn(`⚠️ Model ${model} returned status ${geminiRes.status}: ${geminiJson.error?.message}`);
+    lastError = geminiJson.error?.message || geminiRes.statusText;
+  }
+
+  throw new Error(`All Gemini models failed. Last error: ${lastError}`);
+}
+
 async function main() {
   console.log("🐏 Starting 12-Hour Rhody Complete History & Roast Sync for " + LEAGUE_ID);
 
@@ -74,7 +108,6 @@ async function main() {
       } catch (_) {}
     }
 
-    // Sort newest transactions first
     trades.sort((a, b) => b.timestamp - a.timestamp);
     waivers.sort((a, b) => b.timestamp - a.timestamp);
 
@@ -105,16 +138,15 @@ async function main() {
   const recentTrades = (currentSeason.trades || []).slice(0, 8);
   const recentWaivers = (currentSeason.waivers || []).slice(0, 12);
 
-  // 3. Generate Fresh Roasts via Gemini AI
   if (!GEMINI_API_KEY) {
-    throw new Error("❌ GEMINI_API_KEY is missing! Make sure you added it under Settings -> Secrets and variables -> Actions -> Repository secrets.");
+    throw new Error("❌ GEMINI_API_KEY is missing!");
   }
 
   const prompt = `
 You are the savage, hilarious host of the "Rhody Gridiron Desk" (URI / Kingston themed fantasy football broadcast) covering Sleeper League "Rhody".
 Today's Date: ${new Date().toLocaleDateString("en-US", { timeZone: "America/New_York" })}.
 
-LEAGUE LORE (Use for flavor, but DO NOT just repeat old jokes—focus heavily on the NEWEST trades, waivers, and standings below!):
+LEAGUE LORE (Use for flavor, but focus heavily on the NEWEST trades, waivers, and standings below!):
 - JewsinParis once traded away Drake London for Jordan Mason.
 - Caaaam blew 50 FAAB in Week 1 on a defense and loves vetoing trades.
 - ELord11 is a trade addict.
@@ -146,28 +178,7 @@ Return ONLY a valid JSON array of 4 objects with these exact keys:
 ]
 `;
 
-  console.log("🤖 Calling Gemini API to generate fresh trade & league roasts...");
-  const geminiRes = await fetch(
-    `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${GEMINI_API_KEY}`,
-    {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        contents: [{ parts: [{ text: prompt }] }],
-        generationConfig: {
-          responseMimeType: "application/json",
-          temperature: 1.0
-        }
-      })
-    }
-  );
-
-  const geminiJson = await geminiRes.json();
-  if (!geminiRes.ok || geminiJson.error) {
-    console.error("❌ Gemini API Error Details:", JSON.stringify(geminiJson, null, 2));
-    throw new Error(`Gemini API failed: ${geminiJson.error?.message || geminiRes.statusText}`);
-  }
-
+  const geminiJson = await callGeminiWithFallback(prompt);
   let rawText = geminiJson.candidates?.[0]?.content?.parts?.[0]?.text || "[]";
   rawText = rawText.replace(/^```json\s*/i, "").replace(/```\s*$/i, "").trim();
   const roasts = JSON.parse(rawText);
