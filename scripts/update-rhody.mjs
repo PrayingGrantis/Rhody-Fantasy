@@ -4,48 +4,96 @@ import path from "path";
 const LEAGUE_ID = "1389738151307649024";
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 
-async function getJSON(url) {
-  const res = await fetch(url);
-  if (!res.ok) throw new Error(`Failed ${url}: ${res.status}`);
-  return res.json();
+const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
+async function fetchWithTimeout(url, options = {}, timeoutMs = 30000) {
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), timeoutMs);
+  try {
+    return await fetch(url, { ...options, signal: controller.signal });
+  } finally {
+    clearTimeout(timer);
+  }
 }
 
-async function callGeminiWithFallback(prompt) {
+async function getJSON(url, retries = 3) {
+  for (let i = 1; i <= retries; i++) {
+    try {
+      const res = await fetchWithTimeout(url, {}, 20000);
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      return await res.json();
+    } catch (err) {
+      if (i === retries) throw new Error(`Failed ${url}: ${err.message}`);
+      console.warn(`⚠️ Retry ${i}/${retries} for ${url}...`);
+      await sleep(2000 * i);
+    }
+  }
+}
+
+async function generateRoastsWithRetry(prompt) {
   const modelsToTry = ["gemini-3.8-flash", "gemini-flash-latest", "gemini-3.0-flash"];
   let lastError = null;
 
   for (const model of modelsToTry) {
-    console.log(`🤖 Trying Gemini model: ${model}...`);
-    const geminiRes = await fetch(
-      `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${GEMINI_API_KEY}`,
-      {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          contents: [{ parts: [{ text: prompt }] }],
-          generationConfig: {
-            responseMimeType: "application/json",
-            temperature: 1.0
-          }
-        })
+    for (let attempt = 1; attempt <= 3; attempt++) {
+      try {
+        console.log(`🤖 Calling ${model} (Attempt ${attempt}/3)...`);
+        const geminiRes = await fetchWithTimeout(
+          `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${GEMINI_API_KEY}`,
+          {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              contents: [{ parts: [{ text: prompt }] }],
+              generationConfig: {
+                responseMimeType: "application/json",
+                temperature: 1.0
+              }
+            })
+          },
+          45000 // 45-second timeout so it never hangs for 5 minutes
+        );
+
+        const geminiJson = await geminiRes.json();
+        if (!geminiRes.ok || geminiJson.error) {
+          throw new Error(geminiJson.error?.message || `HTTP ${geminiRes.status}`);
+        }
+
+        let rawText = geminiJson.candidates?.[0]?.content?.parts?.[0]?.text || "[]";
+        rawText = rawText.replace(/^```json\s*/i, "").replace(/```\s*$/i, "").trim();
+        const parsed = JSON.parse(rawText);
+
+        if (Array.isArray(parsed) && parsed.length > 0) {
+          console.log(`✅ Successfully generated ${parsed.length} fresh roasts using ${model}!`);
+          return parsed;
+        }
+        throw new Error("Returned empty or non-array JSON");
+      } catch (err) {
+        lastError = err.message;
+        console.warn(`⚠️ ${model} attempt ${attempt} failed: ${lastError}`);
+        if (attempt < 3) {
+          const waitTime = attempt * 5000;
+          console.log(`⏳ Waiting ${waitTime / 1000}s before retrying...`);
+          await sleep(waitTime);
+        }
       }
-    );
-
-    const geminiJson = await geminiRes.json();
-    if (geminiRes.ok && !geminiJson.error) {
-      console.log(`✅ Success with ${model}!`);
-      return geminiJson;
     }
-
-    console.warn(`⚠️ Model ${model} returned status ${geminiRes.status}: ${geminiJson.error?.message}`);
-    lastError = geminiJson.error?.message || geminiRes.statusText;
   }
 
-  throw new Error(`All Gemini models failed. Last error: ${lastError}`);
+  throw new Error(`All Gemini retry attempts exhausted. Last error: ${lastError}`);
 }
 
 async function main() {
   console.log("🐏 Starting 12-Hour Rhody Complete History & Roast Sync for " + LEAGUE_ID);
+
+  const dataFilePath = path.join(process.cwd(), "data", "rhody-data.json");
+  let existingRoasts = [];
+  if (fs.existsSync(dataFilePath)) {
+    try {
+      const existingData = JSON.parse(fs.readFileSync(dataFilePath, "utf8"));
+      if (Array.isArray(existingData.roasts)) existingRoasts = existingData.roasts;
+    } catch (_) {}
+  }
 
   // 1. Download Master NFL Player Dictionary
   const playersRaw = await getJSON("https://api.sleeper.app/v1/players/nfl");
@@ -178,16 +226,17 @@ Return ONLY a valid JSON array of 4 objects with these exact keys:
 ]
 `;
 
-  const geminiJson = await callGeminiWithFallback(prompt);
-  let rawText = geminiJson.candidates?.[0]?.content?.parts?.[0]?.text || "[]";
-  rawText = rawText.replace(/^```json\s*/i, "").replace(/```\s*$/i, "").trim();
-  const roasts = JSON.parse(rawText);
-
-  console.log(`✅ Generated ${roasts.length} fresh AI articles!`);
+  let roasts = existingRoasts;
+  try {
+    roasts = await generateRoastsWithRetry(prompt);
+  } catch (err) {
+    console.warn("⚠️ Gemini exhausted all retries, keeping previous roasts so site data still updates:", err.message);
+    if (!roasts.length) throw err;
+  }
 
   fs.mkdirSync(path.join(process.cwd(), "data"), { recursive: true });
   fs.writeFileSync(
-    path.join(process.cwd(), "data", "rhody-data.json"),
+    dataFilePath,
     JSON.stringify({
       updatedAt: new Date().toISOString(),
       roasts,
