@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-04T12:41:16.606Z",
+  "updatedAt": "2026-11-04T23:28:37.443Z",
   "roasts": [
     {
       "category": "BREAKING TRADE DESK",
@@ -204,6 +204,151 @@
   "recentWaivers": [
     {
       "season": "2026",
+      "week": 9,
+      "type": "free_agent",
+      "managers": [
+        "CerealStroke"
+      ],
+      "added": [
+        "CerealStroke received Tyler Bass (K - BUF)"
+      ],
+      "dropped": [
+        "CerealStroke dropped Trey Smack (K - GB)"
+      ],
+      "faabBid": 0,
+      "timestamp": 1793825189962,
+      "date": "11/4/2026, 3:46:29 PM"
+    },
+    {
+      "season": "2026",
+      "week": 9,
+      "type": "free_agent",
+      "managers": [
+        "CerealStroke"
+      ],
+      "added": [
+        "CerealStroke received Gardner Minshew II (QB - ARI)"
+      ],
+      "dropped": [
+        "CerealStroke dropped Efton Chism III (WR - NE)"
+      ],
+      "faabBid": 0,
+      "timestamp": 1793825141688,
+      "date": "11/4/2026, 3:45:41 PM"
+    },
+    {
+      "season": "2026",
+      "week": 9,
+      "type": "free_agent",
+      "managers": [
+        "CerealStroke"
+      ],
+      "added": [
+        "CerealStroke received Emmett Johnson (RB - KC)"
+      ],
+      "dropped": [],
+      "faabBid": 0,
+      "timestamp": 1793825032582,
+      "date": "11/4/2026, 3:43:52 PM"
+    },
+    {
+      "season": "2026",
+      "week": 9,
+      "type": "free_agent",
+      "managers": [
+        "PrayingGrantis"
+      ],
+      "added": [
+        "PrayingGrantis received Chris Rodriguez Jr. (RB - JAX)"
+      ],
+      "dropped": [
+        "PrayingGrantis dropped Makai Lemon (WR - PHI)"
+      ],
+      "faabBid": 0,
+      "timestamp": 1793823013052,
+      "date": "11/4/2026, 3:10:13 PM"
+    },
+    {
+      "season": "2026",
+      "week": 9,
+      "type": "free_agent",
+      "managers": [
+        "ELord11"
+      ],
+      "added": [
+        "ELord11 received Kansas City Chiefs (DEF - KC)"
+      ],
+      "dropped": [
+        "ELord11 dropped Las Vegas Raiders (DEF - LV)"
+      ],
+      "faabBid": 0,
+      "timestamp": 1793819821229,
+      "date": "11/4/2026, 2:17:01 PM"
+    },
+    {
+      "season": "2026",
+      "week": 9,
+      "type": "free_agent",
+      "managers": [
+        "JewsInParis"
+      ],
+      "added": [
+        "JewsInParis received Jordan Addison (WR - MIN)"
+      ],
+      "dropped": [],
+      "faabBid": 0,
+      "timestamp": 1793819490525,
+      "date": "11/4/2026, 2:11:30 PM"
+    },
+    {
+      "season": "2026",
+      "week": 9,
+      "type": "free_agent",
+      "managers": [
+        "Unanswered"
+      ],
+      "added": [],
+      "dropped": [
+        "Unanswered dropped Washington Commanders (DEF - WAS)"
+      ],
+      "faabBid": 0,
+      "timestamp": 1793809384067,
+      "date": "11/4/2026, 11:23:04 AM"
+    },
+    {
+      "season": "2026",
+      "week": 9,
+      "type": "free_agent",
+      "managers": [
+        "JewsInParis"
+      ],
+      "added": [
+        "JewsInParis received Devin Singletary (RB - NYG)"
+      ],
+      "dropped": [
+        "JewsInParis dropped Brian Thomas Jr. (WR - JAX)"
+      ],
+      "faabBid": 0,
+      "timestamp": 1793807277902,
+      "date": "11/4/2026, 10:47:57 AM"
+    },
+    {
+      "season": "2026",
+      "week": 9,
+      "type": "free_agent",
+      "managers": [
+        "ELord11"
+      ],
+      "added": [],
+      "dropped": [
+        "ELord11 dropped Christian Kirk (WR - SF)"
+      ],
+      "faabBid": 0,
+      "timestamp": 1793806942333,
+      "date": "11/4/2026, 10:42:22 AM"
+    },
+    {
+      "season": "2026",
       "week": 8,
       "type": "waiver",
       "managers": [
@@ -252,147 +397,6 @@
       "faabBid": 6,
       "timestamp": 1793779648765,
       "date": "11/4/2026, 3:07:28 AM"
-    },
-    {
-      "season": "2026",
-      "week": 8,
-      "type": "waiver",
-      "managers": [
-        "Shipoopiehole"
-      ],
-      "added": [
-        "Shipoopiehole received Tyler Allgeier (RB - ARI)"
-      ],
-      "dropped": [
-        "Shipoopiehole dropped Pat Freiermuth (TE - PIT)"
-      ],
-      "faabBid": 11,
-      "timestamp": 1793779648765,
-      "date": "11/4/2026, 3:07:28 AM"
-    },
-    {
-      "season": "2026",
-      "week": 8,
-      "type": "waiver",
-      "managers": [
-        "Unanswered"
-      ],
-      "added": [
-        "Unanswered received Tampa Bay Buccaneers (DEF - TB)"
-      ],
-      "dropped": [
-        "Unanswered dropped Baltimore Ravens (DEF - BAL)"
-      ],
-      "faabBid": 19,
-      "timestamp": 1793779648765,
-      "date": "11/4/2026, 3:07:28 AM"
-    },
-    {
-      "season": "2026",
-      "week": 8,
-      "type": "waiver",
-      "managers": [
-        "owenriddell"
-      ],
-      "added": [
-        "owenriddell received Adonai Mitchell (WR - NYJ)"
-      ],
-      "dropped": [],
-      "faabBid": 15,
-      "timestamp": 1793779648765,
-      "date": "11/4/2026, 3:07:28 AM"
-    },
-    {
-      "season": "2026",
-      "week": 8,
-      "type": "free_agent",
-      "managers": [
-        "Shipoopiehole"
-      ],
-      "added": [],
-      "dropped": [
-        "Shipoopiehole dropped Emanuel Wilson (RB - SEA)"
-      ],
-      "faabBid": 0,
-      "timestamp": 1793713686270,
-      "date": "11/3/2026, 8:48:06 AM"
-    },
-    {
-      "season": "2026",
-      "week": 8,
-      "type": "free_agent",
-      "managers": [
-        "CerealStroke"
-      ],
-      "added": [],
-      "dropped": [
-        "CerealStroke dropped Kyler Murray (QB - MIN)"
-      ],
-      "faabBid": 0,
-      "timestamp": 1793549625994,
-      "date": "11/1/2026, 11:13:45 AM"
-    },
-    {
-      "season": "2026",
-      "week": 8,
-      "type": "free_agent",
-      "managers": [
-        "CarlaCote"
-      ],
-      "added": [
-        "CarlaCote received Chris Godwin Jr. (WR - TB)"
-      ],
-      "dropped": [
-        "CarlaCote dropped Philadelphia Eagles (DEF - PHI)"
-      ],
-      "faabBid": 0,
-      "timestamp": 1793545420823,
-      "date": "11/1/2026, 10:03:40 AM"
-    },
-    {
-      "season": "2026",
-      "week": 8,
-      "type": "free_agent",
-      "managers": [
-        "CarlaCote"
-      ],
-      "added": [
-        "CarlaCote received Samaje Perine (RB - CIN)"
-      ],
-      "dropped": [],
-      "faabBid": 0,
-      "timestamp": 1793545381683,
-      "date": "11/1/2026, 10:03:01 AM"
-    },
-    {
-      "season": "2026",
-      "week": 8,
-      "type": "free_agent",
-      "managers": [
-        "ELord11"
-      ],
-      "added": [
-        "ELord11 received Seth McGowan (RB - IND)"
-      ],
-      "dropped": [],
-      "faabBid": 0,
-      "timestamp": 1793495881460,
-      "date": "10/31/2026, 9:18:01 PM"
-    },
-    {
-      "season": "2026",
-      "week": 8,
-      "type": "free_agent",
-      "managers": [
-        "owenriddell"
-      ],
-      "added": [],
-      "dropped": [
-        "owenriddell dropped Kaelon Black (RB - SF)"
-      ],
-      "faabBid": 0,
-      "timestamp": 1793390437068,
-      "date": "10/30/2026, 4:00:37 PM"
     }
   ],
   "currentStandings": [
@@ -853,6 +857,151 @@
       "waivers": [
         {
           "season": "2026",
+          "week": 9,
+          "type": "free_agent",
+          "managers": [
+            "CerealStroke"
+          ],
+          "added": [
+            "CerealStroke received Tyler Bass (K - BUF)"
+          ],
+          "dropped": [
+            "CerealStroke dropped Trey Smack (K - GB)"
+          ],
+          "faabBid": 0,
+          "timestamp": 1793825189962,
+          "date": "11/4/2026, 3:46:29 PM"
+        },
+        {
+          "season": "2026",
+          "week": 9,
+          "type": "free_agent",
+          "managers": [
+            "CerealStroke"
+          ],
+          "added": [
+            "CerealStroke received Gardner Minshew II (QB - ARI)"
+          ],
+          "dropped": [
+            "CerealStroke dropped Efton Chism III (WR - NE)"
+          ],
+          "faabBid": 0,
+          "timestamp": 1793825141688,
+          "date": "11/4/2026, 3:45:41 PM"
+        },
+        {
+          "season": "2026",
+          "week": 9,
+          "type": "free_agent",
+          "managers": [
+            "CerealStroke"
+          ],
+          "added": [
+            "CerealStroke received Emmett Johnson (RB - KC)"
+          ],
+          "dropped": [],
+          "faabBid": 0,
+          "timestamp": 1793825032582,
+          "date": "11/4/2026, 3:43:52 PM"
+        },
+        {
+          "season": "2026",
+          "week": 9,
+          "type": "free_agent",
+          "managers": [
+            "PrayingGrantis"
+          ],
+          "added": [
+            "PrayingGrantis received Chris Rodriguez Jr. (RB - JAX)"
+          ],
+          "dropped": [
+            "PrayingGrantis dropped Makai Lemon (WR - PHI)"
+          ],
+          "faabBid": 0,
+          "timestamp": 1793823013052,
+          "date": "11/4/2026, 3:10:13 PM"
+        },
+        {
+          "season": "2026",
+          "week": 9,
+          "type": "free_agent",
+          "managers": [
+            "ELord11"
+          ],
+          "added": [
+            "ELord11 received Kansas City Chiefs (DEF - KC)"
+          ],
+          "dropped": [
+            "ELord11 dropped Las Vegas Raiders (DEF - LV)"
+          ],
+          "faabBid": 0,
+          "timestamp": 1793819821229,
+          "date": "11/4/2026, 2:17:01 PM"
+        },
+        {
+          "season": "2026",
+          "week": 9,
+          "type": "free_agent",
+          "managers": [
+            "JewsInParis"
+          ],
+          "added": [
+            "JewsInParis received Jordan Addison (WR - MIN)"
+          ],
+          "dropped": [],
+          "faabBid": 0,
+          "timestamp": 1793819490525,
+          "date": "11/4/2026, 2:11:30 PM"
+        },
+        {
+          "season": "2026",
+          "week": 9,
+          "type": "free_agent",
+          "managers": [
+            "Unanswered"
+          ],
+          "added": [],
+          "dropped": [
+            "Unanswered dropped Washington Commanders (DEF - WAS)"
+          ],
+          "faabBid": 0,
+          "timestamp": 1793809384067,
+          "date": "11/4/2026, 11:23:04 AM"
+        },
+        {
+          "season": "2026",
+          "week": 9,
+          "type": "free_agent",
+          "managers": [
+            "JewsInParis"
+          ],
+          "added": [
+            "JewsInParis received Devin Singletary (RB - NYG)"
+          ],
+          "dropped": [
+            "JewsInParis dropped Brian Thomas Jr. (WR - JAX)"
+          ],
+          "faabBid": 0,
+          "timestamp": 1793807277902,
+          "date": "11/4/2026, 10:47:57 AM"
+        },
+        {
+          "season": "2026",
+          "week": 9,
+          "type": "free_agent",
+          "managers": [
+            "ELord11"
+          ],
+          "added": [],
+          "dropped": [
+            "ELord11 dropped Christian Kirk (WR - SF)"
+          ],
+          "faabBid": 0,
+          "timestamp": 1793806942333,
+          "date": "11/4/2026, 10:42:22 AM"
+        },
+        {
+          "season": "2026",
           "week": 8,
           "type": "waiver",
           "managers": [
@@ -1106,153 +1255,6 @@
           "faabBid": 0,
           "timestamp": 1793222249759,
           "date": "10/28/2026, 5:17:29 PM"
-        },
-        {
-          "season": "2026",
-          "week": 8,
-          "type": "free_agent",
-          "managers": [
-            "ELord11"
-          ],
-          "added": [],
-          "dropped": [
-            "ELord11 dropped Dallas Cowboys (DEF - DAL)"
-          ],
-          "faabBid": 0,
-          "timestamp": 1793221972876,
-          "date": "10/28/2026, 5:12:52 PM"
-        },
-        {
-          "season": "2026",
-          "week": 8,
-          "type": "free_agent",
-          "managers": [
-            "CarlaCote"
-          ],
-          "added": [
-            "CarlaCote received Cam Little (K - JAX)"
-          ],
-          "dropped": [
-            "CarlaCote dropped Dominic Zvada (K - NYG)"
-          ],
-          "faabBid": 0,
-          "timestamp": 1793202067963,
-          "date": "10/28/2026, 11:41:07 AM"
-        },
-        {
-          "season": "2026",
-          "week": 8,
-          "type": "free_agent",
-          "managers": [
-            "JewsInParis"
-          ],
-          "added": [],
-          "dropped": [
-            "JewsInParis dropped Alvin Kamara (RB - NO)"
-          ],
-          "faabBid": 0,
-          "timestamp": 1793201254500,
-          "date": "10/28/2026, 11:27:34 AM"
-        },
-        {
-          "season": "2026",
-          "week": 8,
-          "type": "free_agent",
-          "managers": [
-            "owenriddell"
-          ],
-          "added": [
-            "owenriddell received Jacksonville Jaguars (DEF - JAX)"
-          ],
-          "dropped": [
-            "owenriddell dropped Jacory Croskey-Merritt (RB - WAS)"
-          ],
-          "faabBid": 0,
-          "timestamp": 1793200683021,
-          "date": "10/28/2026, 11:18:03 AM"
-        },
-        {
-          "season": "2026",
-          "week": 8,
-          "type": "free_agent",
-          "managers": [
-            "PrayingGrantis"
-          ],
-          "added": [],
-          "dropped": [
-            "PrayingGrantis dropped Brian Robinson Jr. (RB - ATL)"
-          ],
-          "faabBid": 0,
-          "timestamp": 1793180342829,
-          "date": "10/28/2026, 5:39:02 AM"
-        },
-        {
-          "season": "2026",
-          "week": 7,
-          "type": "waiver",
-          "managers": [
-            "ELord11"
-          ],
-          "added": [
-            "ELord11 received Jonah Coleman (RB - DEN)"
-          ],
-          "dropped": [
-            "ELord11 dropped Jake Ferguson (TE - DAL)"
-          ],
-          "faabBid": 28,
-          "timestamp": 1793171208320,
-          "date": "10/28/2026, 3:06:48 AM"
-        },
-        {
-          "season": "2026",
-          "week": 7,
-          "type": "waiver",
-          "managers": [
-            "PrayingGrantis"
-          ],
-          "added": [
-            "PrayingGrantis received Cincinnati Bengals (DEF - CIN)"
-          ],
-          "dropped": [
-            "PrayingGrantis dropped Cleveland Browns (DEF - CLE)"
-          ],
-          "faabBid": 6,
-          "timestamp": 1793171208320,
-          "date": "10/28/2026, 3:06:48 AM"
-        },
-        {
-          "season": "2026",
-          "week": 7,
-          "type": "waiver",
-          "managers": [
-            "Tylero0"
-          ],
-          "added": [
-            "Tylero0 received Antonio Williams (WR - WAS)"
-          ],
-          "dropped": [
-            "Tylero0 dropped Chris Godwin Jr. (WR - TB)"
-          ],
-          "faabBid": 6,
-          "timestamp": 1793171208320,
-          "date": "10/28/2026, 3:06:48 AM"
-        },
-        {
-          "season": "2026",
-          "week": 7,
-          "type": "waiver",
-          "managers": [
-            "Tylero0"
-          ],
-          "added": [
-            "Tylero0 received Caleb Douglas (WR - MIA)"
-          ],
-          "dropped": [
-            "Tylero0 dropped Jordan Love (QB - GB)"
-          ],
-          "faabBid": 6,
-          "timestamp": 1793171208320,
-          "date": "10/28/2026, 3:06:48 AM"
         }
       ]
     },
@@ -27414,7 +27416,7 @@
     "5095": {
       "name": "Daniel Carlson",
       "pos": "K",
-      "team": "NO"
+      "team": "FA"
     },
     "5096": {
       "name": "Ray-Ray McCloud",
@@ -29599,7 +29601,7 @@
     "5532": {
       "name": "Daniel Ekuale",
       "pos": "DT",
-      "team": "FA"
+      "team": "WAS"
     },
     "5533": {
       "name": "Trenton Thompson",
@@ -31399,7 +31401,7 @@
     "5893": {
       "name": "C.J. Gardner-Johnson",
       "pos": "DB",
-      "team": "BUF"
+      "team": "FA"
     },
     "5894": {
       "name": "Germaine Pratt",
@@ -33789,7 +33791,7 @@
     "6386": {
       "name": "Alex Bachman",
       "pos": "WR",
-      "team": "LAR"
+      "team": "FA"
     },
     "6387": {
       "name": "Nsimba Webster",
@@ -36419,7 +36421,7 @@
     "6928": {
       "name": "Kindle Vildor",
       "pos": "DB",
-      "team": "NE"
+      "team": "FA"
     },
     "6929": {
       "name": "Brian Cole",
@@ -36562,9 +36564,9 @@
       "team": "FA"
     },
     "6957": {
-      "name": "James Proche",
+      "name": "James Proche II",
       "pos": "WR",
-      "team": "FA"
+      "team": "ARI"
     },
     "6958": {
       "name": "Mike Danna",
@@ -39744,7 +39746,7 @@
     "7599": {
       "name": "Jermar Jefferson",
       "pos": "RB",
-      "team": "FA"
+      "team": "ARI"
     },
     "7600": {
       "name": "Pat Freiermuth",
@@ -40284,7 +40286,7 @@
     "7707": {
       "name": "Tre Brown",
       "pos": "CB",
-      "team": "NYJ"
+      "team": "FA"
     },
     "7708": {
       "name": "Marco Wilson",
@@ -40309,7 +40311,7 @@
     "7712": {
       "name": "Robert Rochell",
       "pos": "DB",
-      "team": "CAR"
+      "team": "FA"
     },
     "7713": {
       "name": "Jaelon Darden",
@@ -40832,9 +40834,9 @@
       "team": "NYG"
     },
     "7817": {
-      "name": "Earnest Brown",
+      "name": "Earnest Brown IV",
       "pos": "DE",
-      "team": "FA"
+      "team": "CHI"
     },
     "7818": {
       "name": "T.J. Slaton Jr.",
@@ -42364,7 +42366,7 @@
     "8123": {
       "name": "Hassan Haskins",
       "pos": "RB",
-      "team": "FA"
+      "team": "CLE"
     },
     "8124": {
       "name": "Player Invalid",
@@ -44109,7 +44111,7 @@
     "8472": {
       "name": "Darian Kinnard",
       "pos": "T",
-      "team": "LV"
+      "team": "FA"
     },
     "8473": {
       "name": "Eric Johnson",
@@ -45674,7 +45676,7 @@
     "8799": {
       "name": "Zaire Mitchell-Paden",
       "pos": "TE",
-      "team": "HOU"
+      "team": "FA"
     },
     "8800": {
       "name": "Malik Davis",
@@ -47329,7 +47331,7 @@
     "10963": {
       "name": "Jakorian Bennett",
       "pos": "DB",
-      "team": "PHI"
+      "team": "FA"
     },
     "10964": {
       "name": "Nick Saldiveri",
@@ -47342,7 +47344,7 @@
       "team": "LAR"
     },
     "10966": {
-      "name": "Rob Beal Jr.",
+      "name": "Robert Beal Jr.",
       "pos": "LB",
       "team": "SF"
     },
@@ -47419,7 +47421,7 @@
     "10981": {
       "name": "Colby Sorsdal",
       "pos": "OL",
-      "team": "ATL"
+      "team": "FA"
     },
     "10982": {
       "name": "Mike Morris",
@@ -47604,7 +47606,7 @@
     "11018": {
       "name": "Christian Braswell",
       "pos": "DB",
-      "team": "FA"
+      "team": "PHI"
     },
     "11019": {
       "name": "Erick Hallett II",
@@ -49484,7 +49486,7 @@
     "11399": {
       "name": "Garrett Nelson",
       "pos": "LB",
-      "team": "LAR"
+      "team": "FA"
     },
     "11400": {
       "name": "Ezekiel Vandenburgh",
@@ -49934,7 +49936,7 @@
     "11489": {
       "name": "Kahlef Hailassie",
       "pos": "CB",
-      "team": "GB"
+      "team": "FA"
     },
     "11490": {
       "name": "Ian Swenson",
@@ -51229,7 +51231,7 @@
     "11748": {
       "name": "Bub Means",
       "pos": "WR",
-      "team": "CLE"
+      "team": "FA"
     },
     "11749": {
       "name": "Cam Hart",
@@ -51359,7 +51361,7 @@
     "11774": {
       "name": "Trevor Keegan",
       "pos": "OL",
-      "team": "MIN"
+      "team": "TB"
     },
     "11775": {
       "name": "Jaylin Simpson",
@@ -51464,7 +51466,7 @@
     "11795": {
       "name": "Jaden Crumedy",
       "pos": "DT",
-      "team": "FA"
+      "team": "HOU"
     },
     "11796": {
       "name": "Khristian Boyd",
@@ -51759,7 +51761,7 @@
     "11854": {
       "name": "Andrew Coker",
       "pos": "OL",
-      "team": "CLE"
+      "team": "FA"
     },
     "11855": {
       "name": "Amari Gainer",
@@ -54399,7 +54401,7 @@
     "12382": {
       "name": "Jake Kubas",
       "pos": "OG",
-      "team": "NE"
+      "team": "FA"
     },
     "12383": {
       "name": "John Jiles",
@@ -56109,7 +56111,7 @@
     "12724": {
       "name": "Kyonte Hamilton",
       "pos": "DL",
-      "team": "HOU"
+      "team": "FA"
     },
     "12725": {
       "name": "Luke Lachey",
@@ -57024,7 +57026,7 @@
     "12907": {
       "name": "Quentin Skinner",
       "pos": "WR",
-      "team": "PHI"
+      "team": "FA"
     },
     "12908": {
       "name": "Chandler Brayboy",
@@ -57034,7 +57036,7 @@
     "12909": {
       "name": "Eli Pancol",
       "pos": "WR",
-      "team": "DEN"
+      "team": "FA"
     },
     "12910": {
       "name": "B.J. Green II",
@@ -57194,7 +57196,7 @@
     "12941": {
       "name": "Bryson Nesbit",
       "pos": "TE",
-      "team": "MIN"
+      "team": "FA"
     },
     "12942": {
       "name": "Zemaiah Vaughn",
@@ -57629,7 +57631,7 @@
     "13028": {
       "name": "Elliott Davison",
       "pos": "DB",
-      "team": "FA"
+      "team": "NE"
     },
     "13029": {
       "name": "James Burnip",
@@ -57729,7 +57731,7 @@
     "13048": {
       "name": "Jared Ivey",
       "pos": "DE",
-      "team": "FA"
+      "team": "ATL"
     },
     "13049": {
       "name": "Alijah Huzzie",
@@ -57779,7 +57781,7 @@
     "13058": {
       "name": "Cam Horsley",
       "pos": "DT",
-      "team": "ARI"
+      "team": "FA"
     },
     "13059": {
       "name": "Jalen Kimber",
@@ -58639,7 +58641,7 @@
     "13230": {
       "name": "Vershon Lee",
       "pos": "OL",
-      "team": "CLE"
+      "team": "FA"
     },
     "13231": {
       "name": "Luke Felix-Fualalo",
@@ -60889,7 +60891,7 @@
     "13680": {
       "name": "Bishop Fitzgerald",
       "pos": "DB",
-      "team": "DET"
+      "team": "FA"
     },
     "13681": {
       "name": "Kaidon Salter",
@@ -60974,7 +60976,7 @@
     "13697": {
       "name": "Da'Metrius Weatherspoon",
       "pos": "OL",
-      "team": "FA"
+      "team": "CAR"
     },
     "13698": {
       "name": "Max Tomczak",
@@ -61204,12 +61206,12 @@
     "13743": {
       "name": "Joseph Manjack",
       "pos": "WR",
-      "team": "FA"
+      "team": "NYJ"
     },
     "13744": {
       "name": "Cameron Ross",
       "pos": "WR",
-      "team": "DEN"
+      "team": "FA"
     },
     "13745": {
       "name": "Zion Washington",
@@ -61229,7 +61231,7 @@
     "13748": {
       "name": "Wes Pahl",
       "pos": "P",
-      "team": "CLE"
+      "team": "FA"
     },
     "13749": {
       "name": "Kole Wilson",
@@ -61794,7 +61796,7 @@
     "13861": {
       "name": "Daniel Sobkowicz",
       "pos": "WR",
-      "team": "FA"
+      "team": "HOU"
     },
     "13862": {
       "name": "Treyvhon Saunders",
@@ -62009,7 +62011,7 @@
     "13904": {
       "name": "Jacob De Jesus",
       "pos": "WR",
-      "team": "FA"
+      "team": "KC"
     },
     "13905": {
       "name": "Omari Evans",
@@ -62299,7 +62301,7 @@
     "13962": {
       "name": "Cameron Dorner",
       "pos": "WR",
-      "team": "NE"
+      "team": "FA"
     },
     "13963": {
       "name": "Nick DeGennaro",
