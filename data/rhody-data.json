@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-03T00:30:44.066Z",
+  "updatedAt": "2026-11-04T02:21:15.129Z",
   "roasts": [
     {
       "category": "BREAKING TRADE DESK",
@@ -207,6 +207,21 @@
       "week": 8,
       "type": "free_agent",
       "managers": [
+        "Shipoopiehole"
+      ],
+      "added": [],
+      "dropped": [
+        "Shipoopiehole dropped Emanuel Wilson (RB - SEA)"
+      ],
+      "faabBid": 0,
+      "timestamp": 1793713686270,
+      "date": "11/3/2026, 8:48:06 AM"
+    },
+    {
+      "season": "2026",
+      "week": 8,
+      "type": "free_agent",
+      "managers": [
         "CerealStroke"
       ],
       "added": [],
@@ -374,112 +389,97 @@
       "faabBid": 0,
       "timestamp": 1793202067963,
       "date": "10/28/2026, 11:41:07 AM"
-    },
-    {
-      "season": "2026",
-      "week": 8,
-      "type": "free_agent",
-      "managers": [
-        "JewsInParis"
-      ],
-      "added": [],
-      "dropped": [
-        "JewsInParis dropped Alvin Kamara (RB - NO)"
-      ],
-      "faabBid": 0,
-      "timestamp": 1793201254500,
-      "date": "10/28/2026, 11:27:34 AM"
     }
   ],
   "currentStandings": [
     {
       "manager": "Caaaam",
-      "wins": 7,
+      "wins": 8,
       "losses": 0,
-      "fpts": 1008.96,
-      "fptsAgainst": 823.84,
-      "benchPointsLeftBehind": 152.82,
+      "fpts": 1173.9,
+      "fptsAgainst": 976.22,
+      "benchPointsLeftBehind": 173.32,
       "faabUsed": 100
     },
     {
       "manager": "JewsInParis",
-      "wins": 6,
+      "wins": 7,
       "losses": 1,
-      "fpts": 1018.76,
-      "fptsAgainst": 910.62,
-      "benchPointsLeftBehind": 117.2,
+      "fpts": 1187.22,
+      "fptsAgainst": 1060.66,
+      "benchPointsLeftBehind": 121.2,
       "faabUsed": 64
     },
     {
       "manager": "Tylero0",
-      "wins": 5,
+      "wins": 6,
       "losses": 2,
-      "fpts": 1087.92,
-      "fptsAgainst": 947.5,
-      "benchPointsLeftBehind": 120.8,
+      "fpts": 1225.08,
+      "fptsAgainst": 1062.88,
+      "benchPointsLeftBehind": 137.7,
       "faabUsed": 48
     },
     {
       "manager": "PrayingGrantis",
       "wins": 5,
-      "losses": 2,
-      "fpts": 1039.14,
-      "fptsAgainst": 911.56,
-      "benchPointsLeftBehind": 187.48,
+      "losses": 3,
+      "fpts": 1191.52,
+      "fptsAgainst": 1076.5,
+      "benchPointsLeftBehind": 195.28,
       "faabUsed": 68
     },
     {
       "manager": "CarlaCote",
       "wins": 4,
-      "losses": 3,
-      "fpts": 916.46,
-      "fptsAgainst": 906.5,
-      "benchPointsLeftBehind": 128.76,
+      "losses": 4,
+      "fpts": 1031.84,
+      "fptsAgainst": 1043.66,
+      "benchPointsLeftBehind": 150.86,
       "faabUsed": 7
     },
     {
       "manager": "Unanswered",
-      "wins": 3,
+      "wins": 4,
       "losses": 4,
-      "fpts": 893.7,
-      "fptsAgainst": 952.3,
-      "benchPointsLeftBehind": 132.04,
+      "fpts": 1007.94,
+      "fptsAgainst": 1037.62,
+      "benchPointsLeftBehind": 143.24,
       "faabUsed": 81
     },
     {
       "manager": "ELord11",
       "wins": 3,
-      "losses": 4,
-      "fpts": 879.66,
-      "fptsAgainst": 862.08,
-      "benchPointsLeftBehind": 128.44,
+      "losses": 5,
+      "fpts": 1029.7,
+      "fptsAgainst": 1030.54,
+      "benchPointsLeftBehind": 138.44,
       "faabUsed": 89
     },
     {
       "manager": "owenriddell",
       "wins": 2,
-      "losses": 5,
-      "fpts": 893.52,
-      "fptsAgainst": 920.7,
-      "benchPointsLeftBehind": 101.2,
+      "losses": 6,
+      "fpts": 978.84,
+      "fptsAgainst": 1034.94,
+      "benchPointsLeftBehind": 103.9,
       "faabUsed": 8
     },
     {
       "manager": "Shipoopiehole",
-      "wins": 0,
+      "wins": 1,
       "losses": 7,
-      "fpts": 840.38,
-      "fptsAgainst": 1115.4,
-      "benchPointsLeftBehind": 127.06,
+      "fpts": 953.56,
+      "fptsAgainst": 1191.4,
+      "benchPointsLeftBehind": 136.46,
       "faabUsed": 51
     },
     {
       "manager": "CerealStroke",
       "wins": 0,
-      "losses": 7,
-      "fpts": 735.04,
-      "fptsAgainst": 963.04,
-      "benchPointsLeftBehind": 156.04,
+      "losses": 8,
+      "fpts": 811.04,
+      "fptsAgainst": 1076.22,
+      "benchPointsLeftBehind": 195.14,
       "faabUsed": 0
     }
   ],
@@ -490,92 +490,92 @@
       "standings": [
         {
           "manager": "Caaaam",
-          "wins": 7,
+          "wins": 8,
           "losses": 0,
-          "fpts": 1008.96,
-          "fptsAgainst": 823.84,
-          "benchPointsLeftBehind": 152.82,
+          "fpts": 1173.9,
+          "fptsAgainst": 976.22,
+          "benchPointsLeftBehind": 173.32,
           "faabUsed": 100
         },
         {
           "manager": "JewsInParis",
-          "wins": 6,
+          "wins": 7,
           "losses": 1,
-          "fpts": 1018.76,
-          "fptsAgainst": 910.62,
-          "benchPointsLeftBehind": 117.2,
+          "fpts": 1187.22,
+          "fptsAgainst": 1060.66,
+          "benchPointsLeftBehind": 121.2,
           "faabUsed": 64
         },
         {
           "manager": "Tylero0",
-          "wins": 5,
+          "wins": 6,
           "losses": 2,
-          "fpts": 1087.92,
-          "fptsAgainst": 947.5,
-          "benchPointsLeftBehind": 120.8,
+          "fpts": 1225.08,
+          "fptsAgainst": 1062.88,
+          "benchPointsLeftBehind": 137.7,
           "faabUsed": 48
         },
         {
           "manager": "PrayingGrantis",
           "wins": 5,
-          "losses": 2,
-          "fpts": 1039.14,
-          "fptsAgainst": 911.56,
-          "benchPointsLeftBehind": 187.48,
+          "losses": 3,
+          "fpts": 1191.52,
+          "fptsAgainst": 1076.5,
+          "benchPointsLeftBehind": 195.28,
           "faabUsed": 68
         },
         {
           "manager": "CarlaCote",
           "wins": 4,
-          "losses": 3,
-          "fpts": 916.46,
-          "fptsAgainst": 906.5,
-          "benchPointsLeftBehind": 128.76,
+          "losses": 4,
+          "fpts": 1031.84,
+          "fptsAgainst": 1043.66,
+          "benchPointsLeftBehind": 150.86,
           "faabUsed": 7
         },
         {
           "manager": "Unanswered",
-          "wins": 3,
+          "wins": 4,
           "losses": 4,
-          "fpts": 893.7,
-          "fptsAgainst": 952.3,
-          "benchPointsLeftBehind": 132.04,
+          "fpts": 1007.94,
+          "fptsAgainst": 1037.62,
+          "benchPointsLeftBehind": 143.24,
           "faabUsed": 81
         },
         {
           "manager": "ELord11",
           "wins": 3,
-          "losses": 4,
-          "fpts": 879.66,
-          "fptsAgainst": 862.08,
-          "benchPointsLeftBehind": 128.44,
+          "losses": 5,
+          "fpts": 1029.7,
+          "fptsAgainst": 1030.54,
+          "benchPointsLeftBehind": 138.44,
           "faabUsed": 89
         },
         {
           "manager": "owenriddell",
           "wins": 2,
-          "losses": 5,
-          "fpts": 893.52,
-          "fptsAgainst": 920.7,
-          "benchPointsLeftBehind": 101.2,
+          "losses": 6,
+          "fpts": 978.84,
+          "fptsAgainst": 1034.94,
+          "benchPointsLeftBehind": 103.9,
           "faabUsed": 8
         },
         {
           "manager": "Shipoopiehole",
-          "wins": 0,
+          "wins": 1,
           "losses": 7,
-          "fpts": 840.38,
-          "fptsAgainst": 1115.4,
-          "benchPointsLeftBehind": 127.06,
+          "fpts": 953.56,
+          "fptsAgainst": 1191.4,
+          "benchPointsLeftBehind": 136.46,
           "faabUsed": 51
         },
         {
           "manager": "CerealStroke",
           "wins": 0,
-          "losses": 7,
-          "fpts": 735.04,
-          "fptsAgainst": 963.04,
-          "benchPointsLeftBehind": 156.04,
+          "losses": 8,
+          "fpts": 811.04,
+          "fptsAgainst": 1076.22,
+          "benchPointsLeftBehind": 195.14,
           "faabUsed": 0
         }
       ],
@@ -847,6 +847,21 @@
         }
       ],
       "waivers": [
+        {
+          "season": "2026",
+          "week": 8,
+          "type": "free_agent",
+          "managers": [
+            "Shipoopiehole"
+          ],
+          "added": [],
+          "dropped": [
+            "Shipoopiehole dropped Emanuel Wilson (RB - SEA)"
+          ],
+          "faabBid": 0,
+          "timestamp": 1793713686270,
+          "date": "11/3/2026, 8:48:06 AM"
+        },
         {
           "season": "2026",
           "week": 8,
@@ -1234,21 +1249,6 @@
           "faabBid": 0,
           "timestamp": 1792956314861,
           "date": "10/25/2026, 3:25:14 PM"
-        },
-        {
-          "season": "2026",
-          "week": 7,
-          "type": "free_agent",
-          "managers": [
-            "JewsInParis"
-          ],
-          "added": [
-            "JewsInParis received Makai Lemon (WR - PHI)"
-          ],
-          "dropped": [],
-          "faabBid": 0,
-          "timestamp": 1792947302803,
-          "date": "10/25/2026, 12:55:02 PM"
         }
       ]
     },
@@ -1602,7 +1602,7 @@
           ],
           "added": [],
           "dropped": [
-            "Shipoopiehole dropped Audric Estime (RB - CLE)"
+            "Shipoopiehole dropped Audric Estime (RB - NO)"
           ],
           "faabBid": 0,
           "timestamp": 1766589180647,
@@ -1789,7 +1789,7 @@
             "Shipoopiehole"
           ],
           "added": [
-            "Shipoopiehole received Audric Estime (RB - CLE)"
+            "Shipoopiehole received Audric Estime (RB - NO)"
           ],
           "dropped": [],
           "faabBid": 0,
@@ -23795,7 +23795,7 @@
     "4371": {
       "name": "Josh Tupou",
       "pos": "DT",
-      "team": "NYG"
+      "team": "FA"
     },
     "4372": {
       "name": "Jarveon Williams",
@@ -37160,7 +37160,7 @@
     "7077": {
       "name": "Jacob Bobenmoyer",
       "pos": "LS",
-      "team": "JAX"
+      "team": "FA"
     },
     "7078": {
       "name": "Tony Brown",
@@ -40820,7 +40820,7 @@
     "7815": {
       "name": "K.J. Britt",
       "pos": "LB",
-      "team": "NE"
+      "team": "DET"
     },
     "7816": {
       "name": "Jason Pinnock",
@@ -45960,7 +45960,7 @@
     "8857": {
       "name": "Kader Kohou",
       "pos": "CB",
-      "team": "KC"
+      "team": "FA"
     },
     "8858": {
       "name": "Keshunn Abram",
@@ -47200,7 +47200,7 @@
     "10938": {
       "name": "D.J. Johnson",
       "pos": "LB",
-      "team": "FA"
+      "team": "GB"
     },
     "10939": {
       "name": "Jay Ward",
@@ -47315,7 +47315,7 @@
     "10961": {
       "name": "Blake Freeland",
       "pos": "OL",
-      "team": "CIN"
+      "team": "NYJ"
     },
     "10962": {
       "name": "Kelee Ringo",
@@ -50380,7 +50380,7 @@
     "11579": {
       "name": "Audric Estime",
       "pos": "RB",
-      "team": "CLE"
+      "team": "NO"
     },
     "11580": {
       "name": "Dillon Johnson",
@@ -50725,7 +50725,7 @@
     "11648": {
       "name": "Kedon Slovis",
       "pos": "QB",
-      "team": "GB"
+      "team": "BAL"
     },
     "11649": {
       "name": "Kendall Milton",
@@ -52770,7 +52770,7 @@
     "12057": {
       "name": "Maema Njongmeta",
       "pos": "LB",
-      "team": "CAR"
+      "team": "FA"
     },
     "12058": {
       "name": "PJ Jules",
@@ -53175,7 +53175,7 @@
     "12138": {
       "name": "Anthony Goodlow",
       "pos": "DE",
-      "team": "FA"
+      "team": "LV"
     },
     "12139": {
       "name": "Kenny Logan",
@@ -53620,7 +53620,7 @@
     "12227": {
       "name": "Elias Neal",
       "pos": "LB",
-      "team": "FA"
+      "team": "NE"
     },
     "12228": {
       "name": "Blake Larson",
@@ -55925,7 +55925,7 @@
     "12688": {
       "name": "Cam Miller",
       "pos": "QB",
-      "team": "FA"
+      "team": "GB"
     },
     "12689": {
       "name": "JJ Pegues",
@@ -56385,7 +56385,7 @@
     "12780": {
       "name": "Xavier Truss",
       "pos": "OT",
-      "team": "FA"
+      "team": "CLE"
     },
     "12781": {
       "name": "Karene Reid",
@@ -56740,7 +56740,7 @@
     "12851": {
       "name": "Rivaldo Fairweather",
       "pos": "TE",
-      "team": "FA"
+      "team": "ARI"
     },
     "12852": {
       "name": "Monaray Baldwin",
@@ -56845,7 +56845,7 @@
     "12872": {
       "name": "John Saunders Jr.",
       "pos": "DB",
-      "team": "FA"
+      "team": "GB"
     },
     "12873": {
       "name": "Alex Huntley",
@@ -57625,7 +57625,7 @@
     "13028": {
       "name": "Elliott Davison",
       "pos": "DB",
-      "team": "NE"
+      "team": "FA"
     },
     "13029": {
       "name": "James Burnip",
@@ -57695,7 +57695,7 @@
     "13042": {
       "name": "Xavier Guillory",
       "pos": "WR",
-      "team": "FA"
+      "team": "CLE"
     },
     "13043": {
       "name": "Chris Tyree",
@@ -57725,7 +57725,7 @@
     "13048": {
       "name": "Jared Ivey",
       "pos": "DE",
-      "team": "ATL"
+      "team": "FA"
     },
     "13049": {
       "name": "Alijah Huzzie",
@@ -58550,7 +58550,7 @@
     "13213": {
       "name": "Lucas Scott",
       "pos": "FB",
-      "team": "BAL"
+      "team": "FA"
     },
     "13214": {
       "name": "Kaimon Rucker",
@@ -59575,7 +59575,7 @@
     "13418": {
       "name": "Robert Henry Jr.",
       "pos": "RB",
-      "team": "SEA"
+      "team": "WAS"
     },
     "13419": {
       "name": "Jaydn Ott",
@@ -61760,7 +61760,7 @@
     "13855": {
       "name": "Austin Blaske",
       "pos": "OL",
-      "team": "FA"
+      "team": "CLE"
     },
     "13856": {
       "name": "Darryl Peterson III",
@@ -61920,7 +61920,7 @@
     "13887": {
       "name": "Nyzier Fourqurean",
       "pos": "CB",
-      "team": "FA"
+      "team": "LAR"
     },
     "13888": {
       "name": "DeShawn Hanika",
