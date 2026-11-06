@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-06T00:32:28.533Z",
+  "updatedAt": "2026-11-06T12:45:50.076Z",
   "roasts": [
     {
       "category": "BREAKING TRADE DESK",
@@ -27,6 +27,28 @@
     }
   ],
   "recentTrades": [
+    {
+      "season": "2026",
+      "week": 9,
+      "type": "trade",
+      "managers": [
+        "ELord11",
+        "Unanswered"
+      ],
+      "added": [
+        "Unanswered received Josh Jacobs (RB - GB)",
+        "ELord11 received A.J. Brown (WR - NE)",
+        "Unanswered received Jaylen Waddle (WR - DEN)"
+      ],
+      "dropped": [
+        "ELord11 dropped Josh Jacobs (RB - GB)",
+        "Unanswered dropped A.J. Brown (WR - NE)",
+        "ELord11 dropped Jaylen Waddle (WR - DEN)"
+      ],
+      "faabBid": 0,
+      "timestamp": 1793949253250,
+      "date": "11/6/2026, 2:14:13 AM"
+    },
     {
       "season": "2026",
       "week": 7,
@@ -177,31 +199,60 @@
       "faabBid": 0,
       "timestamp": 1790748809752,
       "date": "9/30/2026, 2:13:29 AM"
-    },
-    {
-      "season": "2026",
-      "week": 3,
-      "type": "trade",
-      "managers": [
-        "Tylero0",
-        "JewsInParis"
-      ],
-      "added": [
-        "JewsInParis received Stefon Diggs (WR - WAS)",
-        "Tylero0 received Romeo Doubs (WR - NE)",
-        "Tylero0 received Jameson Williams (WR - DET)"
-      ],
-      "dropped": [
-        "Tylero0 dropped Stefon Diggs (WR - WAS)",
-        "JewsInParis dropped Romeo Doubs (WR - NE)",
-        "JewsInParis dropped Jameson Williams (WR - DET)"
-      ],
-      "faabBid": 0,
-      "timestamp": 1790748809752,
-      "date": "9/30/2026, 2:13:29 AM"
     }
   ],
   "recentWaivers": [
+    {
+      "season": "2026",
+      "week": 9,
+      "type": "free_agent",
+      "managers": [
+        "CarlaCote"
+      ],
+      "added": [
+        "CarlaCote received Mack Hollins (WR - NE)"
+      ],
+      "dropped": [
+        "CarlaCote dropped Kirk Cousins (QB - LV)"
+      ],
+      "faabBid": 0,
+      "timestamp": 1793938848385,
+      "date": "11/5/2026, 11:20:48 PM"
+    },
+    {
+      "season": "2026",
+      "week": 9,
+      "type": "free_agent",
+      "managers": [
+        "CarlaCote"
+      ],
+      "added": [
+        "CarlaCote received Chicago Bears (DEF - CHI)"
+      ],
+      "dropped": [
+        "CarlaCote dropped New York Jets (DEF - NYJ)"
+      ],
+      "faabBid": 0,
+      "timestamp": 1793937399310,
+      "date": "11/5/2026, 10:56:39 PM"
+    },
+    {
+      "season": "2026",
+      "week": 9,
+      "type": "free_agent",
+      "managers": [
+        "CarlaCote"
+      ],
+      "added": [
+        "CarlaCote received Alvin Kamara (RB - NO)"
+      ],
+      "dropped": [
+        "CarlaCote dropped Samaje Perine (RB - CIN)"
+      ],
+      "faabBid": 0,
+      "timestamp": 1793937372961,
+      "date": "11/5/2026, 10:56:12 PM"
+    },
     {
       "season": "2026",
       "week": 9,
@@ -346,57 +397,6 @@
       "faabBid": 0,
       "timestamp": 1793806942333,
       "date": "11/4/2026, 10:42:22 AM"
-    },
-    {
-      "season": "2026",
-      "week": 8,
-      "type": "waiver",
-      "managers": [
-        "PrayingGrantis"
-      ],
-      "added": [
-        "PrayingGrantis received Keenan Allen (WR - IND)"
-      ],
-      "dropped": [
-        "PrayingGrantis dropped Brenton Strange (TE - JAX)"
-      ],
-      "faabBid": 3,
-      "timestamp": 1793779648765,
-      "date": "11/4/2026, 3:07:28 AM"
-    },
-    {
-      "season": "2026",
-      "week": 8,
-      "type": "waiver",
-      "managers": [
-        "PrayingGrantis"
-      ],
-      "added": [
-        "PrayingGrantis received Houston Texans (DEF - HOU)"
-      ],
-      "dropped": [
-        "PrayingGrantis dropped Cincinnati Bengals (DEF - CIN)"
-      ],
-      "faabBid": 3,
-      "timestamp": 1793779648765,
-      "date": "11/4/2026, 3:07:28 AM"
-    },
-    {
-      "season": "2026",
-      "week": 8,
-      "type": "waiver",
-      "managers": [
-        "Tylero0"
-      ],
-      "added": [
-        "Tylero0 received Mike Washington Jr. (RB - LV)"
-      ],
-      "dropped": [
-        "Tylero0 dropped Kimani Vidal (RB - LAC)"
-      ],
-      "faabBid": 6,
-      "timestamp": 1793779648765,
-      "date": "11/4/2026, 3:07:28 AM"
     }
   ],
   "currentStandings": [
@@ -588,6 +588,28 @@
         }
       ],
       "trades": [
+        {
+          "season": "2026",
+          "week": 9,
+          "type": "trade",
+          "managers": [
+            "ELord11",
+            "Unanswered"
+          ],
+          "added": [
+            "Unanswered received Josh Jacobs (RB - GB)",
+            "ELord11 received A.J. Brown (WR - NE)",
+            "Unanswered received Jaylen Waddle (WR - DEN)"
+          ],
+          "dropped": [
+            "ELord11 dropped Josh Jacobs (RB - GB)",
+            "Unanswered dropped A.J. Brown (WR - NE)",
+            "ELord11 dropped Jaylen Waddle (WR - DEN)"
+          ],
+          "faabBid": 0,
+          "timestamp": 1793949253250,
+          "date": "11/6/2026, 2:14:13 AM"
+        },
         {
           "season": "2026",
           "week": 7,
@@ -855,6 +877,57 @@
         }
       ],
       "waivers": [
+        {
+          "season": "2026",
+          "week": 9,
+          "type": "free_agent",
+          "managers": [
+            "CarlaCote"
+          ],
+          "added": [
+            "CarlaCote received Mack Hollins (WR - NE)"
+          ],
+          "dropped": [
+            "CarlaCote dropped Kirk Cousins (QB - LV)"
+          ],
+          "faabBid": 0,
+          "timestamp": 1793938848385,
+          "date": "11/5/2026, 11:20:48 PM"
+        },
+        {
+          "season": "2026",
+          "week": 9,
+          "type": "free_agent",
+          "managers": [
+            "CarlaCote"
+          ],
+          "added": [
+            "CarlaCote received Chicago Bears (DEF - CHI)"
+          ],
+          "dropped": [
+            "CarlaCote dropped New York Jets (DEF - NYJ)"
+          ],
+          "faabBid": 0,
+          "timestamp": 1793937399310,
+          "date": "11/5/2026, 10:56:39 PM"
+        },
+        {
+          "season": "2026",
+          "week": 9,
+          "type": "free_agent",
+          "managers": [
+            "CarlaCote"
+          ],
+          "added": [
+            "CarlaCote received Alvin Kamara (RB - NO)"
+          ],
+          "dropped": [
+            "CarlaCote dropped Samaje Perine (RB - CIN)"
+          ],
+          "faabBid": 0,
+          "timestamp": 1793937372961,
+          "date": "11/5/2026, 10:56:12 PM"
+        },
         {
           "season": "2026",
           "week": 9,
@@ -1206,55 +1279,6 @@
           "faabBid": 1,
           "timestamp": 1793340997473,
           "date": "10/30/2026, 2:16:37 AM"
-        },
-        {
-          "season": "2026",
-          "week": 8,
-          "type": "free_agent",
-          "managers": [
-            "Unanswered"
-          ],
-          "added": [
-            "Unanswered received Washington Commanders (DEF - WAS)"
-          ],
-          "dropped": [
-            "Unanswered dropped Mark Andrews (TE - BAL)"
-          ],
-          "faabBid": 0,
-          "timestamp": 1793306912788,
-          "date": "10/29/2026, 4:48:32 PM"
-        },
-        {
-          "season": "2026",
-          "week": 8,
-          "type": "free_agent",
-          "managers": [
-            "owenriddell"
-          ],
-          "added": [],
-          "dropped": [
-            "owenriddell dropped Houston Texans (DEF - HOU)"
-          ],
-          "faabBid": 0,
-          "timestamp": 1793222260880,
-          "date": "10/28/2026, 5:17:40 PM"
-        },
-        {
-          "season": "2026",
-          "week": 8,
-          "type": "free_agent",
-          "managers": [
-            "ELord11"
-          ],
-          "added": [
-            "ELord11 received Las Vegas Raiders (DEF - LV)"
-          ],
-          "dropped": [
-            "ELord11 dropped Seth McGowan (RB - IND)"
-          ],
-          "faabBid": 0,
-          "timestamp": 1793222249759,
-          "date": "10/28/2026, 5:17:29 PM"
         }
       ]
     },
