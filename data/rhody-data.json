@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-07T00:29:50.081Z",
+  "updatedAt": "2026-11-07T12:31:26.677Z",
   "roasts": [
     {
       "category": "BREAKING TRADE DESK",
@@ -210,6 +210,142 @@
         "ELord11"
       ],
       "added": [
+        "ELord11 received Cade Otton (TE - TB)"
+      ],
+      "dropped": [
+        "ELord11 dropped Quentin Johnston (WR - LAC)"
+      ],
+      "faabBid": 0,
+      "timestamp": 1794022616120,
+      "date": "11/6/2026, 10:36:56 PM"
+    },
+    {
+      "season": "2026",
+      "week": 9,
+      "type": "free_agent",
+      "managers": [
+        "ELord11"
+      ],
+      "added": [
+        "ELord11 received Quentin Johnston (WR - LAC)"
+      ],
+      "dropped": [
+        "ELord11 dropped Demarcus Robinson (WR - SF)"
+      ],
+      "faabBid": 0,
+      "timestamp": 1794022606944,
+      "date": "11/6/2026, 10:36:46 PM"
+    },
+    {
+      "season": "2026",
+      "week": 9,
+      "type": "free_agent",
+      "managers": [
+        "ELord11"
+      ],
+      "added": [
+        "ELord11 received Demarcus Robinson (WR - SF)"
+      ],
+      "dropped": [
+        "ELord11 dropped Greg Dulcich (TE - MIA)"
+      ],
+      "faabBid": 0,
+      "timestamp": 1794022594516,
+      "date": "11/6/2026, 10:36:34 PM"
+    },
+    {
+      "season": "2026",
+      "week": 9,
+      "type": "free_agent",
+      "managers": [
+        "ELord11"
+      ],
+      "added": [
+        "ELord11 received Greg Dulcich (TE - MIA)"
+      ],
+      "dropped": [
+        "ELord11 dropped Tyler Higbee (TE - LAR)"
+      ],
+      "faabBid": 0,
+      "timestamp": 1794022541631,
+      "date": "11/6/2026, 10:35:41 PM"
+    },
+    {
+      "season": "2026",
+      "week": 9,
+      "type": "free_agent",
+      "managers": [
+        "ELord11"
+      ],
+      "added": [
+        "ELord11 received Tyler Higbee (TE - LAR)"
+      ],
+      "dropped": [
+        "ELord11 dropped Dylan Sampson (RB - CLE)"
+      ],
+      "faabBid": 0,
+      "timestamp": 1794022533678,
+      "date": "11/6/2026, 10:35:33 PM"
+    },
+    {
+      "season": "2026",
+      "week": 9,
+      "type": "free_agent",
+      "managers": [
+        "ELord11"
+      ],
+      "added": [
+        "ELord11 received Dylan Sampson (RB - CLE)"
+      ],
+      "dropped": [
+        "ELord11 dropped Jahan Dotson (WR - ATL)"
+      ],
+      "faabBid": 0,
+      "timestamp": 1794022524725,
+      "date": "11/6/2026, 10:35:24 PM"
+    },
+    {
+      "season": "2026",
+      "week": 9,
+      "type": "free_agent",
+      "managers": [
+        "ELord11"
+      ],
+      "added": [
+        "ELord11 received Jahan Dotson (WR - ATL)"
+      ],
+      "dropped": [
+        "ELord11 dropped Darius Cooper (WR - PHI)"
+      ],
+      "faabBid": 0,
+      "timestamp": 1794022514923,
+      "date": "11/6/2026, 10:35:14 PM"
+    },
+    {
+      "season": "2026",
+      "week": 9,
+      "type": "free_agent",
+      "managers": [
+        "ELord11"
+      ],
+      "added": [
+        "ELord11 received Darius Cooper (WR - PHI)"
+      ],
+      "dropped": [
+        "ELord11 dropped Dylan Sampson (RB - CLE)"
+      ],
+      "faabBid": 0,
+      "timestamp": 1794022508150,
+      "date": "11/6/2026, 10:35:08 PM"
+    },
+    {
+      "season": "2026",
+      "week": 9,
+      "type": "free_agent",
+      "managers": [
+        "ELord11"
+      ],
+      "added": [
         "ELord11 received Dylan Sampson (RB - CLE)"
       ],
       "dropped": [
@@ -267,136 +403,6 @@
       "faabBid": 0,
       "timestamp": 1793992596069,
       "date": "11/6/2026, 2:16:36 PM"
-    },
-    {
-      "season": "2026",
-      "week": 9,
-      "type": "free_agent",
-      "managers": [
-        "ELord11"
-      ],
-      "added": [
-        "ELord11 received Mike Gesicki (TE - CIN)"
-      ],
-      "dropped": [],
-      "faabBid": 0,
-      "timestamp": 1793992583240,
-      "date": "11/6/2026, 2:16:23 PM"
-    },
-    {
-      "season": "2026",
-      "week": 9,
-      "type": "free_agent",
-      "managers": [
-        "Unanswered"
-      ],
-      "added": [],
-      "dropped": [
-        "Unanswered dropped Jason Myers (K - SEA)"
-      ],
-      "faabBid": 0,
-      "timestamp": 1793991277534,
-      "date": "11/6/2026, 1:54:37 PM"
-    },
-    {
-      "season": "2026",
-      "week": 9,
-      "type": "free_agent",
-      "managers": [
-        "CarlaCote"
-      ],
-      "added": [
-        "CarlaCote received Mack Hollins (WR - NE)"
-      ],
-      "dropped": [
-        "CarlaCote dropped Kirk Cousins (QB - LV)"
-      ],
-      "faabBid": 0,
-      "timestamp": 1793938848385,
-      "date": "11/5/2026, 11:20:48 PM"
-    },
-    {
-      "season": "2026",
-      "week": 9,
-      "type": "free_agent",
-      "managers": [
-        "CarlaCote"
-      ],
-      "added": [
-        "CarlaCote received Chicago Bears (DEF - CHI)"
-      ],
-      "dropped": [
-        "CarlaCote dropped New York Jets (DEF - NYJ)"
-      ],
-      "faabBid": 0,
-      "timestamp": 1793937399310,
-      "date": "11/5/2026, 10:56:39 PM"
-    },
-    {
-      "season": "2026",
-      "week": 9,
-      "type": "free_agent",
-      "managers": [
-        "CarlaCote"
-      ],
-      "added": [
-        "CarlaCote received Alvin Kamara (RB - NO)"
-      ],
-      "dropped": [
-        "CarlaCote dropped Samaje Perine (RB - CIN)"
-      ],
-      "faabBid": 0,
-      "timestamp": 1793937372961,
-      "date": "11/5/2026, 10:56:12 PM"
-    },
-    {
-      "season": "2026",
-      "week": 9,
-      "type": "free_agent",
-      "managers": [
-        "CerealStroke"
-      ],
-      "added": [
-        "CerealStroke received Tyler Bass (K - BUF)"
-      ],
-      "dropped": [
-        "CerealStroke dropped Trey Smack (K - GB)"
-      ],
-      "faabBid": 0,
-      "timestamp": 1793825189962,
-      "date": "11/4/2026, 3:46:29 PM"
-    },
-    {
-      "season": "2026",
-      "week": 9,
-      "type": "free_agent",
-      "managers": [
-        "CerealStroke"
-      ],
-      "added": [
-        "CerealStroke received Gardner Minshew II (QB - ARI)"
-      ],
-      "dropped": [
-        "CerealStroke dropped Efton Chism III (WR - NE)"
-      ],
-      "faabBid": 0,
-      "timestamp": 1793825141688,
-      "date": "11/4/2026, 3:45:41 PM"
-    },
-    {
-      "season": "2026",
-      "week": 9,
-      "type": "free_agent",
-      "managers": [
-        "CerealStroke"
-      ],
-      "added": [
-        "CerealStroke received Emmett Johnson (RB - KC)"
-      ],
-      "dropped": [],
-      "faabBid": 0,
-      "timestamp": 1793825032582,
-      "date": "11/4/2026, 3:43:52 PM"
     }
   ],
   "currentStandings": [
@@ -885,6 +891,142 @@
             "ELord11"
           ],
           "added": [
+            "ELord11 received Cade Otton (TE - TB)"
+          ],
+          "dropped": [
+            "ELord11 dropped Quentin Johnston (WR - LAC)"
+          ],
+          "faabBid": 0,
+          "timestamp": 1794022616120,
+          "date": "11/6/2026, 10:36:56 PM"
+        },
+        {
+          "season": "2026",
+          "week": 9,
+          "type": "free_agent",
+          "managers": [
+            "ELord11"
+          ],
+          "added": [
+            "ELord11 received Quentin Johnston (WR - LAC)"
+          ],
+          "dropped": [
+            "ELord11 dropped Demarcus Robinson (WR - SF)"
+          ],
+          "faabBid": 0,
+          "timestamp": 1794022606944,
+          "date": "11/6/2026, 10:36:46 PM"
+        },
+        {
+          "season": "2026",
+          "week": 9,
+          "type": "free_agent",
+          "managers": [
+            "ELord11"
+          ],
+          "added": [
+            "ELord11 received Demarcus Robinson (WR - SF)"
+          ],
+          "dropped": [
+            "ELord11 dropped Greg Dulcich (TE - MIA)"
+          ],
+          "faabBid": 0,
+          "timestamp": 1794022594516,
+          "date": "11/6/2026, 10:36:34 PM"
+        },
+        {
+          "season": "2026",
+          "week": 9,
+          "type": "free_agent",
+          "managers": [
+            "ELord11"
+          ],
+          "added": [
+            "ELord11 received Greg Dulcich (TE - MIA)"
+          ],
+          "dropped": [
+            "ELord11 dropped Tyler Higbee (TE - LAR)"
+          ],
+          "faabBid": 0,
+          "timestamp": 1794022541631,
+          "date": "11/6/2026, 10:35:41 PM"
+        },
+        {
+          "season": "2026",
+          "week": 9,
+          "type": "free_agent",
+          "managers": [
+            "ELord11"
+          ],
+          "added": [
+            "ELord11 received Tyler Higbee (TE - LAR)"
+          ],
+          "dropped": [
+            "ELord11 dropped Dylan Sampson (RB - CLE)"
+          ],
+          "faabBid": 0,
+          "timestamp": 1794022533678,
+          "date": "11/6/2026, 10:35:33 PM"
+        },
+        {
+          "season": "2026",
+          "week": 9,
+          "type": "free_agent",
+          "managers": [
+            "ELord11"
+          ],
+          "added": [
+            "ELord11 received Dylan Sampson (RB - CLE)"
+          ],
+          "dropped": [
+            "ELord11 dropped Jahan Dotson (WR - ATL)"
+          ],
+          "faabBid": 0,
+          "timestamp": 1794022524725,
+          "date": "11/6/2026, 10:35:24 PM"
+        },
+        {
+          "season": "2026",
+          "week": 9,
+          "type": "free_agent",
+          "managers": [
+            "ELord11"
+          ],
+          "added": [
+            "ELord11 received Jahan Dotson (WR - ATL)"
+          ],
+          "dropped": [
+            "ELord11 dropped Darius Cooper (WR - PHI)"
+          ],
+          "faabBid": 0,
+          "timestamp": 1794022514923,
+          "date": "11/6/2026, 10:35:14 PM"
+        },
+        {
+          "season": "2026",
+          "week": 9,
+          "type": "free_agent",
+          "managers": [
+            "ELord11"
+          ],
+          "added": [
+            "ELord11 received Darius Cooper (WR - PHI)"
+          ],
+          "dropped": [
+            "ELord11 dropped Dylan Sampson (RB - CLE)"
+          ],
+          "faabBid": 0,
+          "timestamp": 1794022508150,
+          "date": "11/6/2026, 10:35:08 PM"
+        },
+        {
+          "season": "2026",
+          "week": 9,
+          "type": "free_agent",
+          "managers": [
+            "ELord11"
+          ],
+          "added": [
             "ELord11 received Dylan Sampson (RB - CLE)"
           ],
           "dropped": [
@@ -1153,136 +1295,6 @@
           "faabBid": 0,
           "timestamp": 1793807277902,
           "date": "11/4/2026, 10:47:57 AM"
-        },
-        {
-          "season": "2026",
-          "week": 9,
-          "type": "free_agent",
-          "managers": [
-            "ELord11"
-          ],
-          "added": [],
-          "dropped": [
-            "ELord11 dropped Christian Kirk (WR - SF)"
-          ],
-          "faabBid": 0,
-          "timestamp": 1793806942333,
-          "date": "11/4/2026, 10:42:22 AM"
-        },
-        {
-          "season": "2026",
-          "week": 8,
-          "type": "waiver",
-          "managers": [
-            "PrayingGrantis"
-          ],
-          "added": [
-            "PrayingGrantis received Keenan Allen (WR - IND)"
-          ],
-          "dropped": [
-            "PrayingGrantis dropped Brenton Strange (TE - JAX)"
-          ],
-          "faabBid": 3,
-          "timestamp": 1793779648765,
-          "date": "11/4/2026, 3:07:28 AM"
-        },
-        {
-          "season": "2026",
-          "week": 8,
-          "type": "waiver",
-          "managers": [
-            "PrayingGrantis"
-          ],
-          "added": [
-            "PrayingGrantis received Houston Texans (DEF - HOU)"
-          ],
-          "dropped": [
-            "PrayingGrantis dropped Cincinnati Bengals (DEF - CIN)"
-          ],
-          "faabBid": 3,
-          "timestamp": 1793779648765,
-          "date": "11/4/2026, 3:07:28 AM"
-        },
-        {
-          "season": "2026",
-          "week": 8,
-          "type": "waiver",
-          "managers": [
-            "Tylero0"
-          ],
-          "added": [
-            "Tylero0 received Mike Washington Jr. (RB - LV)"
-          ],
-          "dropped": [
-            "Tylero0 dropped Kimani Vidal (RB - LAC)"
-          ],
-          "faabBid": 6,
-          "timestamp": 1793779648765,
-          "date": "11/4/2026, 3:07:28 AM"
-        },
-        {
-          "season": "2026",
-          "week": 8,
-          "type": "waiver",
-          "managers": [
-            "Shipoopiehole"
-          ],
-          "added": [
-            "Shipoopiehole received Tyler Allgeier (RB - ARI)"
-          ],
-          "dropped": [
-            "Shipoopiehole dropped Pat Freiermuth (TE - PIT)"
-          ],
-          "faabBid": 11,
-          "timestamp": 1793779648765,
-          "date": "11/4/2026, 3:07:28 AM"
-        },
-        {
-          "season": "2026",
-          "week": 8,
-          "type": "waiver",
-          "managers": [
-            "Unanswered"
-          ],
-          "added": [
-            "Unanswered received Tampa Bay Buccaneers (DEF - TB)"
-          ],
-          "dropped": [
-            "Unanswered dropped Baltimore Ravens (DEF - BAL)"
-          ],
-          "faabBid": 19,
-          "timestamp": 1793779648765,
-          "date": "11/4/2026, 3:07:28 AM"
-        },
-        {
-          "season": "2026",
-          "week": 8,
-          "type": "waiver",
-          "managers": [
-            "owenriddell"
-          ],
-          "added": [
-            "owenriddell received Adonai Mitchell (WR - NYJ)"
-          ],
-          "dropped": [],
-          "faabBid": 15,
-          "timestamp": 1793779648765,
-          "date": "11/4/2026, 3:07:28 AM"
-        },
-        {
-          "season": "2026",
-          "week": 8,
-          "type": "free_agent",
-          "managers": [
-            "Shipoopiehole"
-          ],
-          "added": [],
-          "dropped": [
-            "Shipoopiehole dropped Emanuel Wilson (RB - SEA)"
-          ],
-          "faabBid": 0,
-          "timestamp": 1793713686270,
-          "date": "11/3/2026, 8:48:06 AM"
         }
       ]
     },
