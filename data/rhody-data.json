@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-08T00:27:41.219Z",
+  "updatedAt": "2026-11-08T12:29:20.473Z",
   "roasts": [
     {
       "category": "BREAKING TRADE DESK",
@@ -207,6 +207,23 @@
       "week": 9,
       "type": "free_agent",
       "managers": [
+        "CerealStroke"
+      ],
+      "added": [
+        "CerealStroke received Corey Kiner (RB - NE)"
+      ],
+      "dropped": [
+        "CerealStroke dropped Kendre Miller (RB - NO)"
+      ],
+      "faabBid": 0,
+      "timestamp": 1794125438762,
+      "date": "11/8/2026, 3:10:38 AM"
+    },
+    {
+      "season": "2026",
+      "week": 9,
+      "type": "free_agent",
+      "managers": [
         "ELord11"
       ],
       "added": [
@@ -388,23 +405,6 @@
       "faabBid": 0,
       "timestamp": 1793992706509,
       "date": "11/6/2026, 2:18:26 PM"
-    },
-    {
-      "season": "2026",
-      "week": 9,
-      "type": "free_agent",
-      "managers": [
-        "ELord11"
-      ],
-      "added": [
-        "ELord11 received Joe Milton (QB - PHI)"
-      ],
-      "dropped": [
-        "ELord11 dropped Jordan Love (QB - GB)"
-      ],
-      "faabBid": 0,
-      "timestamp": 1793992694418,
-      "date": "11/6/2026, 2:18:14 PM"
     }
   ],
   "currentStandings": [
@@ -890,6 +890,23 @@
           "week": 9,
           "type": "free_agent",
           "managers": [
+            "CerealStroke"
+          ],
+          "added": [
+            "CerealStroke received Corey Kiner (RB - NE)"
+          ],
+          "dropped": [
+            "CerealStroke dropped Kendre Miller (RB - NO)"
+          ],
+          "faabBid": 0,
+          "timestamp": 1794125438762,
+          "date": "11/8/2026, 3:10:38 AM"
+        },
+        {
+          "season": "2026",
+          "week": 9,
+          "type": "free_agent",
+          "managers": [
             "ELord11"
           ],
           "added": [
@@ -1282,21 +1299,6 @@
           "faabBid": 0,
           "timestamp": 1793819490525,
           "date": "11/4/2026, 2:11:30 PM"
-        },
-        {
-          "season": "2026",
-          "week": 9,
-          "type": "free_agent",
-          "managers": [
-            "Unanswered"
-          ],
-          "added": [],
-          "dropped": [
-            "Unanswered dropped Washington Commanders (DEF - WAS)"
-          ],
-          "faabBid": 0,
-          "timestamp": 1793809384067,
-          "date": "11/4/2026, 11:23:04 AM"
         }
       ]
     },
