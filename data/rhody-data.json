@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-07T12:31:26.677Z",
+  "updatedAt": "2026-11-08T00:27:41.219Z",
   "roasts": [
     {
       "category": "BREAKING TRADE DESK",
@@ -210,6 +210,23 @@
         "ELord11"
       ],
       "added": [
+        "ELord11 received Makai Lemon (WR - PHI)"
+      ],
+      "dropped": [
+        "ELord11 dropped Cade Otton (TE - TB)"
+      ],
+      "faabBid": 0,
+      "timestamp": 1794087190706,
+      "date": "11/7/2026, 4:33:10 PM"
+    },
+    {
+      "season": "2026",
+      "week": 9,
+      "type": "free_agent",
+      "managers": [
+        "ELord11"
+      ],
+      "added": [
         "ELord11 received Cade Otton (TE - TB)"
       ],
       "dropped": [
@@ -388,21 +405,6 @@
       "faabBid": 0,
       "timestamp": 1793992694418,
       "date": "11/6/2026, 2:18:14 PM"
-    },
-    {
-      "season": "2026",
-      "week": 9,
-      "type": "free_agent",
-      "managers": [
-        "ELord11"
-      ],
-      "added": [
-        "ELord11 received Jordan Love (QB - GB)"
-      ],
-      "dropped": [],
-      "faabBid": 0,
-      "timestamp": 1793992596069,
-      "date": "11/6/2026, 2:16:36 PM"
     }
   ],
   "currentStandings": [
@@ -891,6 +893,23 @@
             "ELord11"
           ],
           "added": [
+            "ELord11 received Makai Lemon (WR - PHI)"
+          ],
+          "dropped": [
+            "ELord11 dropped Cade Otton (TE - TB)"
+          ],
+          "faabBid": 0,
+          "timestamp": 1794087190706,
+          "date": "11/7/2026, 4:33:10 PM"
+        },
+        {
+          "season": "2026",
+          "week": 9,
+          "type": "free_agent",
+          "managers": [
+            "ELord11"
+          ],
+          "added": [
             "ELord11 received Cade Otton (TE - TB)"
           ],
           "dropped": [
@@ -1278,23 +1297,6 @@
           "faabBid": 0,
           "timestamp": 1793809384067,
           "date": "11/4/2026, 11:23:04 AM"
-        },
-        {
-          "season": "2026",
-          "week": 9,
-          "type": "free_agent",
-          "managers": [
-            "JewsInParis"
-          ],
-          "added": [
-            "JewsInParis received Devin Singletary (RB - NYG)"
-          ],
-          "dropped": [
-            "JewsInParis dropped Brian Thomas Jr. (WR - JAX)"
-          ],
-          "faabBid": 0,
-          "timestamp": 1793807277902,
-          "date": "11/4/2026, 10:47:57 AM"
         }
       ]
     },
@@ -13661,7 +13663,7 @@
     "2334": {
       "name": "Phillip Dorsett II",
       "pos": "WR",
-      "team": "LV"
+      "team": "FA"
     },
     "2335": {
       "name": "Damarious Randall",
@@ -42436,7 +42438,7 @@
     "8129": {
       "name": "Dameon Pierce",
       "pos": "RB",
-      "team": "PHI"
+      "team": "FA"
     },
     "8130": {
       "name": "Trey McBride",
@@ -46721,7 +46723,7 @@
     "10215": {
       "name": "Jake Haener",
       "pos": "QB",
-      "team": "FA"
+      "team": "NYG"
     },
     "10216": {
       "name": "Kenny McIntosh",
@@ -52186,7 +52188,7 @@
     "11931": {
       "name": "Austin Reed",
       "pos": "QB",
-      "team": "BAL"
+      "team": "FA"
     },
     "11932": {
       "name": "Mike DiLiello",
@@ -56811,7 +56813,7 @@
     "12856": {
       "name": "Zion Childress",
       "pos": "DB",
-      "team": "CAR"
+      "team": "FA"
     },
     "12857": {
       "name": "Bruce Harmon",
@@ -60431,7 +60433,7 @@
     "13580": {
       "name": "Carsen Ryan",
       "pos": "TE",
-      "team": "FA"
+      "team": "CLE"
     },
     "13581": {
       "name": "Jayden Williams",
