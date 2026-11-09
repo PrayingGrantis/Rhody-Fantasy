@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-08T12:29:20.473Z",
+  "updatedAt": "2026-11-09T00:33:19.193Z",
   "roasts": [
     {
       "category": "BREAKING TRADE DESK",
@@ -213,7 +213,7 @@
         "CerealStroke received Corey Kiner (RB - NE)"
       ],
       "dropped": [
-        "CerealStroke dropped Kendre Miller (RB - NO)"
+        "CerealStroke dropped Kendre Miller (RB - FA)"
       ],
       "faabBid": 0,
       "timestamp": 1794125438762,
@@ -896,7 +896,7 @@
             "CerealStroke received Corey Kiner (RB - NE)"
           ],
           "dropped": [
-            "CerealStroke dropped Kendre Miller (RB - NO)"
+            "CerealStroke dropped Kendre Miller (RB - FA)"
           ],
           "faabBid": 0,
           "timestamp": 1794125438762,
@@ -46670,7 +46670,7 @@
     "9757": {
       "name": "Kendre Miller",
       "pos": "RB",
-      "team": "NO"
+      "team": "FA"
     },
     "9758": {
       "name": "C.J. Stroud",
@@ -52930,7 +52930,7 @@
     "12079": {
       "name": "Treyton Welch",
       "pos": "TE",
-      "team": "NO"
+      "team": "FA"
     },
     "12080": {
       "name": "Aidan Robbins",
