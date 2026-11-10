@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-10T00:30:42.430Z",
+  "updatedAt": "2026-11-10T12:46:29.170Z",
   "roasts": [
     {
       "category": "BREAKING TRADE DESK",
@@ -410,92 +410,92 @@
   "currentStandings": [
     {
       "manager": "Caaaam",
-      "wins": 8,
+      "wins": 9,
       "losses": 0,
-      "fpts": 1173.9,
-      "fptsAgainst": 976.22,
-      "benchPointsLeftBehind": 173.32,
+      "fpts": 1351.84,
+      "fptsAgainst": 1101.9,
+      "benchPointsLeftBehind": 200.7,
       "faabUsed": 100
+    },
+    {
+      "manager": "Tylero0",
+      "wins": 7,
+      "losses": 2,
+      "fpts": 1323.34,
+      "fptsAgainst": 1144.46,
+      "benchPointsLeftBehind": 159.4,
+      "faabUsed": 54
     },
     {
       "manager": "JewsInParis",
       "wins": 7,
-      "losses": 1,
-      "fpts": 1187.22,
-      "fptsAgainst": 1060.66,
-      "benchPointsLeftBehind": 121.2,
+      "losses": 2,
+      "fpts": 1312.9,
+      "fptsAgainst": 1238.6,
+      "benchPointsLeftBehind": 125.22,
       "faabUsed": 64
     },
     {
-      "manager": "Tylero0",
-      "wins": 6,
-      "losses": 2,
-      "fpts": 1225.08,
-      "fptsAgainst": 1062.88,
-      "benchPointsLeftBehind": 137.7,
-      "faabUsed": 54
-    },
-    {
       "manager": "PrayingGrantis",
-      "wins": 5,
+      "wins": 6,
       "losses": 3,
-      "fpts": 1191.52,
-      "fptsAgainst": 1076.5,
-      "benchPointsLeftBehind": 195.28,
+      "fpts": 1356.58,
+      "fptsAgainst": 1165.86,
+      "benchPointsLeftBehind": 200.82,
       "faabUsed": 74
     },
     {
       "manager": "CarlaCote",
-      "wins": 4,
+      "wins": 5,
       "losses": 4,
-      "fpts": 1031.84,
-      "fptsAgainst": 1043.66,
-      "benchPointsLeftBehind": 150.86,
+      "fpts": 1207.56,
+      "fptsAgainst": 1133.48,
+      "benchPointsLeftBehind": 160.76,
       "faabUsed": 7
     },
     {
       "manager": "Unanswered",
-      "wins": 4,
+      "wins": 5,
       "losses": 4,
-      "fpts": 1007.94,
-      "fptsAgainst": 1037.62,
-      "benchPointsLeftBehind": 143.24,
+      "fpts": 1170.84,
+      "fptsAgainst": 1172.7,
+      "benchPointsLeftBehind": 146.84,
       "faabUsed": 100
     },
     {
       "manager": "ELord11",
       "wins": 3,
-      "losses": 5,
-      "fpts": 1029.7,
-      "fptsAgainst": 1030.54,
-      "benchPointsLeftBehind": 138.44,
+      "losses": 6,
+      "fpts": 1164.78,
+      "fptsAgainst": 1193.44,
+      "benchPointsLeftBehind": 147.44,
       "faabUsed": 89
     },
     {
       "manager": "owenriddell",
       "wins": 2,
-      "losses": 6,
-      "fpts": 978.84,
-      "fptsAgainst": 1034.94,
-      "benchPointsLeftBehind": 103.9,
+      "losses": 7,
+      "fpts": 1068.66,
+      "fptsAgainst": 1210.66,
+      "benchPointsLeftBehind": 104.6,
       "faabUsed": 23
     },
     {
       "manager": "Shipoopiehole",
       "wins": 1,
-      "losses": 7,
-      "fpts": 953.56,
-      "fptsAgainst": 1191.4,
-      "benchPointsLeftBehind": 136.46,
+      "losses": 8,
+      "fpts": 1042.92,
+      "fptsAgainst": 1356.46,
+      "benchPointsLeftBehind": 160,
       "faabUsed": 62
     },
     {
       "manager": "CerealStroke",
       "wins": 0,
-      "losses": 8,
-      "fpts": 811.04,
-      "fptsAgainst": 1076.22,
-      "benchPointsLeftBehind": 195.14,
+      "losses": 9,
+      "fpts": 892.62,
+      "fptsAgainst": 1174.48,
+      "benchPointsLeftBehind": 214.44,
       "faabUsed": 0
     }
   ],
@@ -506,92 +506,92 @@
       "standings": [
         {
           "manager": "Caaaam",
-          "wins": 8,
+          "wins": 9,
           "losses": 0,
-          "fpts": 1173.9,
-          "fptsAgainst": 976.22,
-          "benchPointsLeftBehind": 173.32,
+          "fpts": 1351.84,
+          "fptsAgainst": 1101.9,
+          "benchPointsLeftBehind": 200.7,
           "faabUsed": 100
+        },
+        {
+          "manager": "Tylero0",
+          "wins": 7,
+          "losses": 2,
+          "fpts": 1323.34,
+          "fptsAgainst": 1144.46,
+          "benchPointsLeftBehind": 159.4,
+          "faabUsed": 54
         },
         {
           "manager": "JewsInParis",
           "wins": 7,
-          "losses": 1,
-          "fpts": 1187.22,
-          "fptsAgainst": 1060.66,
-          "benchPointsLeftBehind": 121.2,
+          "losses": 2,
+          "fpts": 1312.9,
+          "fptsAgainst": 1238.6,
+          "benchPointsLeftBehind": 125.22,
           "faabUsed": 64
         },
         {
-          "manager": "Tylero0",
-          "wins": 6,
-          "losses": 2,
-          "fpts": 1225.08,
-          "fptsAgainst": 1062.88,
-          "benchPointsLeftBehind": 137.7,
-          "faabUsed": 54
-        },
-        {
           "manager": "PrayingGrantis",
-          "wins": 5,
+          "wins": 6,
           "losses": 3,
-          "fpts": 1191.52,
-          "fptsAgainst": 1076.5,
-          "benchPointsLeftBehind": 195.28,
+          "fpts": 1356.58,
+          "fptsAgainst": 1165.86,
+          "benchPointsLeftBehind": 200.82,
           "faabUsed": 74
         },
         {
           "manager": "CarlaCote",
-          "wins": 4,
+          "wins": 5,
           "losses": 4,
-          "fpts": 1031.84,
-          "fptsAgainst": 1043.66,
-          "benchPointsLeftBehind": 150.86,
+          "fpts": 1207.56,
+          "fptsAgainst": 1133.48,
+          "benchPointsLeftBehind": 160.76,
           "faabUsed": 7
         },
         {
           "manager": "Unanswered",
-          "wins": 4,
+          "wins": 5,
           "losses": 4,
-          "fpts": 1007.94,
-          "fptsAgainst": 1037.62,
-          "benchPointsLeftBehind": 143.24,
+          "fpts": 1170.84,
+          "fptsAgainst": 1172.7,
+          "benchPointsLeftBehind": 146.84,
           "faabUsed": 100
         },
         {
           "manager": "ELord11",
           "wins": 3,
-          "losses": 5,
-          "fpts": 1029.7,
-          "fptsAgainst": 1030.54,
-          "benchPointsLeftBehind": 138.44,
+          "losses": 6,
+          "fpts": 1164.78,
+          "fptsAgainst": 1193.44,
+          "benchPointsLeftBehind": 147.44,
           "faabUsed": 89
         },
         {
           "manager": "owenriddell",
           "wins": 2,
-          "losses": 6,
-          "fpts": 978.84,
-          "fptsAgainst": 1034.94,
-          "benchPointsLeftBehind": 103.9,
+          "losses": 7,
+          "fpts": 1068.66,
+          "fptsAgainst": 1210.66,
+          "benchPointsLeftBehind": 104.6,
           "faabUsed": 23
         },
         {
           "manager": "Shipoopiehole",
           "wins": 1,
-          "losses": 7,
-          "fpts": 953.56,
-          "fptsAgainst": 1191.4,
-          "benchPointsLeftBehind": 136.46,
+          "losses": 8,
+          "fpts": 1042.92,
+          "fptsAgainst": 1356.46,
+          "benchPointsLeftBehind": 160,
           "faabUsed": 62
         },
         {
           "manager": "CerealStroke",
           "wins": 0,
-          "losses": 8,
-          "fpts": 811.04,
-          "fptsAgainst": 1076.22,
-          "benchPointsLeftBehind": 195.14,
+          "losses": 9,
+          "fpts": 892.62,
+          "fptsAgainst": 1174.48,
+          "benchPointsLeftBehind": 214.44,
           "faabUsed": 0
         }
       ],
@@ -3295,7 +3295,7 @@
     "260": {
       "name": "Josh Johnson",
       "pos": "QB",
-      "team": "CIN"
+      "team": "ARI"
     },
     "261": {
       "name": "A.J. Hawk",
