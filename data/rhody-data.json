@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-11T00:31:35.079Z",
+  "updatedAt": "2026-11-11T12:51:14.446Z",
   "roasts": [
     {
       "category": "BREAKING TRADE DESK",
@@ -27,6 +27,28 @@
     }
   ],
   "recentTrades": [
+    {
+      "season": "2026",
+      "week": 9,
+      "type": "trade",
+      "managers": [
+        "ELord11",
+        "Tylero0"
+      ],
+      "added": [
+        "ELord11 received Drake London (WR - ATL)",
+        "ELord11 received Garrett Wilson (WR - NYJ)",
+        "Tylero0 received Puka Nacua (WR - LAR)"
+      ],
+      "dropped": [
+        "Tylero0 dropped Drake London (WR - ATL)",
+        "Tylero0 dropped Garrett Wilson (WR - NYJ)",
+        "ELord11 dropped Puka Nacua (WR - LAR)"
+      ],
+      "faabBid": 0,
+      "timestamp": 1794381226822,
+      "date": "11/11/2026, 2:13:46 AM"
+    },
     {
       "season": "2026",
       "week": 9,
@@ -184,24 +206,58 @@
       "faabBid": 0,
       "timestamp": 1791008014335,
       "date": "10/3/2026, 2:13:34 AM"
-    },
-    {
-      "season": "2026",
-      "week": 3,
-      "type": "trade",
-      "managers": [
-        "ELord11",
-        "Tylero0",
-        "PrayingGrantis"
-      ],
-      "added": [],
-      "dropped": [],
-      "faabBid": 0,
-      "timestamp": 1790748809752,
-      "date": "9/30/2026, 2:13:29 AM"
     }
   ],
   "recentWaivers": [
+    {
+      "season": "2026",
+      "week": 9,
+      "type": "waiver",
+      "managers": [
+        "Tylero0"
+      ],
+      "added": [
+        "Tylero0 received Tank Dell (WR - HOU)"
+      ],
+      "dropped": [],
+      "faabBid": 11,
+      "timestamp": 1794384415947,
+      "date": "11/11/2026, 3:06:55 AM"
+    },
+    {
+      "season": "2026",
+      "week": 9,
+      "type": "waiver",
+      "managers": [
+        "Shipoopiehole"
+      ],
+      "added": [
+        "Shipoopiehole received Baltimore Ravens (DEF - BAL)"
+      ],
+      "dropped": [
+        "Shipoopiehole dropped Marvin Harrison Jr. (WR - HOU)"
+      ],
+      "faabBid": 6,
+      "timestamp": 1794384415947,
+      "date": "11/11/2026, 3:06:55 AM"
+    },
+    {
+      "season": "2026",
+      "week": 9,
+      "type": "waiver",
+      "managers": [
+        "JewsInParis"
+      ],
+      "added": [
+        "JewsInParis received Jordan Love (QB - GB)"
+      ],
+      "dropped": [
+        "JewsInParis dropped Devaughn Vele (WR - NO)"
+      ],
+      "faabBid": 5,
+      "timestamp": 1794384415947,
+      "date": "11/11/2026, 3:06:55 AM"
+    },
     {
       "season": "2026",
       "week": 9,
@@ -352,57 +408,6 @@
       "faabBid": 0,
       "timestamp": 1794022524725,
       "date": "11/6/2026, 10:35:24 PM"
-    },
-    {
-      "season": "2026",
-      "week": 9,
-      "type": "free_agent",
-      "managers": [
-        "ELord11"
-      ],
-      "added": [
-        "ELord11 received Jahan Dotson (WR - ATL)"
-      ],
-      "dropped": [
-        "ELord11 dropped Darius Cooper (WR - PHI)"
-      ],
-      "faabBid": 0,
-      "timestamp": 1794022514923,
-      "date": "11/6/2026, 10:35:14 PM"
-    },
-    {
-      "season": "2026",
-      "week": 9,
-      "type": "free_agent",
-      "managers": [
-        "ELord11"
-      ],
-      "added": [
-        "ELord11 received Darius Cooper (WR - PHI)"
-      ],
-      "dropped": [
-        "ELord11 dropped Dylan Sampson (RB - CLE)"
-      ],
-      "faabBid": 0,
-      "timestamp": 1794022508150,
-      "date": "11/6/2026, 10:35:08 PM"
-    },
-    {
-      "season": "2026",
-      "week": 9,
-      "type": "free_agent",
-      "managers": [
-        "ELord11"
-      ],
-      "added": [
-        "ELord11 received Dylan Sampson (RB - CLE)"
-      ],
-      "dropped": [
-        "ELord11 dropped Corey Kiner (RB - NE)"
-      ],
-      "faabBid": 0,
-      "timestamp": 1793992721371,
-      "date": "11/6/2026, 2:18:41 PM"
     }
   ],
   "currentStandings": [
@@ -422,7 +427,7 @@
       "fpts": 1323.34,
       "fptsAgainst": 1144.46,
       "benchPointsLeftBehind": 159.4,
-      "faabUsed": 54
+      "faabUsed": 65
     },
     {
       "manager": "JewsInParis",
@@ -431,7 +436,7 @@
       "fpts": 1312.9,
       "fptsAgainst": 1238.6,
       "benchPointsLeftBehind": 125.22,
-      "faabUsed": 64
+      "faabUsed": 69
     },
     {
       "manager": "PrayingGrantis",
@@ -485,7 +490,7 @@
       "fpts": 1042.92,
       "fptsAgainst": 1356.46,
       "benchPointsLeftBehind": 160,
-      "faabUsed": 62
+      "faabUsed": 68
     },
     {
       "manager": "CerealStroke",
@@ -518,7 +523,7 @@
           "fpts": 1323.34,
           "fptsAgainst": 1144.46,
           "benchPointsLeftBehind": 159.4,
-          "faabUsed": 54
+          "faabUsed": 65
         },
         {
           "manager": "JewsInParis",
@@ -527,7 +532,7 @@
           "fpts": 1312.9,
           "fptsAgainst": 1238.6,
           "benchPointsLeftBehind": 125.22,
-          "faabUsed": 64
+          "faabUsed": 69
         },
         {
           "manager": "PrayingGrantis",
@@ -581,7 +586,7 @@
           "fpts": 1042.92,
           "fptsAgainst": 1356.46,
           "benchPointsLeftBehind": 160,
-          "faabUsed": 62
+          "faabUsed": 68
         },
         {
           "manager": "CerealStroke",
@@ -594,6 +599,28 @@
         }
       ],
       "trades": [
+        {
+          "season": "2026",
+          "week": 9,
+          "type": "trade",
+          "managers": [
+            "ELord11",
+            "Tylero0"
+          ],
+          "added": [
+            "ELord11 received Drake London (WR - ATL)",
+            "ELord11 received Garrett Wilson (WR - NYJ)",
+            "Tylero0 received Puka Nacua (WR - LAR)"
+          ],
+          "dropped": [
+            "Tylero0 dropped Drake London (WR - ATL)",
+            "Tylero0 dropped Garrett Wilson (WR - NYJ)",
+            "ELord11 dropped Puka Nacua (WR - LAR)"
+          ],
+          "faabBid": 0,
+          "timestamp": 1794381226822,
+          "date": "11/11/2026, 2:13:46 AM"
+        },
         {
           "season": "2026",
           "week": 9,
@@ -883,6 +910,55 @@
         }
       ],
       "waivers": [
+        {
+          "season": "2026",
+          "week": 9,
+          "type": "waiver",
+          "managers": [
+            "Tylero0"
+          ],
+          "added": [
+            "Tylero0 received Tank Dell (WR - HOU)"
+          ],
+          "dropped": [],
+          "faabBid": 11,
+          "timestamp": 1794384415947,
+          "date": "11/11/2026, 3:06:55 AM"
+        },
+        {
+          "season": "2026",
+          "week": 9,
+          "type": "waiver",
+          "managers": [
+            "Shipoopiehole"
+          ],
+          "added": [
+            "Shipoopiehole received Baltimore Ravens (DEF - BAL)"
+          ],
+          "dropped": [
+            "Shipoopiehole dropped Marvin Harrison Jr. (WR - HOU)"
+          ],
+          "faabBid": 6,
+          "timestamp": 1794384415947,
+          "date": "11/11/2026, 3:06:55 AM"
+        },
+        {
+          "season": "2026",
+          "week": 9,
+          "type": "waiver",
+          "managers": [
+            "JewsInParis"
+          ],
+          "added": [
+            "JewsInParis received Jordan Love (QB - GB)"
+          ],
+          "dropped": [
+            "JewsInParis dropped Devaughn Vele (WR - NO)"
+          ],
+          "faabBid": 5,
+          "timestamp": 1794384415947,
+          "date": "11/11/2026, 3:06:55 AM"
+        },
         {
           "season": "2026",
           "week": 9,
@@ -1248,55 +1324,6 @@
           "faabBid": 0,
           "timestamp": 1793825141688,
           "date": "11/4/2026, 3:45:41 PM"
-        },
-        {
-          "season": "2026",
-          "week": 9,
-          "type": "free_agent",
-          "managers": [
-            "CerealStroke"
-          ],
-          "added": [
-            "CerealStroke received Emmett Johnson (RB - KC)"
-          ],
-          "dropped": [],
-          "faabBid": 0,
-          "timestamp": 1793825032582,
-          "date": "11/4/2026, 3:43:52 PM"
-        },
-        {
-          "season": "2026",
-          "week": 9,
-          "type": "free_agent",
-          "managers": [
-            "PrayingGrantis"
-          ],
-          "added": [
-            "PrayingGrantis received Chris Rodriguez Jr. (RB - JAX)"
-          ],
-          "dropped": [
-            "PrayingGrantis dropped Makai Lemon (WR - PHI)"
-          ],
-          "faabBid": 0,
-          "timestamp": 1793823013052,
-          "date": "11/4/2026, 3:10:13 PM"
-        },
-        {
-          "season": "2026",
-          "week": 9,
-          "type": "free_agent",
-          "managers": [
-            "ELord11"
-          ],
-          "added": [
-            "ELord11 received Kansas City Chiefs (DEF - KC)"
-          ],
-          "dropped": [
-            "ELord11 dropped Las Vegas Raiders (DEF - LV)"
-          ],
-          "faabBid": 0,
-          "timestamp": 1793819821229,
-          "date": "11/4/2026, 2:17:01 PM"
         }
       ]
     },
@@ -36883,7 +36910,7 @@
     "7012": {
       "name": "Mykal Walker",
       "pos": "LB",
-      "team": "FA"
+      "team": "NYJ"
     },
     "7013": {
       "name": "Steven Montez",
@@ -38238,7 +38265,7 @@
     "7283": {
       "name": "Chris Williams",
       "pos": "DT",
-      "team": "FA"
+      "team": "LV"
     },
     "7284": {
       "name": "Travis Reed",
