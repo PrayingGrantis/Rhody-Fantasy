@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-10T12:46:29.170Z",
+  "updatedAt": "2026-11-11T00:31:35.079Z",
   "roasts": [
     {
       "category": "BREAKING TRADE DESK",
@@ -207,13 +207,28 @@
       "week": 9,
       "type": "free_agent",
       "managers": [
+        "Tylero0"
+      ],
+      "added": [],
+      "dropped": [
+        "Tylero0 dropped Will Shipley (RB - PHI)"
+      ],
+      "faabBid": 0,
+      "timestamp": 1794347307124,
+      "date": "11/10/2026, 4:48:27 PM"
+    },
+    {
+      "season": "2026",
+      "week": 9,
+      "type": "free_agent",
+      "managers": [
         "CerealStroke"
       ],
       "added": [
         "CerealStroke received Corey Kiner (RB - NE)"
       ],
       "dropped": [
-        "CerealStroke dropped Kendre Miller (RB - FA)"
+        "CerealStroke dropped Kendre Miller (RB - DAL)"
       ],
       "faabBid": 0,
       "timestamp": 1794125438762,
@@ -388,23 +403,6 @@
       "faabBid": 0,
       "timestamp": 1793992721371,
       "date": "11/6/2026, 2:18:41 PM"
-    },
-    {
-      "season": "2026",
-      "week": 9,
-      "type": "free_agent",
-      "managers": [
-        "ELord11"
-      ],
-      "added": [
-        "ELord11 received Corey Kiner (RB - NE)"
-      ],
-      "dropped": [
-        "ELord11 dropped Joe Milton (QB - PHI)"
-      ],
-      "faabBid": 0,
-      "timestamp": 1793992706509,
-      "date": "11/6/2026, 2:18:26 PM"
     }
   ],
   "currentStandings": [
@@ -890,13 +888,28 @@
           "week": 9,
           "type": "free_agent",
           "managers": [
+            "Tylero0"
+          ],
+          "added": [],
+          "dropped": [
+            "Tylero0 dropped Will Shipley (RB - PHI)"
+          ],
+          "faabBid": 0,
+          "timestamp": 1794347307124,
+          "date": "11/10/2026, 4:48:27 PM"
+        },
+        {
+          "season": "2026",
+          "week": 9,
+          "type": "free_agent",
+          "managers": [
             "CerealStroke"
           ],
           "added": [
             "CerealStroke received Corey Kiner (RB - NE)"
           ],
           "dropped": [
-            "CerealStroke dropped Kendre Miller (RB - FA)"
+            "CerealStroke dropped Kendre Miller (RB - DAL)"
           ],
           "faabBid": 0,
           "timestamp": 1794125438762,
@@ -1162,7 +1175,7 @@
             "CarlaCote received Mack Hollins (WR - NE)"
           ],
           "dropped": [
-            "CarlaCote dropped Kirk Cousins (QB - LV)"
+            "CarlaCote dropped Kirk Cousins (QB - MIN)"
           ],
           "faabBid": 0,
           "timestamp": 1793938848385,
@@ -1284,21 +1297,6 @@
           "faabBid": 0,
           "timestamp": 1793819821229,
           "date": "11/4/2026, 2:17:01 PM"
-        },
-        {
-          "season": "2026",
-          "week": 9,
-          "type": "free_agent",
-          "managers": [
-            "JewsInParis"
-          ],
-          "added": [
-            "JewsInParis received Jordan Addison (WR - MIN)"
-          ],
-          "dropped": [],
-          "faabBid": 0,
-          "timestamp": 1793819490525,
-          "date": "11/4/2026, 2:11:30 PM"
         }
       ]
     },
@@ -5245,7 +5243,7 @@
     "650": {
       "name": "Nick Folk",
       "pos": "K",
-      "team": "ATL"
+      "team": "FA"
     },
     "651": {
       "name": "Santonio Holmes",
@@ -7825,7 +7823,7 @@
     "1166": {
       "name": "Kirk Cousins",
       "pos": "QB",
-      "team": "LV"
+      "team": "MIN"
     },
     "1167": {
       "name": "Richard Crawford",
@@ -9390,7 +9388,7 @@
     "1479": {
       "name": "Keenan Allen",
       "pos": "WR",
-      "team": "IND"
+      "team": "SF"
     },
     "1480": {
       "name": "D.J. Fluker",
@@ -13665,7 +13663,7 @@
     "2334": {
       "name": "Phillip Dorsett II",
       "pos": "WR",
-      "team": "FA"
+      "team": "ARI"
     },
     "2335": {
       "name": "Damarious Randall",
@@ -31520,7 +31518,7 @@
     "5908": {
       "name": "Amani Hooker",
       "pos": "DB",
-      "team": "TEN"
+      "team": "BUF"
     },
     "5909": {
       "name": "Hamp Cheevers",
@@ -37210,7 +37208,7 @@
     "7077": {
       "name": "Jacob Bobenmoyer",
       "pos": "LS",
-      "team": "FA"
+      "team": "IND"
     },
     "7078": {
       "name": "Tony Brown",
@@ -41690,7 +41688,7 @@
     "7979": {
       "name": "Ryan Neuzil",
       "pos": "OL",
-      "team": "ATL"
+      "team": "BAL"
     },
     "7980": {
       "name": "John Raine",
@@ -43205,7 +43203,7 @@
     "8282": {
       "name": "Delarrin Turner-Yell",
       "pos": "DB",
-      "team": "FA"
+      "team": "ATL"
     },
     "8283": {
       "name": "Brian Asamoah II",
@@ -45720,7 +45718,7 @@
     "8799": {
       "name": "Zaire Mitchell-Paden",
       "pos": "TE",
-      "team": "FA"
+      "team": "CLE"
     },
     "8800": {
       "name": "Malik Davis",
@@ -46585,7 +46583,7 @@
     "9500": {
       "name": "Josh Downs",
       "pos": "WR",
-      "team": "IND"
+      "team": "KC"
     },
     "9501": {
       "name": "DeMario Douglas",
@@ -46670,7 +46668,7 @@
     "9757": {
       "name": "Kendre Miller",
       "pos": "RB",
-      "team": "FA"
+      "team": "DAL"
     },
     "9758": {
       "name": "C.J. Stroud",
@@ -47130,7 +47128,7 @@
     "10914": {
       "name": "Daiyan Henley",
       "pos": "LB",
-      "team": "LAC"
+      "team": "DEN"
     },
     "10915": {
       "name": "Ricky Stromberg",
@@ -47245,7 +47243,7 @@
     "10937": {
       "name": "Jake Moody",
       "pos": "K",
-      "team": "BAL"
+      "team": "ATL"
     },
     "10938": {
       "name": "D.J. Johnson",
@@ -47550,7 +47548,7 @@
     "10998": {
       "name": "Jose Ramirez",
       "pos": "DL",
-      "team": "NE"
+      "team": "FA"
     },
     "10999": {
       "name": "Josh Hayes",
@@ -47785,7 +47783,7 @@
     "11045": {
       "name": "Andrew Vorhees",
       "pos": "OL",
-      "team": "BAL"
+      "team": "ATL"
     },
     "11046": {
       "name": "Colton Dowell",
@@ -48390,7 +48388,7 @@
     "11168": {
       "name": "Xavier Smith",
       "pos": "WR",
-      "team": "SF"
+      "team": "LAR"
     },
     "11169": {
       "name": "Dresser Winn",
@@ -49060,7 +49058,7 @@
     "11305": {
       "name": "Claudin Cherelus",
       "pos": "LB",
-      "team": "FA"
+      "team": "CAR"
     },
     "11306": {
       "name": "Xavier Gipson",
@@ -49635,7 +49633,7 @@
     "11420": {
       "name": "Luke Haggard",
       "pos": "OT",
-      "team": "FA"
+      "team": "TB"
     },
     "11421": {
       "name": "Ryan Miller",
@@ -52930,7 +52928,7 @@
     "12079": {
       "name": "Treyton Welch",
       "pos": "TE",
-      "team": "FA"
+      "team": "NO"
     },
     "12080": {
       "name": "Aidan Robbins",
@@ -57225,7 +57223,7 @@
     "12938": {
       "name": "Jackson Meeks",
       "pos": "TE",
-      "team": "DET"
+      "team": "FA"
     },
     "12939": {
       "name": "Anthony Tyus III",
@@ -58270,7 +58268,7 @@
     "13147": {
       "name": "Gus Hartwig",
       "pos": "C",
-      "team": "FA"
+      "team": "ATL"
     },
     "13148": {
       "name": "Aaron Smith",
@@ -58600,7 +58598,7 @@
     "13213": {
       "name": "Lucas Scott",
       "pos": "FB",
-      "team": "FA"
+      "team": "BAL"
     },
     "13214": {
       "name": "Kaimon Rucker",
@@ -58615,7 +58613,7 @@
     "13216": {
       "name": "Derrick Canteen",
       "pos": "CB",
-      "team": "TEN"
+      "team": "FA"
     },
     "13217": {
       "name": "Hunter Dekkers",
@@ -59675,7 +59673,7 @@
     "13428": {
       "name": "Joey Aguilar",
       "pos": "QB",
-      "team": "JAX"
+      "team": "ARI"
     },
     "13429": {
       "name": "Seydou Traore",
@@ -61275,7 +61273,7 @@
     "13748": {
       "name": "Wes Pahl",
       "pos": "P",
-      "team": "FA"
+      "team": "CLE"
     },
     "13749": {
       "name": "Kole Wilson",
@@ -61565,7 +61563,7 @@
     "13806": {
       "name": "Matt Lauter",
       "pos": "TE",
-      "team": "FA"
+      "team": "NO"
     },
     "13807": {
       "name": "Gary Smith III",
@@ -61670,7 +61668,7 @@
     "13827": {
       "name": "Tanner Arkin",
       "pos": "TE",
-      "team": "NE"
+      "team": "FA"
     },
     "13828": {
       "name": "Channing Canada",
@@ -62035,7 +62033,7 @@
     "13900": {
       "name": "Cole Brevard",
       "pos": "DT",
-      "team": "KC"
+      "team": "SEA"
     },
     "13901": {
       "name": "Anthony Dunn",
@@ -62318,9 +62316,9 @@
       "team": "FA"
     },
     "13957": {
-      "name": "Kenny Fletcher",
+      "name": "Kenny Fletcher Jr.",
       "pos": "TE",
-      "team": "FA"
+      "team": "GB"
     },
     "13958": {
       "name": "Aidan Laros",
