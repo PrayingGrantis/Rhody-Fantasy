@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-12T00:48:05.779Z",
+  "updatedAt": "2026-11-12T12:48:32.274Z",
   "roasts": [
     {
       "category": "BREAKING TRADE DESK",
@@ -214,6 +214,74 @@
       "week": 10,
       "type": "free_agent",
       "managers": [
+        "CarlaCote"
+      ],
+      "added": [
+        "CarlaCote received Zonovan Knight (RB - ARI)"
+      ],
+      "dropped": [
+        "CarlaCote dropped Michael Wilson (WR - ARI)"
+      ],
+      "faabBid": 0,
+      "timestamp": 1794447372662,
+      "date": "11/11/2026, 8:36:12 PM"
+    },
+    {
+      "season": "2026",
+      "week": 10,
+      "type": "free_agent",
+      "managers": [
+        "CarlaCote"
+      ],
+      "added": [
+        "CarlaCote received New York Giants (DEF - NYG)"
+      ],
+      "dropped": [
+        "CarlaCote dropped Chris Godwin Jr. (WR - TB)"
+      ],
+      "faabBid": 0,
+      "timestamp": 1794447310710,
+      "date": "11/11/2026, 8:35:10 PM"
+    },
+    {
+      "season": "2026",
+      "week": 10,
+      "type": "free_agent",
+      "managers": [
+        "Tylero0"
+      ],
+      "added": [
+        "Tylero0 received Tyler Higbee (TE - LAR)"
+      ],
+      "dropped": [
+        "Tylero0 dropped Tutu Atwell (WR - LAR)"
+      ],
+      "faabBid": 0,
+      "timestamp": 1794445477974,
+      "date": "11/11/2026, 8:04:37 PM"
+    },
+    {
+      "season": "2026",
+      "week": 10,
+      "type": "free_agent",
+      "managers": [
+        "Tylero0"
+      ],
+      "added": [
+        "Tylero0 received Keon Coleman (WR - BUF)"
+      ],
+      "dropped": [
+        "Tylero0 dropped Mike Washington Jr. (RB - LV)"
+      ],
+      "faabBid": 0,
+      "timestamp": 1794445026517,
+      "date": "11/11/2026, 7:57:06 PM"
+    },
+    {
+      "season": "2026",
+      "week": 10,
+      "type": "free_agent",
+      "managers": [
         "Caaaam"
       ],
       "added": [
@@ -332,74 +400,6 @@
       "faabBid": 0,
       "timestamp": 1794347307124,
       "date": "11/10/2026, 4:48:27 PM"
-    },
-    {
-      "season": "2026",
-      "week": 9,
-      "type": "free_agent",
-      "managers": [
-        "CerealStroke"
-      ],
-      "added": [
-        "CerealStroke received Corey Kiner (RB - NE)"
-      ],
-      "dropped": [
-        "CerealStroke dropped Kendre Miller (RB - DAL)"
-      ],
-      "faabBid": 0,
-      "timestamp": 1794125438762,
-      "date": "11/8/2026, 3:10:38 AM"
-    },
-    {
-      "season": "2026",
-      "week": 9,
-      "type": "free_agent",
-      "managers": [
-        "ELord11"
-      ],
-      "added": [
-        "ELord11 received Makai Lemon (WR - PHI)"
-      ],
-      "dropped": [
-        "ELord11 dropped Cade Otton (TE - TB)"
-      ],
-      "faabBid": 0,
-      "timestamp": 1794087190706,
-      "date": "11/7/2026, 4:33:10 PM"
-    },
-    {
-      "season": "2026",
-      "week": 9,
-      "type": "free_agent",
-      "managers": [
-        "ELord11"
-      ],
-      "added": [
-        "ELord11 received Cade Otton (TE - TB)"
-      ],
-      "dropped": [
-        "ELord11 dropped Quentin Johnston (WR - LAC)"
-      ],
-      "faabBid": 0,
-      "timestamp": 1794022616120,
-      "date": "11/6/2026, 10:36:56 PM"
-    },
-    {
-      "season": "2026",
-      "week": 9,
-      "type": "free_agent",
-      "managers": [
-        "ELord11"
-      ],
-      "added": [
-        "ELord11 received Quentin Johnston (WR - LAC)"
-      ],
-      "dropped": [
-        "ELord11 dropped Demarcus Robinson (WR - SF)"
-      ],
-      "faabBid": 0,
-      "timestamp": 1794022606944,
-      "date": "11/6/2026, 10:36:46 PM"
     }
   ],
   "currentStandings": [
@@ -907,6 +907,74 @@
           "week": 10,
           "type": "free_agent",
           "managers": [
+            "CarlaCote"
+          ],
+          "added": [
+            "CarlaCote received Zonovan Knight (RB - ARI)"
+          ],
+          "dropped": [
+            "CarlaCote dropped Michael Wilson (WR - ARI)"
+          ],
+          "faabBid": 0,
+          "timestamp": 1794447372662,
+          "date": "11/11/2026, 8:36:12 PM"
+        },
+        {
+          "season": "2026",
+          "week": 10,
+          "type": "free_agent",
+          "managers": [
+            "CarlaCote"
+          ],
+          "added": [
+            "CarlaCote received New York Giants (DEF - NYG)"
+          ],
+          "dropped": [
+            "CarlaCote dropped Chris Godwin Jr. (WR - TB)"
+          ],
+          "faabBid": 0,
+          "timestamp": 1794447310710,
+          "date": "11/11/2026, 8:35:10 PM"
+        },
+        {
+          "season": "2026",
+          "week": 10,
+          "type": "free_agent",
+          "managers": [
+            "Tylero0"
+          ],
+          "added": [
+            "Tylero0 received Tyler Higbee (TE - LAR)"
+          ],
+          "dropped": [
+            "Tylero0 dropped Tutu Atwell (WR - LAR)"
+          ],
+          "faabBid": 0,
+          "timestamp": 1794445477974,
+          "date": "11/11/2026, 8:04:37 PM"
+        },
+        {
+          "season": "2026",
+          "week": 10,
+          "type": "free_agent",
+          "managers": [
+            "Tylero0"
+          ],
+          "added": [
+            "Tylero0 received Keon Coleman (WR - BUF)"
+          ],
+          "dropped": [
+            "Tylero0 dropped Mike Washington Jr. (RB - LV)"
+          ],
+          "faabBid": 0,
+          "timestamp": 1794445026517,
+          "date": "11/11/2026, 7:57:06 PM"
+        },
+        {
+          "season": "2026",
+          "week": 10,
+          "type": "free_agent",
+          "managers": [
             "Caaaam"
           ],
           "added": [
@@ -1246,68 +1314,6 @@
           "faabBid": 0,
           "timestamp": 1793992694418,
           "date": "11/6/2026, 2:18:14 PM"
-        },
-        {
-          "season": "2026",
-          "week": 9,
-          "type": "free_agent",
-          "managers": [
-            "ELord11"
-          ],
-          "added": [
-            "ELord11 received Jordan Love (QB - GB)"
-          ],
-          "dropped": [],
-          "faabBid": 0,
-          "timestamp": 1793992596069,
-          "date": "11/6/2026, 2:16:36 PM"
-        },
-        {
-          "season": "2026",
-          "week": 9,
-          "type": "free_agent",
-          "managers": [
-            "ELord11"
-          ],
-          "added": [
-            "ELord11 received Mike Gesicki (TE - CIN)"
-          ],
-          "dropped": [],
-          "faabBid": 0,
-          "timestamp": 1793992583240,
-          "date": "11/6/2026, 2:16:23 PM"
-        },
-        {
-          "season": "2026",
-          "week": 9,
-          "type": "free_agent",
-          "managers": [
-            "Unanswered"
-          ],
-          "added": [],
-          "dropped": [
-            "Unanswered dropped Jason Myers (K - SEA)"
-          ],
-          "faabBid": 0,
-          "timestamp": 1793991277534,
-          "date": "11/6/2026, 1:54:37 PM"
-        },
-        {
-          "season": "2026",
-          "week": 9,
-          "type": "free_agent",
-          "managers": [
-            "CarlaCote"
-          ],
-          "added": [
-            "CarlaCote received Mack Hollins (WR - NE)"
-          ],
-          "dropped": [
-            "CarlaCote dropped Kirk Cousins (QB - MIN)"
-          ],
-          "faabBid": 0,
-          "timestamp": 1793938848385,
-          "date": "11/5/2026, 11:20:48 PM"
         }
       ]
     },
