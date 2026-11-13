@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-12T12:48:32.274Z",
+  "updatedAt": "2026-11-13T00:36:40.363Z",
   "roasts": [
     {
       "category": "BREAKING TRADE DESK",
@@ -214,6 +214,23 @@
       "week": 10,
       "type": "free_agent",
       "managers": [
+        "CerealStroke"
+      ],
+      "added": [
+        "CerealStroke received Geno Smith (QB - NYJ)"
+      ],
+      "dropped": [
+        "CerealStroke dropped Gardner Minshew II (QB - ARI)"
+      ],
+      "faabBid": 0,
+      "timestamp": 1794527203490,
+      "date": "11/12/2026, 6:46:43 PM"
+    },
+    {
+      "season": "2026",
+      "week": 10,
+      "type": "free_agent",
+      "managers": [
         "CarlaCote"
       ],
       "added": [
@@ -385,21 +402,6 @@
       "faabBid": 5,
       "timestamp": 1794384415947,
       "date": "11/11/2026, 3:06:55 AM"
-    },
-    {
-      "season": "2026",
-      "week": 9,
-      "type": "free_agent",
-      "managers": [
-        "Tylero0"
-      ],
-      "added": [],
-      "dropped": [
-        "Tylero0 dropped Will Shipley (RB - PHI)"
-      ],
-      "faabBid": 0,
-      "timestamp": 1794347307124,
-      "date": "11/10/2026, 4:48:27 PM"
     }
   ],
   "currentStandings": [
@@ -907,6 +909,23 @@
           "week": 10,
           "type": "free_agent",
           "managers": [
+            "CerealStroke"
+          ],
+          "added": [
+            "CerealStroke received Geno Smith (QB - NYJ)"
+          ],
+          "dropped": [
+            "CerealStroke dropped Gardner Minshew II (QB - ARI)"
+          ],
+          "faabBid": 0,
+          "timestamp": 1794527203490,
+          "date": "11/12/2026, 6:46:43 PM"
+        },
+        {
+          "season": "2026",
+          "week": 10,
+          "type": "free_agent",
+          "managers": [
             "CarlaCote"
           ],
           "added": [
@@ -1297,23 +1316,6 @@
           "faabBid": 0,
           "timestamp": 1793992706509,
           "date": "11/6/2026, 2:18:26 PM"
-        },
-        {
-          "season": "2026",
-          "week": 9,
-          "type": "free_agent",
-          "managers": [
-            "ELord11"
-          ],
-          "added": [
-            "ELord11 received Joe Milton (QB - PHI)"
-          ],
-          "dropped": [
-            "ELord11 dropped Jordan Love (QB - GB)"
-          ],
-          "faabBid": 0,
-          "timestamp": 1793992694418,
-          "date": "11/6/2026, 2:18:14 PM"
         }
       ]
     },
@@ -32220,7 +32222,7 @@
     "6045": {
       "name": "Gary Jennings",
       "pos": "WR",
-      "team": "LAC"
+      "team": "FA"
     },
     "6046": {
       "name": "Joe Dineen",
@@ -41420,7 +41422,7 @@
     "7922": {
       "name": "Riley Patterson",
       "pos": "K",
-      "team": "FA"
+      "team": "BAL"
     },
     "7923": {
       "name": "Robert Jones",
@@ -44130,7 +44132,7 @@
     "8464": {
       "name": "Cordell Volson",
       "pos": "T",
-      "team": "FA"
+      "team": "SEA"
     },
     "8465": {
       "name": "Spencer Burford",
@@ -47145,7 +47147,7 @@
     "10914": {
       "name": "Daiyan Henley",
       "pos": "LB",
-      "team": "DEN"
+      "team": "LAC"
     },
     "10915": {
       "name": "Ricky Stromberg",
@@ -49150,7 +49152,7 @@
     "11320": {
       "name": "Nikko Remigio",
       "pos": "WR",
-      "team": "FA"
+      "team": "HOU"
     },
     "11321": {
       "name": "Anthony Cook",
@@ -52005,7 +52007,7 @@
     "11891": {
       "name": "Kyle Hergel",
       "pos": "OL",
-      "team": "FA"
+      "team": "BAL"
     },
     "11892": {
       "name": "Nate Latu",
@@ -52625,7 +52627,7 @@
     "12015": {
       "name": "Harrison Mevis",
       "pos": "K",
-      "team": "FA"
+      "team": "BAL"
     },
     "12016": {
       "name": "Jeremiah Crawford",
@@ -57795,7 +57797,7 @@
     "13049": {
       "name": "Alijah Huzzie",
       "pos": "DB",
-      "team": "FA"
+      "team": "JAX"
     },
     "13050": {
       "name": "Austin Brinkman",
