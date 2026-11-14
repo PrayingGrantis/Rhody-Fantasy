@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-14T00:31:19.593Z",
+  "updatedAt": "2026-11-14T17:29:26.502Z",
   "roasts": [
     {
       "category": "BREAKING TRADE DESK",
@@ -27,6 +27,28 @@
     }
   ],
   "recentTrades": [
+    {
+      "season": "2026",
+      "week": 10,
+      "type": "trade",
+      "managers": [
+        "PrayingGrantis",
+        "CarlaCote"
+      ],
+      "added": [
+        "CarlaCote received Nico Collins (WR - HOU)",
+        "CarlaCote received Blake Corum (RB - LAR)",
+        "PrayingGrantis received Matthew Golden (WR - GB)"
+      ],
+      "dropped": [
+        "PrayingGrantis dropped Nico Collins (WR - HOU)",
+        "PrayingGrantis dropped Blake Corum (RB - LAR)",
+        "CarlaCote dropped Matthew Golden (WR - GB)"
+      ],
+      "faabBid": 0,
+      "timestamp": 1794640425788,
+      "date": "11/14/2026, 2:13:45 AM"
+    },
     {
       "season": "2026",
       "week": 9,
@@ -184,28 +206,6 @@
       "faabBid": 0,
       "timestamp": 1791094436608,
       "date": "10/4/2026, 2:13:56 AM"
-    },
-    {
-      "season": "2026",
-      "week": 4,
-      "type": "trade",
-      "managers": [
-        "Unanswered",
-        "PrayingGrantis"
-      ],
-      "added": [
-        "Unanswered received Kenneth Walker III (RB - KC)",
-        "PrayingGrantis received Bijan Robinson (RB - ATL)",
-        "Unanswered received Adonai Mitchell (WR - NYJ)"
-      ],
-      "dropped": [
-        "PrayingGrantis dropped Kenneth Walker III (RB - KC)",
-        "Unanswered dropped Bijan Robinson (RB - ATL)",
-        "PrayingGrantis dropped Adonai Mitchell (WR - NYJ)"
-      ],
-      "faabBid": 0,
-      "timestamp": 1791008014335,
-      "date": "10/3/2026, 2:13:34 AM"
     }
   ],
   "recentWaivers": [
@@ -593,6 +593,28 @@
         }
       ],
       "trades": [
+        {
+          "season": "2026",
+          "week": 10,
+          "type": "trade",
+          "managers": [
+            "PrayingGrantis",
+            "CarlaCote"
+          ],
+          "added": [
+            "CarlaCote received Nico Collins (WR - HOU)",
+            "CarlaCote received Blake Corum (RB - LAR)",
+            "PrayingGrantis received Matthew Golden (WR - GB)"
+          ],
+          "dropped": [
+            "PrayingGrantis dropped Nico Collins (WR - HOU)",
+            "PrayingGrantis dropped Blake Corum (RB - LAR)",
+            "CarlaCote dropped Matthew Golden (WR - GB)"
+          ],
+          "faabBid": 0,
+          "timestamp": 1794640425788,
+          "date": "11/14/2026, 2:13:45 AM"
+        },
         {
           "season": "2026",
           "week": 9,
@@ -25592,7 +25614,7 @@
     "4718": {
       "name": "Dare Ogunbowale",
       "pos": "RB",
-      "team": "HOU"
+      "team": "FA"
     },
     "4719": {
       "name": "Chris Thompson",
@@ -32117,7 +32139,7 @@
     "6024": {
       "name": "Fred Johnson",
       "pos": "T",
-      "team": "PHI"
+      "team": "FA"
     },
     "6025": {
       "name": "Mike Jackson",
