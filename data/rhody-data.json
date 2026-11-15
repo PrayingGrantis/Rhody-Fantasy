@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-15T03:36:59.031Z",
+  "updatedAt": "2026-11-15T18:11:00.980Z",
   "roasts": [
     {
       "category": "BREAKING TRADE DESK",
@@ -214,6 +214,21 @@
       "week": 10,
       "type": "free_agent",
       "managers": [
+        "ELord11"
+      ],
+      "added": [],
+      "dropped": [
+        "ELord11 dropped Makai Lemon (WR - PHI)"
+      ],
+      "faabBid": 0,
+      "timestamp": 1794750038922,
+      "date": "11/15/2026, 8:40:38 AM"
+    },
+    {
+      "season": "2026",
+      "week": 10,
+      "type": "free_agent",
+      "managers": [
         "CerealStroke"
       ],
       "added": [
@@ -385,21 +400,6 @@
       "faabBid": 0,
       "timestamp": 1794424473456,
       "date": "11/11/2026, 2:14:33 PM"
-    },
-    {
-      "season": "2026",
-      "week": 10,
-      "type": "free_agent",
-      "managers": [
-        "Shipoopiehole"
-      ],
-      "added": [],
-      "dropped": [
-        "Shipoopiehole dropped Tyler Shough (QB - NO)"
-      ],
-      "faabBid": 0,
-      "timestamp": 1794412978102,
-      "date": "11/11/2026, 11:02:58 AM"
     }
   ],
   "currentStandings": [
@@ -929,6 +929,21 @@
           "week": 10,
           "type": "free_agent",
           "managers": [
+            "ELord11"
+          ],
+          "added": [],
+          "dropped": [
+            "ELord11 dropped Makai Lemon (WR - PHI)"
+          ],
+          "faabBid": 0,
+          "timestamp": 1794750038922,
+          "date": "11/15/2026, 8:40:38 AM"
+        },
+        {
+          "season": "2026",
+          "week": 10,
+          "type": "free_agent",
+          "managers": [
             "CerealStroke"
           ],
           "added": [
@@ -1315,23 +1330,6 @@
           "faabBid": 0,
           "timestamp": 1794022524725,
           "date": "11/6/2026, 10:35:24 PM"
-        },
-        {
-          "season": "2026",
-          "week": 9,
-          "type": "free_agent",
-          "managers": [
-            "ELord11"
-          ],
-          "added": [
-            "ELord11 received Jahan Dotson (WR - ATL)"
-          ],
-          "dropped": [
-            "ELord11 dropped Darius Cooper (WR - PHI)"
-          ],
-          "faabBid": 0,
-          "timestamp": 1794022514923,
-          "date": "11/6/2026, 10:35:14 PM"
         }
       ]
     },
@@ -1765,7 +1763,7 @@
             "Shipoopiehole"
           ],
           "added": [
-            "Shipoopiehole received Michael Carter (RB - TEN)"
+            "Shipoopiehole received Michael Carter (RB - FA)"
           ],
           "dropped": [],
           "faabBid": 0,
@@ -39863,7 +39861,7 @@
     "7607": {
       "name": "Michael Carter",
       "pos": "RB",
-      "team": "TEN"
+      "team": "FA"
     },
     "7608": {
       "name": "Khalil Herbert",
@@ -47453,7 +47451,7 @@
     "10972": {
       "name": "Terell Smith",
       "pos": "DB",
-      "team": "PIT"
+      "team": "FA"
     },
     "10973": {
       "name": "Nick Hampton",
@@ -50128,7 +50126,7 @@
     "11512": {
       "name": "Tyrus Wheat",
       "pos": "DE",
-      "team": "DAL"
+      "team": "FA"
     },
     "11513": {
       "name": "Earl Bostick",
@@ -54468,7 +54466,7 @@
     "12380": {
       "name": "Te'Cory Couch",
       "pos": "CB",
-      "team": "BUF"
+      "team": "FA"
     },
     "12381": {
       "name": "Mike Edwards",
@@ -54713,7 +54711,7 @@
     "12429": {
       "name": "Kohl Levao",
       "pos": "OL",
-      "team": "NYJ"
+      "team": "FA"
     },
     "12430": {
       "name": "Malik Fisher",
@@ -56713,7 +56711,7 @@
     "12829": {
       "name": "Coleman Owen",
       "pos": "WR",
-      "team": "GB"
+      "team": "FA"
     },
     "12830": {
       "name": "Devonta Davis",
@@ -61868,12 +61866,12 @@
     "13860": {
       "name": "Sabastian Harsh",
       "pos": "DE",
-      "team": "HOU"
+      "team": "FA"
     },
     "13861": {
       "name": "Daniel Sobkowicz",
       "pos": "WR",
-      "team": "HOU"
+      "team": "FA"
     },
     "13862": {
       "name": "Treyvhon Saunders",
