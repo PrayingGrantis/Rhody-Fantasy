@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-15T18:11:00.980Z",
+  "updatedAt": "2026-11-16T03:36:46.194Z",
   "roasts": [
     {
       "category": "BREAKING TRADE DESK",
@@ -214,6 +214,21 @@
       "week": 10,
       "type": "free_agent",
       "managers": [
+        "Caaaam"
+      ],
+      "added": [],
+      "dropped": [
+        "Caaaam dropped Terry McLaurin (WR - WAS)"
+      ],
+      "faabBid": 0,
+      "timestamp": 1794776448654,
+      "date": "11/15/2026, 4:00:48 PM"
+    },
+    {
+      "season": "2026",
+      "week": 10,
+      "type": "free_agent",
+      "managers": [
         "ELord11"
       ],
       "added": [],
@@ -385,21 +400,6 @@
       "faabBid": 0,
       "timestamp": 1794424504899,
       "date": "11/11/2026, 2:15:04 PM"
-    },
-    {
-      "season": "2026",
-      "week": 10,
-      "type": "free_agent",
-      "managers": [
-        "Unanswered"
-      ],
-      "added": [
-        "Unanswered received Green Bay Packers (DEF - GB)"
-      ],
-      "dropped": [],
-      "faabBid": 0,
-      "timestamp": 1794424473456,
-      "date": "11/11/2026, 2:14:33 PM"
     }
   ],
   "currentStandings": [
@@ -929,6 +929,21 @@
           "week": 10,
           "type": "free_agent",
           "managers": [
+            "Caaaam"
+          ],
+          "added": [],
+          "dropped": [
+            "Caaaam dropped Terry McLaurin (WR - WAS)"
+          ],
+          "faabBid": 0,
+          "timestamp": 1794776448654,
+          "date": "11/15/2026, 4:00:48 PM"
+        },
+        {
+          "season": "2026",
+          "week": 10,
+          "type": "free_agent",
+          "managers": [
             "ELord11"
           ],
           "added": [],
@@ -1313,23 +1328,6 @@
           "faabBid": 0,
           "timestamp": 1794022533678,
           "date": "11/6/2026, 10:35:33 PM"
-        },
-        {
-          "season": "2026",
-          "week": 9,
-          "type": "free_agent",
-          "managers": [
-            "ELord11"
-          ],
-          "added": [
-            "ELord11 received Dylan Sampson (RB - CLE)"
-          ],
-          "dropped": [
-            "ELord11 dropped Jahan Dotson (WR - ATL)"
-          ],
-          "faabBid": 0,
-          "timestamp": 1794022524725,
-          "date": "11/6/2026, 10:35:24 PM"
         }
       ]
     },
