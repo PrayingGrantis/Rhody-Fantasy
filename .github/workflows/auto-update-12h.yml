@@ -1,12 +1,16 @@
-name: Rhody 12-Hour Sleeper Sync & Roast Engine
+name: Rhody 8AM Daily Sleeper Sync & Hydrogen Roast Engine
 
 on:
   schedule:
-    - cron: "0 */12 * * *"
+    # Runs once a day at 13:00 UTC (8:00 AM EST)
+    - cron: "0 13 * * *"
   workflow_dispatch:
 
 permissions:
   contents: write
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
   sync-and-roast:
@@ -23,7 +27,7 @@ jobs:
       - name: Create Data Directory
         run: mkdir -p data
 
-      - name: Pull Sleeper League & Generate Roasts
+      - name: Pull Sleeper League & Generate Gemini 4 Hydrogen Daily Edition
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: node scripts/update-rhody.mjs
@@ -33,4 +37,8 @@ jobs:
           git config user.name "Rhody Roast Bot"
           git config user.email "bot@rhodyfantasy.local"
           git add data/rhody-data.json
-          git diff --staged --quiet || (git commit -m "🐏 12-Hour Auto-Update: Latest Sleeper trades, waivers & roasts" && git push)
+          if ! git diff --staged --quiet; then
+            git commit -m "🐏 8AM Daily Edition: Latest Sleeper matchups, trades & Hydrogen roasts"
+            git pull --rebase origin main
+            git push origin main
+          fi
